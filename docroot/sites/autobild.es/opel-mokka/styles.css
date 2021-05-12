@@ -262,6 +262,9 @@ a.logo.axel-logo img {
   margin: 0;
   padding: 10px;
 }
+.splide--fade>.splide__track>.splide__list{
+  width: 100%;
+}
 @media only screen and (min-width: 768px) {
   .contain {
     background-image: url(img/slide1.jpg);
