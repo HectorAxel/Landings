@@ -166,6 +166,7 @@
   vertical-align: bottom;
   max-height: calc(100vh - 260px);
   max-width: 100%;
+  width: 100%;
 }
 .popup.visible {
   display: block;
@@ -245,6 +246,7 @@ footer {
   bottom: 10px;
   position: absolute;
   right: 20px;
+  background: white;
 }
 a.logo.autobild-logo img {
   max-width: 70px;
@@ -353,9 +355,12 @@ a.logo.axel-logo img {
   }
   a.logo.autobild-logo img {
     max-width: 100px;
+    position: relative;
+    top: -8px;
   }
   a.logo.autobild-logo {
     margin-right: 10px;
+    /* margin-bottom: 59px; */
   }
 
   a.logo.axel-logo img {
