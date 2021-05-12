@@ -368,7 +368,7 @@ a.logo.axel-logo img {
   }
 }
 .splide__pagination{
-  display: none;
+  display: none !important;
 }
 .splide__slide p{
   font-size: 21px;
