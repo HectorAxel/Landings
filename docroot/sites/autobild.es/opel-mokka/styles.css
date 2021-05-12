@@ -1,0 +1,359 @@
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+.header {
+  padding: 0 20px;
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+  top: 10px;
+}
+.header p {
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  font-weight: bold;
+}
+
+.header .title {
+  font-size: 56px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.header .subtitle {
+  font-size: 17.4px;
+}
+
+.contain {
+  background-image: url(img/Foto4.jpg);
+  background-size: 100vh;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+.historys {
+  width: max-content;
+  border-radius: 10px;
+  left: 10px;
+}
+.historys > div {
+  margin-bottom: 10px;
+  text-align: center;
+  background: #1e752ea6;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+}
+.historys > div > p,
+.historys > div > a {
+  color: #eeeeee;
+  font-size: 23px;
+  display: flex;
+  margin: 0 0 20px;
+  justify-content: flex-start;
+}
+.historys > div > p,
+.historys > div > a {
+  display: inline-block;
+  font-size: 16px;
+  margin: 0;
+  line-height: 69px;
+  text-indent: 1px;
+}
+.historys > div > p > .logo,
+.historys > div > a > .logo {
+  height: 30px;
+  width: 30px;
+}
+.info {
+  top: 30%;
+  left: 10%;
+}
+
+.gallery {
+  bottom: 23%;
+  left: 54%;
+}
+.interview img {
+  width: 30px;
+  height: auto;
+  filter: invert(100%) sepia(0%) saturate(108%) hue-rotate(61deg)
+    brightness(116%) contrast(100%);
+}
+.interview {
+  right: 19%;
+  top: 40%;
+}
+.infos {
+  top: 50%;
+  left: 21%;
+}
+
+.video {
+  top: 20%;
+  right: 30%;
+}
+
+.config {
+  bottom: 10%;
+  left: 30%;
+}
+.buttons {
+  background: #1e752ec7;
+  width: fit-content;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: inherit;
+}
+.buttons > div {
+  padding: 10px;
+}
+.buttons > div svg {
+  height: 30px;
+  width: 30px;
+}
+.popup,
+.mini-popup {
+  display: none;
+  position: fixed;
+  left: 0;
+  margin: 0 auto;
+  top: 0;
+  width: 100%;
+  background: #000000b3;
+  height: 100vh;
+  overflow: scroll;
+  z-index: 1;
+  overscroll-behavior: contain;
+}
+.mini-popup {
+  align-items: center;
+  justify-content: center;
+}
+.contain-popup {
+  display: none;
+  align-items: center;
+  max-width: 1138px;
+  padding: 70px 20px;
+  margin: 0 auto;
+  overscroll-behavior: contain;
+  height: 100vh;
+}
+.contain-popup.one {
+  align-items: baseline;
+}
+.contain-popup.two {
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 30px;
+  padding-top: 20vh;
+}
+
+.contain-popup img {
+  overscroll-behavior: contain;
+}
+.splide__slide img {
+  vertical-align: bottom;
+  max-height: calc(100vh - 260px);
+  max-width: 100%;
+}
+.popup.visible {
+  display: block;
+}
+.close svg {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.contain-close .close {
+  display: none;
+}
+.contain-close .close svg {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  z-index: 22;
+  top: 20px;
+}
+.contain-video {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+.aspect {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0px;
+  width: 100%;
+}
+.aspect iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.contain-popup.three {
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.contain-popup.three .title {
+  color: #fff;
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+}
+
+.contain-popup.three p {
+  color: #fff;
+  font-size: 23px;
+  line-height: 30px;
+}
+.five p {
+  color: #fff;
+  font-size: 17.5px;
+}
+.five ul {
+  list-style: none;
+  padding: 0 10px;
+}
+
+.five ul li {
+  color: #fff;
+  line-height: 20px;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+footer {
+  bottom: 10px;
+  position: absolute;
+  right: 20px;
+}
+a.logo.autobild-logo img {
+  max-width: 70px;
+}
+a.logo.autobild-logo {
+  margin-right: 10px;
+}
+
+a.logo.axel-logo img {
+  max-width: 120px;
+}
+@media only screen and (min-width: 768px) {
+  .contain {
+    background-image: url(img/slide1.jpg);
+    background-size: cover;
+  }
+  .header {
+    top: 50px;
+  }
+  .header .title {
+    font-size: 95px;
+  }
+  .header .subtitle {
+    font-size: 29.7px;
+  }
+  .historys {
+    border-radius: 10px;
+    left: 10px;
+  }
+  .historys > div {
+    background: #1e752ea6;
+    transition: background 0.3s;
+    cursor: pointer;
+  }
+  .historys > div:hover {
+    background: #1e752e;
+  }
+  .buttons {
+    background: #1e752ec7;
+    right: 0;
+    top: calc(50vh - 69px);
+    bottom: inherit;
+    left: inherit;
+    display: block;
+  }
+  .buttons > div {
+    padding: 15px 10px;
+  }
+  .buttons > div svg {
+    height: 50px;
+    width: 50px;
+    transform: rotate(0);
+    transition: transform 0.5s;
+  }
+  .buttons > div:hover svg {
+    transform: rotate(0deg);
+  }
+  .buttons > div:hover svg {
+    transform: rotate(20deg);
+  }
+  .historys > div {
+    height: 70px;
+    width: 70px;
+  }
+  .historys > div > p > .logo,
+  .historys > div > a > .logo {
+    height: 40px;
+    width: 40px;
+  }
+  .historys > div > p,
+  .historys > div > a {
+    line-height: 97px;
+  }
+  .interview img {
+    width: 45px;
+    position: relative;
+    top: 4px;
+  }
+  .mini-popup {
+    position: absolute;
+    left: 60px;
+    margin: 0 auto;
+    top: 0;
+    width: 500px;
+    height: auto;
+    background: #000000b3;
+    margin: 0 20px;
+    text-align: left;
+    padding: 8px 18px;
+    overflow: scroll;
+    z-index: 1;
+    overscroll-behavior: contain;
+  }
+  a.logo.autobild-logo img {
+    max-width: 100px;
+  }
+  a.logo.autobild-logo {
+    margin-right: 10px;
+  }
+
+  a.logo.axel-logo img {
+    max-width: 180px;
+  }
+  .contain-close .close svg {
+    right: inherit;
+    left: calc(21% - -549px);
+    z-index: 22;
+    top: calc(51% - 30px);
+  }
+}
+.slick-slide img {
+  width: 100%;
+}

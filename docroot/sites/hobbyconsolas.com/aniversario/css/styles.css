@@ -1,0 +1,141 @@
+header {
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  background: #061930;
+  z-index: 1;
+}
+
+header a {
+  display: flex;
+  justify-content: center;
+}
+
+img.logo.logo-dark {
+  max-width: 215px;
+}
+
+.open {
+  position: relative;
+  margin-bottom: 10px;
+}
+.open .subtitle {
+  display: none;
+}
+
+.open img {
+  width: 100%;
+  display: block;
+}
+
+.contain section {
+  background-position: center;
+  position: relative;
+  min-height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+}
+.contain section a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.contain section .block-text,
+.open .block-text {
+  position: absolute;
+  top: 20px;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  font-size: 21px;
+}
+
+.open .block-text {
+  top: inherit;
+  bottom: 0px;
+}
+
+.open .block-text .title {
+  margin-bottom: 15px;
+}
+
+.contain section .block-text p,
+.open p {
+  font-size: 25px;
+  line-height: 34px;
+  font-family: "Roboto Regular";
+  padding: 0 20px;
+  margin: 0;
+}
+
+@media only screen and (min-width: 60em) {
+  .contain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .open .block-text {
+    bottom: 40px;
+  }
+
+  .contain section:nth-child(3n + 1),
+  .contain section.last {
+    width: 100%;
+  }
+
+  .contain section:nth-child(3n + 2),
+  .contain section:nth-child(3n + 3) {
+    width: 49.5%;
+  }
+
+  .contain section {
+    min-height: 460px;
+  }
+
+  .contain section .block-text p,
+  .open p {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .open .subtitle {
+    display: block;
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 963px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 75em) {
+  .contain section {
+    min-height: 600px;
+  }
+  .contain section .block-text p,
+  .open p {
+    font-size: 45px;
+    line-height: 60px;
+  }
+}
+@media only screen and (min-width: 87.5em) {
+  .contain section:nth-child(3n + 2),
+  .contain section:nth-child(3n + 3) {
+    width: 49.7%;
+  }
+  .contain section.last {
+    width: 100%;
+  }
+}
+
+@font-face {
+  font-family: "Roboto Regular";
+  src: url("../fonts/robotoslab-regular.eot");
+  src: url("../fonts/robotoslab-regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/robotoslab-regular.woff2") format("woff2"),
+    url("../fonts/robotoslab-regular.woff") format("woff"),
+    url("../fonts/robotoslab-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
