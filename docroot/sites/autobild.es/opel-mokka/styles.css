@@ -72,7 +72,7 @@
   width: 30px;
 }
 .info {
-  top: 30%;
+  top: 35%;
   left: 10%;
 }
 
@@ -96,8 +96,8 @@
 }
 
 .video {
-  top: 20%;
-  right: 30%;
+  top: 30%;
+  right: 33%;
 }
 
 .config {
@@ -193,7 +193,7 @@
 .contain-video {
   display: flex;
   align-items: center;
-  height: 100vh;
+  height: 100%;
 }
 .aspect {
   position: relative;
@@ -226,18 +226,19 @@
 }
 .five p {
   color: #fff;
-  font-size: 17.5px;
+  font-weight: bold;
+  font-size: 20.5px;
 }
 .five ul {
-  list-style: none;
   padding: 0 10px;
 }
 
 .five ul li {
   color: #fff;
   line-height: 20px;
-  font-size: 15px;
+  font-size: 17px;
   margin-bottom: 10px;
+  font-weight: bold;
 }
 
 footer {
@@ -371,10 +372,12 @@ a.logo.axel-logo img {
   display: none !important;
 }
 .splide__slide p{
-  font-size: 21px;
+  font-size: 17px;
+  line-height: 24px;
   background: #000;
   color: #fff;
   margin: 0;
   padding: 10px;
+  font-weight: bold;
 }
 
