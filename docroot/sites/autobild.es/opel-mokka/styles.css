@@ -157,6 +157,8 @@
   width: 100%;
   margin-bottom: 30px;
   padding-top: 20vh;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .contain-popup img {
@@ -267,6 +269,14 @@ a.logo.axel-logo img {
 }
 .splide--fade>.splide__track>.splide__list{
   width: 100%;
+}
+.contain-popup.one img {
+  width: 100%;
+}
+.contain-popup.three img{
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
 }
 @media only screen and (min-width: 768px) {
   .contain {
