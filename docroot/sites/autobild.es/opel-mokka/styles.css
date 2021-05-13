@@ -396,18 +396,6 @@ a.logo.axel-logo img {
     z-index: 1;
     overscroll-behavior: contain;
   }
-  a.logo.autobild-logo img {
-    max-width: 100px;
-    position: relative;
-    top: -8px;
-  }
-  a.logo.autobild-logo {
-    margin-right: 10px;
-  }
-
-  a.logo.axel-logo img {
-    max-width: 180px;
-  }
   .contain-close .close svg {
     right: inherit;
     left: calc(21% - -549px);
