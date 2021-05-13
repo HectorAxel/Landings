@@ -30,7 +30,7 @@
 }
 
 .contain {
-  background-image: url(img/Foto4.jpg);
+  background-image: url(img/FOto4.jpg);
   background-size: 100vh;
   background-position: center;
   height: 100vh;
@@ -42,12 +42,13 @@
   left: 10px;
 }
 .historys > div {
-  margin-bottom: 10px;
   text-align: center;
-  background: #1e752ea6;
+  background: #7c7c7ccc;
   border-radius: 50%;
-  height: 50px;
   width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
   position: absolute;
 }
 .historys > div > p,
@@ -63,22 +64,13 @@
   display: inline-block;
   font-size: 16px;
   margin: 0;
-  line-height: 69px;
-  text-indent: 1px;
+  line-height: 1;
+  text-indent: 9px;
 }
 .historys > div > p > .logo,
 .historys > div > a > .logo {
   height: 30px;
   width: 30px;
-}
-.info {
-  top: 35%;
-  left: 10%;
-}
-
-.gallery {
-  bottom: 23%;
-  left: 54%;
 }
 .interview img {
   width: 30px;
@@ -86,23 +78,40 @@
   filter: invert(100%) sepia(0%) saturate(108%) hue-rotate(61deg)
     brightness(116%) contrast(100%);
 }
+.info {
+  top: 27%;
+  left: 11%;
+}
+
+.gallery {
+  bottom: 23%;
+  left: 60%;
+  top: auto;
+}
 .interview {
-  right: 19%;
-  top: 40%;
+  right: 32%;
+  left: auto;
+  top: 44%;
 }
 .infos {
-  top: 50%;
-  left: 21%;
+  top: 56%;
+  left: 6%;
+  right: auto;
+  bottom: auto;
 }
 
 .video {
-  top: 30%;
-  right: 33%;
+  top: 25%;
+  right: 14%;
 }
 
 .config {
   bottom: 20%;
-  left: 11%;
+  left: 24%;
+  right: auto;
+}
+.historys > div > span{
+  display: none;
 }
 .buttons {
   background: #1e752ec7;
@@ -243,12 +252,15 @@
 }
 
 footer {
-  bottom: 10px;
+  bottom: 0;
   position: absolute;
-  right: 20px;
-  background: white;
+  right: 0px;
   padding: 10px;
   border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 180px;
+  align-items: center;
 }
 footer p {
   font-weight: bold;
@@ -256,6 +268,8 @@ footer p {
   font-size: 14px;
   margin: 0;
   padding: 0 0 10px;
+  width: 100%;
+  color: #fff;
 }
 a.logo.autobild-logo img {
   max-width: 70px;
@@ -265,7 +279,7 @@ a.logo.autobild-logo {
 }
 
 a.logo.axel-logo img {
-  max-width: 120px;
+  max-width: 70px;
 }
 .splide__slide p{
   font-size: 21px;
@@ -286,10 +300,18 @@ a.logo.axel-logo img {
   margin: 20px auto;
   display: block;
 }
+.historys span {
+  margin-left: 10px;
+  font-weight: bold;
+  color: #fff;
+}
 @media only screen and (min-width: 768px) {
   .contain {
     background-image: url(img/slide1.jpg);
     background-size: cover;
+  }
+  .historys > div > span{
+    display: block;
   }
   .splide__slide p{
     font-size: 27px;
@@ -339,8 +361,10 @@ a.logo.axel-logo img {
     transform: rotate(20deg);
   }
   .historys > div {
-    height: 70px;
-    width: 70px;
+    height: auto;
+    width: auto;
+    border-radius: 0;
+    padding: 5px 10px;
   }
   .historys > div > p > .logo,
   .historys > div > a > .logo {
@@ -349,7 +373,8 @@ a.logo.axel-logo img {
   }
   .historys > div > p,
   .historys > div > a {
-    line-height: 97px;
+    line-height: 15px;
+    text-indent: 10px;
   }
   .interview img {
     width: 45px;
@@ -378,7 +403,6 @@ a.logo.axel-logo img {
   }
   a.logo.autobild-logo {
     margin-right: 10px;
-    /* margin-bottom: 59px; */
   }
 
   a.logo.axel-logo img {
@@ -390,6 +414,7 @@ a.logo.axel-logo img {
     z-index: 22;
     top: calc(51% - 30px);
   }
+  
 }
 .splide__pagination{
   display: none !important;
