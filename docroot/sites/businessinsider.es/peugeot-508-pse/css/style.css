@@ -92,19 +92,6 @@
   margin-bottom: 20px;
   position: relative;
 }
-.aspect {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0px;
-  width: 100%;
-}
-.aspect iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
 .contain-videos .aspect {
   margin-bottom: 10px;
 }
@@ -143,14 +130,39 @@ img.body-image {
   max-width: 520px;
   margin: 15px 16px 11px 0;
 }
+.technical-data .feature.boxed.boxed--border.border--round img{
+  max-width: 100px;
+  margin-bottom: 0;
+}
+.technical-data .feature.boxed.boxed--border.border--round span{
+  width: 100%;
+}
+.technical-data .feature.boxed.boxed--border.border--round {
+  min-height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+.contain-videos .aspect video {
+  width: 100%;
+}
+
+.contain-videos.aos-init.aos-animate {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contain-videos.aos-init {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 @media only screen and (min-width: 660px) {
   .temporal-line {
     background-size: 340px;
   }
-}
-@media only screen and (min-width: 992px) {
   .contain-videos .container-video {
-    margin: 50px 150px 0;
+    width: 48%;
   }
 }
 @media only screen and (min-width: 1025px) {
