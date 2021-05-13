@@ -259,7 +259,7 @@ footer {
   border-radius: 5px;
   display: flex;
   flex-wrap: wrap;
-  width: 180px;
+  width: 200px;
   align-items: center;
 }
 footer p {
@@ -279,7 +279,7 @@ a.logo.autobild-logo {
 }
 
 a.logo.axel-logo img {
-  max-width: 70px;
+  max-width: 100px;
 }
 .splide__slide p{
   font-size: 21px;
