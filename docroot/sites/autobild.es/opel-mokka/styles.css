@@ -166,7 +166,6 @@
 }
 .splide__slide img {
   vertical-align: bottom;
-  max-height: calc(100vh - 260px);
   max-width: 100%;
   width: 100%;
 }
