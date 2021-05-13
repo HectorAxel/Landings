@@ -305,6 +305,10 @@ a.logo.axel-logo img {
   font-weight: bold;
   color: #fff;
 }
+.config span {
+  display: none;
+}
+
 @media only screen and (min-width: 768px) {
   .contain {
     background-image: url(img/slide1.jpg);
@@ -402,7 +406,14 @@ a.logo.axel-logo img {
     z-index: 22;
     top: calc(51% - 30px);
   }
-  
+  .config span {
+    display: inline;
+    position: relative;
+    top: -11px;
+  }
+  .config a{
+    text-decoration: none;
+  }
 }
 .splide__pagination{
   display: none !important;
