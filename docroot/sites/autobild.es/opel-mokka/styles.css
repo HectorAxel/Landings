@@ -259,7 +259,7 @@ footer {
   border-radius: 5px;
   display: flex;
   flex-wrap: wrap;
-  width: 200px;
+  width: 100%;
   align-items: center;
 }
 footer p {
@@ -310,11 +310,30 @@ a.logo.axel-logo img {
 .config span {
   display: none;
 }
+.opel {
+  width: 180px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+a.logo.axel-logo {
+  position: relative;
+  top: -6px;
+  left: 5px;
+  display: none;
+}
 
 @media only screen and (min-width: 768px) {
   .contain {
     background-image: url(img/slide1.jpg);
     background-size: cover;
+  }
+  a.logo.axel-logo {
+    display: block;
   }
   .historys > div > span{
     display: block;
@@ -336,7 +355,6 @@ a.logo.axel-logo img {
     left: 10px;
   }
   .historys > div {
-    background: #1e752ea6;
     transition: background 0.3s;
     cursor: pointer;
   }
@@ -416,6 +434,7 @@ a.logo.axel-logo img {
   .config a{
     text-decoration: none;
   }
+
 }
 .splide__pagination{
   display: none !important;
