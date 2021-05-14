@@ -274,6 +274,30 @@ img.body-image {
   opacity: 1;
   transition: opacity 0.4s;
 }
+footer {
+  padding: 0;
+  margin: 0 0 41px;
+}
+
+a.peu-logo img {
+  max-width: 75px;
+}
+
+a.axel-logo img {
+  max-width: 112px;
+}
+
+.contain-footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
+}
+
+.contain-footer p {
+  width: 100%;
+}
 @media only screen and (min-width: 660px) {
   .temporal-line {
     background-size: 340px;
