@@ -36,7 +36,7 @@
   height: 100vh;
   position: relative;
 }
-.historys {border-radius: 10px;width: 100%;height: calc(100% - 200px);position: absolute;top: 140px;left: 0;}
+.historys {border-radius: 10px;width: 100%;height: calc(100% - 140px);position: absolute;top: 140px;left: 0;}
 .historys > div {
   text-align: center;
   background: #7c7c7ccc;
@@ -75,7 +75,7 @@
     brightness(116%) contrast(100%);
 }
 .info {
-  top: 40px;
+  top: 10%;
   left: 11%;
 }
 
@@ -84,12 +84,12 @@
   top: 10%;
 }
 .interview {
-  left: 20%;
-  top: 24%;
+  left: 6%;
+  top: 30%;
 }
 .infos {
-  top: 47%;
-  left: 60%;
+  top: 52%;
+  left: 58%;
 }
 
 .video {
@@ -98,8 +98,8 @@
 }
 
 .config {
-  top: 47%;
-  left: 24%;
+  top: 56%;
+  left: 18%;
 }
 .historys > div > span{
   display: none;
@@ -345,6 +345,7 @@ a.logo.axel-logo {
   }
   .historys {
   top: 200px;
+  height: calc(100% - 200px);
   }
   .historys > div {
     transition: background 0.3s;
