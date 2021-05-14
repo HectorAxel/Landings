@@ -427,7 +427,14 @@ a.logo.axel-logo {
   .config a{
     text-decoration: none;
   }
-
+  .interview{
+    left: 6%;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .interview{
+    left: 30%;
+  }
 }
 .splide__pagination{
   display: none !important;
