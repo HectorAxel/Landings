@@ -272,7 +272,7 @@ footer p {
   color: #fff;
 }
 a.logo.autobild-logo img {
-  max-width: 70px;
+  max-width: 50px;
   background: #fff;
   padding: 5px;
 }
@@ -281,8 +281,9 @@ a.logo.autobild-logo {
 }
 
 a.logo.axel-logo img {
-  max-width: 100px;
+  max-width: 110px;
   background: #fff;
+  padding: 5px;
 }
 .splide__slide p{
   font-size: 21px;
