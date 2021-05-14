@@ -75,7 +75,7 @@
     brightness(116%) contrast(100%);
 }
 .info {
-  top: 10%;
+  top: 14%;
   left: 11%;
 }
 
@@ -84,7 +84,7 @@
   top: 10%;
 }
 .interview {
-  left: 6%;
+  left: 36%;
   top: 30%;
 }
 .infos {
@@ -98,8 +98,8 @@
 }
 
 .config {
-  top: 56%;
-  left: 18%;
+  top: 51%;
+  left: 13%;
 }
 .historys > div > span{
   display: none;
