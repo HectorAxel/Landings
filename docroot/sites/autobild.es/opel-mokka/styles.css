@@ -273,6 +273,8 @@ footer p {
 }
 a.logo.autobild-logo img {
   max-width: 70px;
+  background: #fff;
+  padding: 5px;
 }
 a.logo.autobild-logo {
   margin-right: 10px;
