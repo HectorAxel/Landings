@@ -180,7 +180,7 @@
   top: 10px;
 }
 .contain-close .close {
-  display: none;
+  display: none
 }
 .contain-close .close svg {
   height: 50px;
@@ -189,7 +189,7 @@
   position: absolute;
   right: 20px;
   z-index: 22;
-  top: 20px;
+  top: -120px;
 }
 .contain-video {
   display: flex;
@@ -319,6 +319,9 @@ a.logo.axel-logo {
   left: 5px;
   display: none;
 }
+.mini-popup.visible{
+  display: flex;
+}
 
 @media only screen and (min-width: 768px) {
   .contain {
@@ -400,9 +403,9 @@ a.logo.axel-logo {
   }
   .mini-popup {
     position: absolute;
-    left: 60px;
+    left: -264px;
     margin: 0 auto;
-    top: 0;
+    top: -196px;
     width: 500px;
     height: auto;
     background: #000000b3;
@@ -431,6 +434,7 @@ a.logo.axel-logo {
     left: 6%;
   }
 }
+
 @media only screen and (min-width: 960px) {
   .interview{
     left: 30%;
