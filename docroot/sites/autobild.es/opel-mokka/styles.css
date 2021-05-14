@@ -20,7 +20,7 @@
 }
 
 .header .title {
-  font-size: 56px;
+  font-size: 54px;
   margin-bottom: 8px;
   text-transform: uppercase;
 }
@@ -36,11 +36,7 @@
   height: 100vh;
   position: relative;
 }
-.historys {
-  width: max-content;
-  border-radius: 10px;
-  left: 10px;
-}
+.historys {border-radius: 10px;width: 100%;height: 100%;position: absolute;top: 140px;left: 0;}
 .historys > div {
   text-align: center;
   background: #7c7c7ccc;
@@ -79,25 +75,21 @@
     brightness(116%) contrast(100%);
 }
 .info {
-  top: 27%;
+  top: 40px;
   left: 11%;
 }
 
 .gallery {
-  bottom: 23%;
   left: 60%;
-  top: auto;
+  top: 10%;
 }
 .interview {
-  right: 32%;
-  left: auto;
-  top: 44%;
+  left: 20%;
+  top: 24%;
 }
 .infos {
-  top: 56%;
-  left: 6%;
-  right: auto;
-  bottom: auto;
+  top: 36%;
+  left: 60%;
 }
 
 .video {
@@ -106,9 +98,8 @@
 }
 
 .config {
-  bottom: 20%;
-  left: 24%;
-  right: auto;
+  top: 53%;
+  left: 39%;
 }
 .historys > div > span{
   display: none;
@@ -281,7 +272,7 @@ a.logo.autobild-logo {
 }
 
 a.logo.axel-logo img {
-  max-width: 110px;
+  max-width: 80px;
   background: #fff;
   padding: 5px;
 }
@@ -353,8 +344,7 @@ a.logo.axel-logo {
     font-size: 29.7px;
   }
   .historys {
-    border-radius: 10px;
-    left: 10px;
+  top: 200px;
   }
   .historys > div {
     transition: background 0.3s;
