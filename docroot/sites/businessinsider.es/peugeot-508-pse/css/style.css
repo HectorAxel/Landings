@@ -42,6 +42,10 @@ html * {
   background-repeat: no-repeat;
   background-position: center 30px;
 }
+section.imagebg.space--xxs.parallax.temporal-line:before {
+  opacity: 0.9;
+  background: #1b1b1b;
+}
 .temporal-line h2 {
   text-align: center;
   font-size: 30px;
