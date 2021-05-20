@@ -309,8 +309,10 @@ a.axel-logo img {
   width: 100%;
 }
 .temporal-line.imagebg .process-1:before {
-  background: #0000;
-  border: 1px dashed #00e2ff;
+  background-image: url(../media/line.png);
+  background-repeat-x: no-repeat;
+  background-color: #0000;
+  background-size: 3px;
 }
 .process__item.aos-init.aos-animate:before {
   position: absolute;
@@ -427,7 +429,7 @@ section.block-surprise h2 {
   }
   .process__item.aos-init.aos-animate:before {
     left: inherit;
-    right: -8px;
+    right: -7px;
     top: 5px;
   }
   .process__item.left-icon.aos-init.aos-animate:before {
