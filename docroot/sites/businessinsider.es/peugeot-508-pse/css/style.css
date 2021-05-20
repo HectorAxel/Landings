@@ -9,6 +9,7 @@ html * {
   background-size: cover;
   background-color: #111;
   background-image: url(../media/peugeot508PSE_6.png);
+  padding: 0;
 }
 
 .logo {
@@ -20,7 +21,7 @@ html * {
   margin: 0 auto;
 }
 .logo h1 {
-  font-size: 75px;
+  font-size: 110px;
   line-height: 1;
   margin: 10px;
   font-weight: bold;
@@ -34,21 +35,22 @@ html * {
 .logo img {
   max-width: 150px;
 }
-.temporal-line {
+section.temporal-line {
   background-attachment: fixed;
   background-image: url(../media/logo-peu.png);
   background-color: #000;
   background-size: 70%;
   background-repeat: no-repeat;
+  padding: 120px 0;
   background-position: center 30px;
 }
 section.imagebg.space--xxs.parallax.temporal-line:before {
   opacity: 0.9;
-  background: #1b1b1b;
+  background: #000000;
 }
 .temporal-line h2 {
   text-align: center;
-  font-size: 30px;
+  font-size: 34px;
   font-weight: 600;
   margin: 0;
   text-transform: uppercase;
@@ -103,9 +105,9 @@ section.imagebg.space--xxs.parallax.temporal-line:before {
   opacity: 1;
 }
 .temporal-line .process-1 h4 {
-  font-size: 24px;
+  font-size: 31px;
   color: #00e2ff;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 .temporal-line .process-1 h4 span {
   font-weight: 600;
@@ -175,7 +177,7 @@ section.videos {
   text-align: center;
   font-size: 27px;
   max-width: 720px;
-  margin: 3rem auto 0;
+  margin: 4rem auto 2rem;
 }
 img.body-image {
   float: left;
@@ -241,7 +243,7 @@ img.body-image {
   max-width: 750px !important;
 }
 .container.interview p {
-  font-size: 16px;
+  font-size: 21px;
   font-weight: bold;
   line-height: 32px;
 }
@@ -369,9 +371,9 @@ section.imagebg.space--xxs.section--ken-burns.no-back:before {
   text-align: center;
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 27px;
+  font-size: 34px;
   display: block;
-  margin-bottom: 40px;
+  margin: 40px 0;
 }
 section.block-surprise {
   padding: 30px 10px;
@@ -399,8 +401,13 @@ section.block-surprise h2 {
   text-transform: uppercase;
   font-weight: 600;
   color: #fff;
-  font-size: 33px;
+  font-size: 34px;
+  margin-bottom: 1rem;
 }
+.process-1 .process__item {
+  width: 100%;
+}
+
 @media only screen and (min-width: 660px) {
   .contain-videos .container-video {
     width: 48%;
@@ -425,6 +432,12 @@ section.block-surprise h2 {
   .process__item.left-icon.aos-init.aos-animate:before {
     left: -5px;
   }
+  .process-1 .process__item {
+    width: 47%;
+  }
+  .process-1 .process__item:nth-child(odd) {
+    margin-left: 22px;
+  }
 }
 @media only screen and (min-width: 900px) {
   .interview img.body-image {
@@ -437,13 +450,21 @@ section.block-surprise h2 {
     margin: 25px -90px 10px 45px;
   }
 }
+@media only screen and (min-width: 992px) {
+  .process-1 .process__item {
+    width: 41%;
+  }
+  .process-1 .process__item:nth-child(odd) {
+    margin-left: 85px;
+  }
+}
 @media only screen and (min-width: 1025px) {
   .text-pse h2,
   .text-pse .lead {
     padding: 0;
   }
   .logo {
-    background: #0000005e;
+    background: #000000b8;
   }
   .logo {
     margin: 150px auto;
@@ -456,5 +477,13 @@ section.block-surprise h2 {
   }
   .process__item.left-icon.aos-init.aos-animate:before {
     top: 7px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .process-1 .process__item {
+    width: 37%;
+  }
+  .process-1 .process__item:nth-child(odd) {
+    margin-left: 148px;
   }
 }
