@@ -94,7 +94,7 @@ section.imagebg.space--xxs.parallax.temporal-line:before {
 }
 
 .technical-data .boxed.boxed--border {
-  border: 3px solid #bfdd0b;
+  border: 3px solid #00e2ff;
   background: #fff;
   color: #000;
 }
@@ -427,7 +427,8 @@ section.block-surprise h2 {
   }
   .process__item.aos-init.aos-animate:before {
     left: inherit;
-    right: -7px;
+    right: -8px;
+    top: 5px;
   }
   .process__item.left-icon.aos-init.aos-animate:before {
     left: -5px;
