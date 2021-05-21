@@ -2,15 +2,16 @@
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .header {
-  padding: 0 20px;
-  max-width: 960px;
+  padding: 20px;
   margin: 0 auto;
-  position: relative;
-  top: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 .header p {
   text-align: center;
@@ -27,25 +28,41 @@
 
 .header .subtitle {
   font-size: 17.4px;
+  color: #eef579;
+  text-transform: uppercase;
 }
 
 .contain {
   background-image: url(img/FOto4.jpg);
-  background-size: 100vh;
+  background-size: cover;
   background-position: center;
   height: 100vh;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
-.historys {border-radius: 10px;width: 100%;height: calc(100% - 140px);position: absolute;top: 140px;left: 0;}
+.historys {
+  border-radius: 10px;
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 0 10px;
+  position: relative;
+  margin-top: 130px;
+}
 .historys > div {
+  width: fit-content;
   text-align: center;
-  background: #7c7c7ccc;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  background: #f9fe57bf;
   display: flex;
   align-items: center;
-  position: absolute;
+  padding: 6px;
+  margin: 10px 5px;
+  border: solid 1px #f9fe57;
+
+  /* support: IE9+ */
 }
 .historys > div > p,
 .historys > div > a {
@@ -75,34 +92,33 @@
     brightness(116%) contrast(100%);
 }
 .info {
-  top: 14%;
-  left: 11%;
+  top: 4%;
+  left: 12%;
 }
 
 .gallery {
-  left: 60%;
-  top: 10%;
+  right: 15%;
+  top: 4%;
 }
 .interview {
-  left: 36%;
-  top: 30%;
+  left: 3%;
+  top: 38%;
 }
 .infos {
-  top: 52%;
-  left: 58%;
+  bottom: 6%;
+  right: 17%;
 }
 
 .video {
-  top: 28%;
-  right: 9%;
+  top: 34%;
+  right: 5%;
 }
 
 .config {
-  top: 51%;
-  left: 13%;
+  bottom: -1%;
+  left: 19%;
 }
-.historys > div > span{
-  display: none;
+.historys > div > span {
 }
 .buttons {
   background: #1e752ec7;
@@ -124,17 +140,19 @@
 }
 .popup,
 .mini-popup {
+  background-position: center;
   display: none;
   position: fixed;
   left: 0;
   margin: 0 auto;
   top: 0;
   width: 100%;
-  background: #000000b3;
+  background-size: cover;
   height: 100vh;
   overflow: scroll;
   z-index: 1;
   overscroll-behavior: contain;
+  background-color: #000000ad;
 }
 .mini-popup {
   align-items: center;
@@ -143,11 +161,12 @@
 .contain-popup {
   display: none;
   align-items: center;
-  max-width: 1138px;
-  padding: 70px 20px;
+  max-width: 980px;
+  padding: 0px 20px;
   margin: 0 auto;
   overscroll-behavior: contain;
   height: 100vh;
+  overflow: scroll;
 }
 .contain-popup.one {
   align-items: baseline;
@@ -158,6 +177,7 @@
   margin-bottom: 30px;
   padding-left: 0;
   padding-right: 0;
+  padding-top: 140px;
 }
 
 .contain-popup img {
@@ -178,9 +198,10 @@
   position: absolute;
   right: 10px;
   top: 10px;
+  z-index: 2;
 }
 .contain-close .close {
-  display: none
+  display: none;
 }
 .contain-close .close svg {
   height: 50px;
@@ -210,20 +231,25 @@
   height: 100%;
 }
 .contain-popup.three {
+  position: relative;
   flex-wrap: wrap;
   align-content: flex-start;
+  padding-bottom: 50px;
 }
 .contain-popup.three .title {
   color: #fff;
   width: 100%;
   font-size: 30px;
   text-align: center;
+  padding: 40px 50px 0;
+  margin: 0;
+  text-transform: uppercase;
 }
 
 .contain-popup.three p {
   color: #fff;
-  font-size: 23px;
-  line-height: 30px;
+  font-size: 22px;
+  line-height: 40px;
 }
 .five p {
   color: #fff;
@@ -242,7 +268,8 @@
   font-weight: bold;
 }
 
-footer {
+footer,
+.logos {
   bottom: 0;
   position: absolute;
   right: 0px;
@@ -253,77 +280,141 @@ footer {
   width: 100%;
   align-items: center;
 }
-footer p {
+footer p,
+.logos p {
   font-weight: bold;
-  text-align: center;
-  font-size: 14px;
+  text-align: left;
+  font-size: 11px;
+  text-transform: uppercase;
   margin: 0;
-  padding: 0 0 10px;
   width: 100%;
+  color: #030000;
+}
+.contain-popup.three .logos p,
+.contain-popup.five .logos p {
   color: #fff;
+  line-height: 1;
+  font-size: 11px;
+  padding: 0;
 }
 a.logo.autobild-logo img {
-  max-width: 50px;
-  background: #fff;
+  max-width: 44px;
   padding: 5px;
-}
-a.logo.autobild-logo {
-  margin-right: 10px;
+  margin: 0;
+  width: auto;
 }
 
 a.logo.axel-logo img {
-  max-width: 80px;
-  background: #fff;
-  padding: 5px;
+  max-width: 120px;
+  margin: 0;
+  width: auto;
 }
-.splide__slide p{
+.splide__slide p {
   font-size: 21px;
   background: #000;
   color: #fff;
   margin: 0;
   padding: 10px;
 }
-.splide--fade>.splide__track>.splide__list{
+.splide--fade > .splide__track > .splide__list {
   width: 100%;
 }
 .contain-popup.one img {
   width: 100%;
 }
-.contain-popup.three img{
+.contain-popup.three img {
   width: 100%;
-  max-width: 400px;
+  max-width: 460px;
   margin: 20px auto;
   display: block;
 }
-.historys span {
-  margin-left: 10px;
+.historys span,
+.historys a span,
+.historys a {
   font-weight: bold;
-  color: #fff;
-}
-.config span {
-  display: none;
+  color: #1e1c1f;
+  text-transform: uppercase;
+  font-size: 19px;
+  text-decoration: none;
+  line-height: 26px;
 }
 .opel {
-  width: 180px;
+  width: 157px;
   position: absolute;
   right: 10px;
   bottom: 10px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  align-items: center;
 }
 
 a.logo.axel-logo {
   position: relative;
   top: -6px;
   left: 5px;
-  display: none;
 }
-.mini-popup.visible{
+.mini-popup.visible {
   display: flex;
 }
+.contain-popup.three:before,
+.contain-popup.five:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #073300d9;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
 
-@media only screen and (min-width: 768px) {
+.contain-popup.five {
+  position: relative;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.contain-popup.five img {
+  max-width: 420px;
+  margin: 30px auto 0;
+}
+
+h2.title {
+  font-size: 45px;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  margin: 0;
+}
+
+h2.title:after {
+  content: "";
+  width: 45px;
+  height: 14px;
+  background: aquamarine;
+  position: absolute;
+  top: -27px;
+  margin: 0 auto;
+  left: 0px;
+  right: 0;
+}
+
+.contain-popup.five h3 {
+  font-size: 22px;
+  color: #fff;
+  width: 100%;
+  font-weight: 100;
+  text-align: center;
+  margin: 0 0 60px;
+}
+.historys > div > a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+@media only screen and (min-width: 980px) {
   .contain {
     background-image: url(img/slide1.jpg);
     background-size: cover;
@@ -331,31 +422,34 @@ a.logo.axel-logo {
   a.logo.axel-logo {
     display: block;
   }
-  .historys > div > span{
+  .historys > div > span {
     display: block;
+    padding: 0 13px;
   }
-  .splide__slide p{
+  .splide__slide p {
     font-size: 27px;
   }
   .header {
-    top: 50px;
+    top: 0;
+    position: relative;
   }
   .header .title {
-    font-size: 95px;
+    font-size: 100px;
   }
   .header .subtitle {
-    font-size: 29.7px;
+    font-size: 30px;
   }
   .historys {
-  top: 200px;
-  height: calc(100% - 200px);
+    height: calc(100% - 200px);
+    margin-top: 0;
   }
   .historys > div {
-    transition: background 0.3s;
+    transition: background-clip 0.3s;
     cursor: pointer;
+    background-clip: content-box;
   }
   .historys > div:hover {
-    background: #1e752e;
+    background-clip: inherit;
   }
   .buttons {
     background: #1e752ec7;
@@ -381,10 +475,12 @@ a.logo.axel-logo {
     transform: rotate(20deg);
   }
   .historys > div {
-    height: auto;
-    width: auto;
-    border-radius: 0;
-    padding: 5px 10px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    padding: 5px;
+    position: absolute;
+    box-sizing: content-box;
   }
   .historys > div > p > .logo,
   .historys > div > a > .logo {
@@ -427,23 +523,18 @@ a.logo.axel-logo {
     position: relative;
     top: -11px;
   }
-  .config a{
+  .config a {
     text-decoration: none;
   }
-  .interview{
-    left: 6%;
+  .contain-popup.three p {
+    padding: 0px 100px;
   }
 }
 
-@media only screen and (min-width: 960px) {
-  .interview{
-    left: 30%;
-  }
-}
-.splide__pagination{
+.splide__pagination {
   display: none !important;
 }
-.splide__slide p{
+.splide__slide p {
   font-size: 17px;
   line-height: 24px;
   background: #000;
@@ -452,4 +543,3 @@ a.logo.axel-logo {
   padding: 10px;
   font-weight: bold;
 }
-
