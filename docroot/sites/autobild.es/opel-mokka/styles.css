@@ -17,12 +17,13 @@
   text-align: center;
   color: #fff;
   margin: 0;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .header .title {
   font-size: 54px;
   margin-bottom: 8px;
+  font-weight: 900;
   text-transform: uppercase;
 }
 
