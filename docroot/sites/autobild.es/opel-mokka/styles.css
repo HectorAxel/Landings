@@ -6,7 +6,7 @@
 }
 
 .header {
-  padding: 20px;
+  padding: 5px 20px;
   margin: 0 auto;
   position: absolute;
   top: 0;
@@ -33,7 +33,7 @@
 }
 
 .contain {
-  background-image: url(img/FOto4.jpg);
+  background-image: url(img/back-main.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -50,19 +50,21 @@
   align-content: center;
   padding: 0 10px;
   position: relative;
-  margin-top: 130px;
+  margin-top: 180px;
 }
 .historys > div {
   width: fit-content;
   text-align: center;
-  background: #f9fe57bf;
+  background: #f9fe57d9;
   display: flex;
   align-items: center;
-  padding: 6px;
-  margin: 10px 5px;
+  padding: 5px;
   border: solid 1px #f9fe57;
 
   /* support: IE9+ */
+  position: absolute;
+  width: 270px;
+  text-align: center;
 }
 .historys > div > p,
 .historys > div > a {
@@ -78,7 +80,6 @@
   font-size: 16px;
   margin: 0;
   line-height: 1;
-  text-indent: 9px;
 }
 .historys > div > p > .logo,
 .historys > div > a > .logo {
@@ -92,33 +93,35 @@
     brightness(116%) contrast(100%);
 }
 .info {
-  top: 4%;
-  left: 12%;
+  top: 60px;
+  left: 50px;
 }
 
 .gallery {
-  right: 15%;
-  top: 4%;
+  left: 15px;
+  top: 128px;
 }
 .interview {
-  left: 3%;
-  top: 38%;
+  right: 15px;
+  bottom: 200px;
 }
 .infos {
-  bottom: 6%;
-  right: 17%;
+  bottom: 111px;
+  right: 15px;
 }
 
 .video {
-  top: 34%;
-  right: 5%;
+  bottom: 66px;
+  right: 50px;
 }
 
 .config {
-  bottom: -1%;
-  left: 19%;
+  bottom: 154px;
+  right: 50px;
 }
-.historys > div > span {
+.test {
+  left: 15px;
+  top: 15px;
 }
 .buttons {
   background: #1e752ec7;
@@ -236,6 +239,9 @@
   align-content: flex-start;
   padding-bottom: 50px;
 }
+.contain-popup.three.visible {
+  display: table-row;
+}
 .contain-popup.three .title {
   color: #fff;
   width: 100%;
@@ -334,23 +340,23 @@ a.logo.axel-logo img {
   font-weight: bold;
   color: #1e1c1f;
   text-transform: uppercase;
-  font-size: 19px;
+  font-size: 15px;
   text-decoration: none;
-  line-height: 26px;
+  line-height: 22px;
 }
 .opel {
   width: 157px;
   position: absolute;
   right: 10px;
-  bottom: 10px;
+  bottom: 0px;
   display: flex;
   align-items: center;
 }
 
 a.logo.axel-logo {
   position: relative;
-  top: -6px;
-  left: 5px;
+  top: 13px;
+  left: -4px;
 }
 .mini-popup.visible {
   display: flex;
@@ -413,6 +419,7 @@ h2.title:after {
   width: 100%;
   height: 100%;
   align-items: center;
+  justify-content: center;
 }
 @media only screen and (min-width: 980px) {
   .contain {
@@ -475,8 +482,8 @@ h2.title:after {
     transform: rotate(20deg);
   }
   .historys > div {
-    height: 200px;
-    width: 200px;
+    height: 180px;
+    width: 180px;
     border-radius: 50%;
     padding: 5px;
     position: absolute;
@@ -528,6 +535,38 @@ h2.title:after {
   }
   .contain-popup.three p {
     padding: 0px 100px;
+  }
+  .info {
+    top: 4%;
+    left: 12%;
+  }
+
+  .gallery {
+    right: 15%;
+    top: 4%;
+    left: inherit;
+  }
+  .interview {
+    left: 3%;
+    top: 38%;
+  }
+  .infos {
+    bottom: 6%;
+    right: 17%;
+  }
+
+  .video {
+    top: 34%;
+    right: 5%;
+  }
+
+  .config {
+    bottom: -1%;
+    left: 19%;
+  }
+  .test {
+    left: inherit;
+    top: inherit;
   }
 }
 
