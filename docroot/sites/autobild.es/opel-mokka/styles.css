@@ -25,6 +25,7 @@
   margin-bottom: 8px;
   font-weight: 900;
   text-transform: uppercase;
+  line-height: 54px;
 }
 
 .header .subtitle {
@@ -95,20 +96,20 @@
     brightness(116%) contrast(100%);
 }
 .info {
-  top: 60px;
+  top: 42px;
   left: 50px;
 }
 
 .gallery {
   left: 15px;
-  top: 128px;
+  top: 108px;
 }
 .interview {
   right: 15px;
-  bottom: 200px;
+  bottom: 194px;
 }
 .infos {
-  bottom: 111px;
+  bottom: 108px;
   right: 15px;
 }
 
@@ -118,12 +119,12 @@
 }
 
 .config {
-  bottom: 154px;
+  bottom: 150px;
   right: 50px;
 }
 .test {
   left: 15px;
-  top: 15px;
+  top: 0;
 }
 .buttons {
   background: #1e752ec7;
