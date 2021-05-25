@@ -529,9 +529,6 @@ h2.title:after {
     top: calc(51% - 30px);
   }
   .config span {
-    display: inline;
-    position: relative;
-    top: -11px;
   }
   .config a {
     text-decoration: none;
