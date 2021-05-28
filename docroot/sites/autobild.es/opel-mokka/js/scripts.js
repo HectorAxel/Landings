@@ -20,7 +20,7 @@ $(".historys > .gallery").click(function(e) {
 });
 $(".historys > .interview").click(function() {
   $('.popup').css('background-image','url(img/back2.jpg)');
-  $(".popup, .three").css("display", "table");
+  $(".popup, .three").css("display", "flex");
   $("html").css("overflow", "hidden");
 });
 

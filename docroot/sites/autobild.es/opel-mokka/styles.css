@@ -60,7 +60,7 @@
   background: #f9fe57d9;
   display: flex;
   align-items: center;
-  padding: 5px;
+  padding: 9px;
   border: solid 1px #f9fe57;
 
   /* support: IE9+ */
@@ -68,6 +68,10 @@
   width: 270px;
   text-align: center;
   justify-content: center;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  cursor: pointer;
 }
 .historys > div > p,
 .historys > div > a {
@@ -96,35 +100,40 @@
     brightness(116%) contrast(100%);
 }
 .info {
-  top: 42px;
+  top: -8px;
   left: 50px;
 }
 
 .gallery {
   left: 15px;
-  top: 108px;
+  top: 57px;
 }
 .interview {
   right: 15px;
-  bottom: 194px;
+  bottom: 215px;
 }
 .infos {
-  bottom: 108px;
+  bottom: 168px;
   right: 15px;
 }
 
 .video {
-  bottom: 66px;
+  bottom: 120px;
   right: 50px;
 }
 
 .config {
-  bottom: 150px;
+  bottom: 0;
   right: 50px;
 }
-.test {
-  left: 15px;
-  top: 0;
+.historys > .test,
+.historys > .config {
+  width: 130px;
+  left: 141px;
+  bottom: 70px;
+  padding: 4px;
+  background: #818181;
+  border: none;
 }
 .buttons {
   background: #1e752ec7;
@@ -240,7 +249,7 @@
   position: relative;
   flex-wrap: wrap;
   align-content: flex-start;
-  padding-bottom: 50px;
+  padding: 0;
 }
 .contain-popup.three.visible {
   display: table-row;
@@ -343,9 +352,9 @@ a.logo.axel-logo img {
   font-weight: bold;
   color: #1e1c1f;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 14px;
   text-decoration: none;
-  line-height: 22px;
+  line-height: 18px;
 }
 .opel {
   width: 157px;
@@ -364,27 +373,29 @@ a.logo.axel-logo {
 .mini-popup.visible {
   display: flex;
 }
-.contain-popup.three:before,
-.contain-popup.five:after {
-  content: "";
+
+.block-green {
   width: 100%;
-  height: 100%;
   background: #073300d9;
-  position: absolute;
   left: 0;
+  height: 100%;
   right: 0;
   z-index: -1;
+  padding: 0px 20px 30px;
+  position: relative;
 }
 
 .contain-popup.five {
   position: relative;
   flex-wrap: wrap;
-  align-content: center;
+  align-content: flex-start;
+  padding: 0;
 }
 
 .contain-popup.five img {
   max-width: 420px;
   margin: 30px auto 0;
+  width: 100%;
 }
 
 h2.title {
@@ -424,6 +435,20 @@ h2.title:after {
   align-items: center;
   justify-content: center;
 }
+.historys > .test span,
+.historys > .config span {
+  font-size: 12px;
+  color: #fff;
+}
+
+.historys > .config {
+  left: -140px;
+}
+.contain-popup.five .logos {
+}
+.contain-popup.five .block-green {
+  padding-top: 70px;
+}
 @media only screen and (min-width: 980px) {
   .contain {
     background-image: url(img/slide1.jpg);
@@ -445,6 +470,7 @@ h2.title:after {
   }
   .header .title {
     font-size: 100px;
+    line-height: 91px;
   }
   .header .subtitle {
     font-size: 30px;
@@ -528,36 +554,39 @@ h2.title:after {
     z-index: 22;
     top: calc(51% - 30px);
   }
-  .config span {
-  }
+
   .config a {
     text-decoration: none;
   }
   .contain-popup.three p {
     padding: 0px 100px;
   }
-  .info {
+  .historys > .info {
     top: 4%;
     left: 12%;
+    right: inherit;
   }
 
-  .gallery {
+  .historys > .gallery {
     right: 15%;
     top: 4%;
     left: inherit;
   }
-  .interview {
+  .historys > .interview {
     left: 3%;
     top: 38%;
+    right: inherit;
   }
-  .infos {
+  .historys > .infos {
     bottom: 6%;
-    right: 17%;
+    left: 15%;
+    right: inherit;
   }
 
-  .video {
+  .historys > .video {
     top: 34%;
     right: 5%;
+    left: inherit;
   }
 
   .config {
@@ -567,6 +596,26 @@ h2.title:after {
   .test {
     left: inherit;
     top: inherit;
+  }
+  .historys > .test,
+  .historys > .config {
+    height: auto;
+    border-radius: 0;
+    width: 200px;
+
+    padding: 8px;
+  }
+  .historys > .test span,
+  .historys > .config span {
+    font-size: 16px;
+  }
+  .historys > .test {
+    left: inherit;
+    right: calc(32% - 216px);
+  }
+  .historys > .config {
+    right: 33%;
+    left: inherit;
   }
 }
 
@@ -581,4 +630,11 @@ h2.title:after {
   margin: 0;
   padding: 10px;
   font-weight: bold;
+}
+.splide h3 {
+  background: #000;
+  color: #fff;
+  margin: 0;
+  padding: 5px;
+  font-size: 24px;
 }
