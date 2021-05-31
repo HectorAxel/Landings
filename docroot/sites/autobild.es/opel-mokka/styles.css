@@ -288,7 +288,7 @@
 
 footer,
 .logos {
-  bottom: 0;
+  bottom: 13px;
   position: absolute;
   right: 0px;
   padding: 10px;
@@ -381,7 +381,7 @@ a.logo.axel-logo {
   left: 0;
   right: 0;
   z-index: -1;
-  padding: 0px 20px 70px;
+  padding: 0px 20px 90px;
   position: relative;
 }
 
