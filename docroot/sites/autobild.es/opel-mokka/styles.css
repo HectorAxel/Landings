@@ -375,13 +375,13 @@ a.logo.axel-logo {
 }
 
 .block-green {
+  box-sizing: content-box;
   width: 100%;
   background: #073300d9;
   left: 0;
-  height: 100%;
   right: 0;
   z-index: -1;
-  padding: 0px 20px 30px;
+  padding: 0px 20px 70px;
   position: relative;
 }
 
@@ -393,6 +393,7 @@ a.logo.axel-logo {
 }
 
 .contain-popup.five img {
+  display: block;
   max-width: 420px;
   margin: 30px auto 0;
   width: 100%;
