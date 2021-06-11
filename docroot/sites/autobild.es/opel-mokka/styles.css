@@ -445,14 +445,13 @@ h2.title:after {
 .historys > .config {
   left: -140px;
 }
-.contain-popup.five .logos {
-}
+
 .contain-popup.five .block-green {
   padding-top: 70px;
 }
 @media only screen and (min-width: 980px) {
   .contain {
-    background-image: url(img/slide1.jpg);
+    background-image: url(img/back-main2.jpg);
     background-size: cover;
   }
   a.logo.axel-logo {
@@ -559,7 +558,8 @@ h2.title:after {
   .config a {
     text-decoration: none;
   }
-  .contain-popup.three p {
+  .contain-popup.three p,
+  .contain-popup.three h2 {
     padding: 0px 100px;
   }
   .historys > .info {
@@ -638,4 +638,8 @@ h2.title:after {
   margin: 0;
   padding: 5px;
   font-size: 24px;
+}
+.contain-popup.three h2 {
+  color: #fff;
+  font-size: 26px;
 }
