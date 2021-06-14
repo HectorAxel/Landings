@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -14,7 +13,7 @@
     <link href="css/main.css" rel="stylesheet" type="text/css" media="all" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=KoHo:wght@200;300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=KoHo:wght@200;300;400;500;600;700&amp;display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/aos.css" />
@@ -22,28 +21,40 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"
     />
+    <link
+      href="../../../css/socicon.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <link
+      href="../../../css/theme.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
   </head>
-  <body>
+  <body data-aos-easing="ease" data-aos-duration="1200" data-aos-delay="0">
     <div class="contain">
       <div class="header-video">
         <video autoplay="" loop="" muted="">
           <source src="./media/back.mp4?a" type="video/mp4" />
         </video>
-        <div class="square" data-aos="fade-right">
+        <div class="square aos-init aos-animate" data-aos="fade-right">
           <p>Citroën</p>
           <span>C3</span>
           <p>aircross</p>
         </div>
-        <div class="content-by" data-aos="fade-right">
+        <div class="content-by aos-init aos-animate" data-aos="fade-right">
           <img src="./media/content-by.png" alt="" />
         </div>
-        <div class="main-title" data-aos="fade-down">
+        <div class="main-title aos-init aos-animate" data-aos="fade-down">
           <h1>Expresa tu verdadera <span>personalidad</span></h1>
         </div>
       </div>
       <div class="description">
         <div class="wrapper vh">
-          <p data-aos="fade-right">
+          <p data-aos="fade-right" class="aos-init aos-animate">
             Carácter, personalización, confort y accesibilidad, la definición
             del nuevo Citroën C3 Aircross lo dice todo, pero si quieres conocer
             a fondo todo lo que ofrece este buque insignia de Citroën lee con
@@ -53,19 +64,20 @@
             src="./media/image-description.jpg"
             alt=""
             data-aos="fade-right"
+            class="aos-init aos-animate"
           />
         </div>
       </div>
       <div class="block-video">
         <div class="wrapper hor">
-          <div class="play" data-aos="fade-right"></div>
-          <div class="title" data-aos="fade-right">
+          <div class="play aos-init aos-animate" data-aos="fade-right"></div>
+          <div class="title aos-init aos-animate" data-aos="fade-right">
             Súbete con nosotros al nuevo Citroën C3 Aircross.
           </div>
         </div>
       </div>
       <div class="mini-description">
-        <div class="wrapper" data-aos="fade-down">
+        <div class="wrapper aos-init aos-animate" data-aos="fade-down">
           <p>
             Viajamos por el Madrid más colorido, divertido y original para
             enseñarte el nuevo Citroën C3 al detalle.
@@ -74,59 +86,175 @@
       </div>
       <div class="info">
         <div class="wrapper vh">
-          <div class="desc-title" data-aos="fade-right">
+          <div class="desc-title aos-init aos-animate" data-aos="fade-right">
             <p>El Citroën C3 Aircross <span>en datos</span></p>
           </div>
-          <img src="./media/image-info.png" alt="" data-aos="fade-right" />
-          <p data-aos="fade-right">
-            cuánto consume, cuáles son sus ventajas y sus cifras
+          <img
+            src="./media/image-info.png"
+            alt=""
+            data-aos="fade-right"
+            class="aos-init aos-animate"
+          />
+          <p data-aos="fade-right" class="aos-init aos-animate">
+            Cuánto cuesta, cuántas personalizaciones puedes hacer con él, cuánto
+            espacio tiene... descúbrelo al detalle
           </p>
-          <button data-aos="fade-right"><a href="">Ir a infografía</a></button>
+          <button data-aos="fade-right" class="aos-init aos-animate">
+            <a href="">Ir a infografía</a>
+          </button>
         </div>
       </div>
       <div class="gallery">
         <div class="wrapper hor">
-          <p class="title-gallery" data-aos="fade-up">
+          <div class="icon-gallery">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 0 24 24"
+              width="24px"
+              fill="#FFFFFF"
+            >
+              <path d="M0 0h24v24H0V0z" fill="none"></path>
+              <path
+                d="M20 4v12H8V4h12m0-2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 9.67l1.69 2.26 2.48-3.1L19 15H9zM2 6v14c0 1.1.9 2 2 2h14v-2H4V6H2z"
+              ></path>
+            </svg>
+          </div>
+          <p class="title-gallery aos-init aos-animate" data-aos="fade-up">
             No vas a encontrar dos Citroën C3 Aircross iguales
           </p>
         </div>
       </div>
       <div class="mini-description">
-        <div class="wrapper" data-aos="fade-right">
+        <div class="wrapper aos-init aos-animate" data-aos="fade-right">
           <p>
             Y tú, ¿cómo y para qué diseñarías tu propio Citroën C3 Aircross?
             Aquí te dejamos nuestra propuesta en imágenes
           </p>
         </div>
       </div>
-      <div class="block-social" data-aos="fade-bottom">
-        <p>Siguenos en instagram</p>
+      <div class="block-social aos-init aos-animate" data-aos="fade-bottom">
+        <p>
+          <span class="insta">
+            <img src="./media/insta.png?ga" alt="" />
+          </span>
+          Siguenos en instagram
+        </p>
         <div class="block-img">
           <div class="contain-img">
-            <img src="./media/insta1.png" alt="" />
+            <a href="https://www.instagram.com/citroenespana/">
+              <img src="./media/insta1.png" alt=""
+            /></a>
           </div>
           <div class="contain-img">
-            <img src="./media/insta2.png" alt="" />
+            <a href="https://www.instagram.com/citroenespana/">
+              <img src="./media/insta2.png" alt=""
+            /></a>
           </div>
           <div class="contain-img">
-            <img src="./media/insta3.png" alt="" />
+            <a href="https://www.instagram.com/citroenespana/">
+              <img src="./media/insta3.png" alt=""
+            /></a>
           </div>
           <div class="contain-img">
-            <img src="./media/insta4.png" alt="" />
+            <a href="https://www.instagram.com/citroenespana/">
+              <img src="./media/insta4.png" alt=""
+            /></a>
           </div>
           <div class="contain-img">
-            <img src="./media/insta5.png" alt="" />
+            <a href="https://www.instagram.com/citroenespana/">
+              <img src="./media/insta5.png" alt=""
+            /></a>
+          </div>
+          <div class="contain-img">
+            <a href="https://www.instagram.com/citroenespana/">
+              <img src="./media/insta6.jpg" alt=""
+            /></a>
           </div>
         </div>
-        <a href=""> Seguir a citroën </a>
+        <button>
+          <a class="button" href="https://www.instagram.com/citroenespana/">
+            Seguir a citroën
+          </a>
+        </button>
       </div>
-      <div class="block-cta" data-aos="fade-up">
+      <div class="block-cta aos-init aos-animate" data-aos="fade-up">
         <div class="contain-buttons">
-          <a href="">Configura</a>
-          <a href="">Oferta</a>
-          <a href="">Descúbrelo</a>
+          <a
+            href="https://www.citroen.es/vehiculos/citroen/suv-c3-aircross/configurar.html"
+            >Configura</a
+          >
+          <a
+            href="https://ofertas-citroen.es/solicita-oferta/turismos/citroen-c3-aircross/aircross/?_ga=2.62835817.496227263.1623005519-1647380807.1620381794&amp;_gac=1.180031062.1622016741.CjwKCAjw47eFBhA9EiwAy8kzNAgAiOfLlbzuPmJHWx1Ug6BcdspYHyNCYD0w4rAyXcTykWc84pQJCxoCLSAQAvD_BwE"
+            >Oferta</a
+          >
+          <a
+            href="https://www.citroen.es/vehiculos/citroen/nuevo-suv-c3-aircross.html"
+            >Descúbrelo</a
+          >
         </div>
       </div>
+      <footer class="footer-7 text-center-xs bg--dark">
+        <div class="container">
+          <div class="contain-footer">
+            <div class="axel">
+              <span class="type--fine-print"
+                >© Axel Springer - Todos los derechos reservados</span
+              >
+            </div>
+            <div class="footer-logos">
+              <ul class="logos">
+                <li>
+                  <a href="https://www.autobild.es/">
+                    <img src="./media/logo-ab.webp" alt="Auto Bild" />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://mediakit.axelspringer.es/"
+                    class="brand-lab-logo"
+                  >
+                    <img
+                      src="./media/brandlab-logo.webp"
+                      alt="BrandLAB | Axel Springer España"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="rss">
+              <ul class="">
+                <li>
+                  <a
+                    href="https://twitter.com/kiamotorsiberia?lang=es"
+                    rel="nofollow"
+                    ><i class="socicon socicon-twitter icon icon--xs"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/KiaEspana/" rel="nofollow"
+                    ><i class="socicon socicon-facebook icon icon--xs"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/kiaspain/?hl=es"
+                    rel="nofollow"
+                    ><i class="socicon socicon-instagram icon icon--xs"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/user/KiaMarketing"
+                    rel="nofollow"
+                    ><i class="socicon socicon-youtube icon icon--xs"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
       <div class="modal-vi">
         <div class="close"></div>
         <div class="video">
@@ -146,7 +274,7 @@
         <div class="close"></div>
         <div class="contain-gallery">
           <div
-            class="splide splide--fade splide--ltr splide--draggable is-active"
+            class="splide splide--fade splide--ltr splide--draggable is-active splide--slide"
             id="splide"
             style="visibility: visible"
           >
@@ -155,7 +283,8 @@
                 class="splide__arrow splide__arrow--prev"
                 type="button"
                 aria-controls="splide-track"
-                aria-label="Go to last slide"
+                aria-label="Previous slide"
+                disabled=""
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -186,7 +315,11 @@
               </button>
             </div>
             <div class="splide__track" id="splide-track">
-              <ul class="splide__list" id="splide-list">
+              <ul
+                class="splide__list"
+                id="splide-list"
+                style="transform: translateX(0px)"
+              >
                 <li
                   class="splide__slide is-active is-visible"
                   id="splide-slide01"
@@ -205,7 +338,12 @@
                     descubrir.
                   </p>
                 </li>
-                <li class="splide__slide" id="splide-slide02">
+                <li
+                  class="splide__slide is-visible"
+                  id="splide-slide02"
+                  aria-hidden="false"
+                  tabindex="0"
+                >
                   <h3>2. Castillo de Montesquieu</h3>
                   <img src="./media/insta2.png" alt="Infografía Opel Mokka-E" />
                   <p>
@@ -214,7 +352,12 @@
                     descubrir.2
                   </p>
                 </li>
-                <li class="splide__slide" id="splide-slide03">
+                <li
+                  class="splide__slide is-visible"
+                  id="splide-slide03"
+                  aria-hidden="false"
+                  tabindex="0"
+                >
                   <h3>3. Castillo de Montesquieu</h3>
                   <img src="./media/insta3.png" alt="Infografía Opel Mokka-E" />
                   <p>
@@ -223,7 +366,12 @@
                     descubrir.3
                   </p>
                 </li>
-                <li class="splide__slide" id="splide-slide04">
+                <li
+                  class="splide__slide is-visible"
+                  id="splide-slide04"
+                  aria-hidden="false"
+                  tabindex="0"
+                >
                   <h3>4. Castillo de Montesquieu</h3>
                   <img src="./media/insta4.png" alt="Infografía Opel Mokka-E" />
                   <p>
@@ -269,10 +417,50 @@
                 ></button>
               </li>
             </ul>
+            <ul class="splide__pagination">
+              <li>
+                <button
+                  class="splide__pagination__page is-active"
+                  type="button"
+                  aria-current="true"
+                  aria-controls="splide-slide01"
+                  aria-label="Go to slide 1"
+                ></button>
+              </li>
+              <li>
+                <button
+                  class="splide__pagination__page"
+                  type="button"
+                  aria-controls="splide-slide02"
+                  aria-label="Go to slide 2"
+                ></button>
+              </li>
+              <li>
+                <button
+                  class="splide__pagination__page"
+                  type="button"
+                  aria-controls="splide-slide03"
+                  aria-label="Go to slide 3"
+                ></button>
+              </li>
+              <li>
+                <button
+                  class="splide__pagination__page"
+                  type="button"
+                  aria-controls="splide-slide04"
+                  aria-label="Go to slide 4"
+                ></button>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://www.google-analytics.com/analytics.js"
+    ></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
