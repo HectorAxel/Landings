@@ -451,7 +451,6 @@ h2.title:after {
 }
 @media only screen and (min-width: 980px) {
   .contain {
-    background-image: url(img/back-main2.jpg);
     background-size: cover;
   }
   a.logo.axel-logo {
