@@ -19,8 +19,8 @@ $(".historys > .gallery").click(function(e) {
   $("html").css("overflow", "hidden");
 });
 $(".historys > .interview").click(function() {
-  $('.popup').css('background-image','url(img/back2.jpg)');
-  $(".popup, .three").css("display", "flex");
+  $('.popup').css('background-image','url(img/back1.jpg)');
+  $(".popup, .five").css("display", "flex");
   $("html").css("overflow", "hidden");
 });
 
@@ -33,8 +33,8 @@ $(".historys > .video").click(function(e) {
 
 
 $(".historys > .infos").click(function(e) {
-  $('.popup').css('background-image','url(img/back1.jpg)');
-  $(".popup, .five").css("display", "flex");
+  $('.popup').css('background-image','url(img/back2.jpg)');
+  $(".popup, .three").css("display", "flex");
   $("html").css("overflow", "hidden");
 });
 
