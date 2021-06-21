@@ -67,7 +67,7 @@ p.subtitle span {
 .contain {
   background-image: url(img/back-main.jpg);
   background-size: cover;
-  background-position: center -190px;
+  background-position: center 0px;
   height: 100vh;
   position: relative;
   display: flex;
