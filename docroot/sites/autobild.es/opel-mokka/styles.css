@@ -485,6 +485,10 @@ h2.title {
   left: 0;
   right: 0;
 }
+span.name {
+  font-size: 17px;
+  font-weight: lighter;
+}
 
 .splide__pagination {
   display: none !important;
