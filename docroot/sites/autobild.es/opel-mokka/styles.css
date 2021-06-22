@@ -159,7 +159,7 @@ p.subtitle span {
 .historys .test,
 .historys .config,
 .historys .find {
-  width: 130px;
+  width: 150px;
   left: 141px;
   bottom: 70px;
   padding: 4px;
@@ -766,5 +766,6 @@ section.contain-buttons-cta {
     position: inherit;
     display: block;
     top: inherit;
+    width: 100px;
   }
 }
