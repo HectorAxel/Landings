@@ -527,7 +527,7 @@ section.contain-buttons {
   position: absolute;
   display: flex;
   flex-wrap: wrap;
-  top: 50px;
+  top: 10px;
 }
 
 section.contain-buttons-cta {
@@ -536,7 +536,7 @@ section.contain-buttons-cta {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-  max-width: 290px;
+  max-width: 370px;
 }
 @media only screen and (min-width: 980px) {
   .des:first-child {
