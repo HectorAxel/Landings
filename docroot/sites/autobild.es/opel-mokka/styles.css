@@ -94,14 +94,11 @@ p.subtitle span {
   display: flex;
   align-items: center;
   padding: 9px;
-  /* border: solid 2px #000; */
-
-  /* support: IE9+ */
-  position: absolute;
-  width: 360px;
+  width: 100%;
+  max-width: 400px;
   text-align: center;
   justify-content: center;
-  margin: 0 auto;
+  margin: 0 auto 10px;
   left: 0;
   right: 0;
   cursor: pointer;
@@ -479,7 +476,6 @@ h2.title {
 
 .historys .find {
   bottom: 120px;
-  margin: 0 auto;
   left: 0;
   right: 0;
 }
@@ -525,6 +521,22 @@ span.name {
 }
 .contain-popup.five h3 {
   color: #000;
+}
+
+section.contain-buttons {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  top: 50px;
+}
+
+section.contain-buttons-cta {
+  position: absolute;
+  bottom: 60px;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  max-width: 290px;
 }
 @media only screen and (min-width: 980px) {
   .des:first-child {
@@ -699,14 +711,17 @@ span.name {
   .historys section > .test {
     left: inherit;
     right: inherit;
+    position: static;
   }
   .historys section > .config {
     right: inherit;
     left: inherit;
+    position: static;
   }
   .historys section > .find {
     left: inherit;
     right: inherit;
+    position: static;
   }
   .des {
     width: 50%;
@@ -722,6 +737,9 @@ span.name {
     align-items: center;
     width: 100%;
     justify-content: center;
+    position: static;
+    display: flex;
+    max-width: inherit;
   }
   .historys section > div {
     border: solid 3px #000;
@@ -745,5 +763,8 @@ span.name {
   section.contain-buttons {
     padding-left: 100px;
     padding-bottom: 70px;
+    position: inherit;
+    display: block;
+    top: inherit;
   }
 }
