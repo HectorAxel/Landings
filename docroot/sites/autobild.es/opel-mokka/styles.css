@@ -72,6 +72,8 @@ p.subtitle span {
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-content: flex-start;
 }
 .historys {
   border-radius: 10px;
@@ -83,6 +85,7 @@ p.subtitle span {
   padding: 0 10px;
   position: relative;
   margin-top: 180px;
+  height: calc(100% - 200px);
 }
 .historys > div {
   width: fit-content;
@@ -554,13 +557,11 @@ h2.title {
     font-size: 45px;
   }
   .historys {
-    height: calc(100% - 200px);
     margin-top: 0;
   }
   .historys > div {
     transition: background-clip 0.3s;
     cursor: pointer;
-    /* background-clip: content-box; */
   }
   .historys > div:hover {
     background-clip: inherit;
