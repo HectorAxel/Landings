@@ -215,7 +215,6 @@ p.subtitle span {
   padding: 0px 20px;
   margin: 0 auto;
   overscroll-behavior: contain;
-  height: 100vh;
   overflow: scroll;
 }
 .contain-popup.one {
@@ -422,7 +421,6 @@ a.logo.axel-logo {
   z-index: -1;
   padding: 0px 20px 90px;
   position: relative;
-  height: 100%;
 }
 
 .contain-popup.five {
@@ -709,5 +707,6 @@ h2.title {
   }
   .block-green {
     padding: 0 160px;
+    height: 100%;
   }
 }
