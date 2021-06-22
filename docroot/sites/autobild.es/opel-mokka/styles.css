@@ -90,11 +90,11 @@ p.subtitle span {
 .historys section > div {
   width: fit-content;
   text-align: center;
-  background: #f9fe57bf;
+  background: #f9fe57ad;
   display: flex;
   align-items: center;
   padding: 9px;
-  border: solid 3px #000;
+  /* border: solid 2px #000; */
 
   /* support: IE9+ */
   position: absolute;
@@ -139,19 +139,19 @@ p.subtitle span {
 
 .gallery {
   left: 15px;
-  top: 65px;
+  top: 32px;
 }
 .interview {
   right: 15px;
-  top: 138px;
+  top: 72px;
 }
 .infos {
-  top: 212px;
+  top: 112px;
   right: 15px;
 }
 
 .video {
-  top: 266px;
+  top: 156px;
   right: 50px;
 }
 
@@ -167,7 +167,7 @@ p.subtitle span {
   bottom: 70px;
   padding: 4px;
   background: #f9fe57bf;
-  border: solid 2px #000;
+  /* border: solid 2px #000; */
   color: #000;
 }
 .buttons {
@@ -386,9 +386,9 @@ a.logo.axel-logo img {
   font-weight: bold;
   color: #1e1c1f;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 14px;
   text-decoration: none;
-  line-height: 22px;
+  line-height: 14px;
 }
 .opel {
   width: 157px;
@@ -721,7 +721,25 @@ span.name {
     width: 100%;
     justify-content: center;
   }
+  .historys section > div {
+    border: solid 3px #000;
+  }
 
+  .historys span,
+  .historys a span,
+  .historys a {
+    font-weight: bold;
+    color: #1e1c1f;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 22px;
+  }
+  .historys .test,
+  .historys .config,
+  .historys .find {
+    border: solid 2px #000;
+  }
   section.contain-buttons {
     padding-left: 100px;
     padding-bottom: 70px;
