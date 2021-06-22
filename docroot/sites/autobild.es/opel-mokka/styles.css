@@ -67,7 +67,7 @@ p.subtitle span {
 .contain {
   background-image: url(img/back-main.jpg);
   background-size: cover;
-  background-position: center 31%;
+  background-position: center 0px;
   height: 100vh;
   position: relative;
   display: flex;
@@ -82,8 +82,7 @@ p.subtitle span {
   align-content: center;
   padding: 0 10px;
   position: relative;
-  margin-top: 70px;
-  height: calc(100% - 326px);
+  margin-top: 180px;
 }
 .historys > div {
   width: fit-content;
@@ -141,15 +140,15 @@ p.subtitle span {
 }
 .interview {
   right: 15px;
-  top: 117px;
+  top: 138px;
 }
 .infos {
-  top: 192px;
+  top: 212px;
   right: 15px;
 }
 
 .video {
-  top: 246px;
+  top: 266px;
   right: 50px;
 }
 
@@ -162,7 +161,7 @@ p.subtitle span {
 .historys > .find {
   width: 130px;
   left: 141px;
-  bottom: -50px;
+  bottom: 70px;
   padding: 4px;
   background: #f9fe57bf;
   border: solid 2px #000;
@@ -480,7 +479,7 @@ h2.title {
 }
 
 .historys > .find {
-  bottom: -8px;
+  bottom: 120px;
   margin: 0 auto;
   left: 0;
   right: 0;
@@ -533,7 +532,6 @@ h2.title {
     background-size: cover;
     background-position: center bottom;
   }
-
   a.logo.axel-logo {
     display: block;
   }
