@@ -707,7 +707,6 @@ h2.title {
   }
   .block-green {
     padding: 0 160px;
-    height: -webkit-fill-available;
   }
   .contain-popup.five .block-green {
     height: auto;
