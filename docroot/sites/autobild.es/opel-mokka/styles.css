@@ -215,6 +215,7 @@ p.subtitle span {
 }
 .contain-popup.one {
   align-items: baseline;
+  padding: 0;
 }
 .contain-popup.two {
   flex-wrap: wrap;
