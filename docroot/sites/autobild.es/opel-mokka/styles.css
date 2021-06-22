@@ -87,7 +87,7 @@ p.subtitle span {
   margin-top: 180px;
   height: calc(100% - 200px);
 }
-.historys > div {
+.historys section > div {
   width: fit-content;
   text-align: center;
   background: #f9fe57bf;
@@ -106,16 +106,16 @@ p.subtitle span {
   right: 0;
   cursor: pointer;
 }
-.historys > div > p,
-.historys > div > a {
+.historys section div > p,
+.historys section div > a {
   color: #000;
   font-size: 23px;
   display: flex;
   margin: 0 0 20px;
   justify-content: flex-start;
 }
-.historys > div > p,
-.historys > div > a {
+.historys section div p,
+.historys section div a {
   display: inline-block;
   font-size: 16px;
   margin: 0;
@@ -159,9 +159,9 @@ p.subtitle span {
   bottom: 0;
   right: 50px;
 }
-.historys > .test,
-.historys > .config,
-.historys > .find {
+.historys .test,
+.historys .config,
+.historys .find {
   width: 130px;
   left: 141px;
   bottom: 70px;
@@ -181,12 +181,8 @@ p.subtitle span {
   right: 0;
   top: inherit;
 }
-.buttons > div {
+.buttons section > div {
   padding: 10px;
-}
-.buttons > div svg {
-  height: 30px;
-  width: 30px;
 }
 .popup,
 .mini-popup {
@@ -464,14 +460,14 @@ h2.title {
   align-items: center;
   justify-content: center;
 }
-.historys > .test span,
-.historys > .config span,
-.historys > .find span {
+.historys .test span,
+.historys .config span,
+.historys .find span {
   font-size: 12px;
   color: #000;
 }
 
-.historys > .config {
+.historys .config {
   left: -140px;
 }
 
@@ -479,7 +475,7 @@ h2.title {
   padding-top: 29px;
 }
 
-.historys > .find {
+.historys .find {
   bottom: 120px;
   margin: 0 auto;
   left: 0;
@@ -543,7 +539,7 @@ span.name {
   a.logo.axel-logo {
     display: block;
   }
-  .historys > div > span {
+  .historys section > div > span {
     display: block;
     padding: 0 13px;
   }
@@ -563,12 +559,15 @@ span.name {
   }
   .historys {
     margin-top: 0;
+    align-content: flex-end;
+    padding-bottom: 40px;
+    justify-content: flex-start;
   }
-  .historys > div {
+  .historys section > div {
     transition: background-clip 0.3s;
     cursor: pointer;
   }
-  .historys > div:hover {
+  .historys section > div:hover {
     background-clip: inherit;
   }
   .buttons {
@@ -594,18 +593,20 @@ span.name {
   .buttons > div:hover svg {
     transform: rotate(20deg);
   }
-  .historys > div {
+  .historys section > div {
     padding: 9px;
     width: 500px;
     background: transparent;
+    position: static;
+    margin-bottom: 10px;
   }
-  .historys > div > p > .logo,
-  .historys > div > a > .logo {
+  .historys section > div > p > .logo,
+  .historys section > div > a > .logo {
     height: 40px;
     width: 40px;
   }
-  .historys > div > p,
-  .historys > div > a {
+  .historys section > div > p,
+  .historys section > div > a {
     line-height: 15px;
     text-indent: 10px;
   }
@@ -639,32 +640,29 @@ span.name {
   .config a {
     text-decoration: none;
   }
-  .contain-popup.three p,
-  .contain-popup.three h2 {
-  }
-  .historys > .info {
+  .historys section > .info {
     top: 234px;
     left: 30px;
     right: inherit;
   }
 
-  .historys > .gallery {
+  .historys section > .gallery {
     left: 30px;
     top: 284px;
     right: inherit;
   }
-  .historys > .interview {
+  .historys section > .interview {
     left: 30px;
     top: 334px;
     right: inherit;
   }
-  .historys > .infos {
+  .historys section > .infos {
     left: 30px;
     right: inherit;
     top: 384px;
   }
 
-  .historys > .video {
+  .historys section > .video {
     top: 434px;
     left: 30px;
     right: inherit;
@@ -678,37 +676,35 @@ span.name {
     left: inherit;
     top: inherit;
   }
-  .historys > .test,
-  .historys > .config,
-  .historys > .find {
+  .historys section > .test,
+  .historys section > .config,
+  .historys section > .find {
     height: auto;
     border-radius: 0;
     width: 170px;
     padding: 4px;
     background: transparent;
-    bottom: 30px;
+    bottom: inherit;
+    position: relative;
+    margin: 0 10px;
   }
-  .historys > .test span,
-  .historys > .config span,
-  .historys > .find span {
+  .historys section > .test span,
+  .historys section > .config span,
+  .historys section > .find span {
     font-size: 12px;
     display: block;
   }
-  .historys > .test {
-    left: 0;
-    right: 354px;
-    margin: 0 auto;
-  }
-  .historys > .config {
+  .historys section > .test {
+    left: inherit;
     right: inherit;
-    left: 0;
-    right: 0px;
-    margin: 0 auto;
   }
-  .historys > .find {
-    left: 0;
-    right: -354px;
-    margin: 0 auto;
+  .historys section > .config {
+    right: inherit;
+    left: inherit;
+  }
+  .historys section > .find {
+    left: inherit;
+    right: inherit;
   }
   .des {
     width: 50%;
@@ -718,5 +714,16 @@ span.name {
   }
   .contain-popup.five .block-green {
     height: auto;
+  }
+  section.contain-buttons-cta {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+  }
+
+  section.contain-buttons {
+    padding-left: 100px;
+    padding-bottom: 90px;
   }
 }
