@@ -101,14 +101,12 @@ html {
 }
 
 .tags ul li {
-  background: #f00;
   margin: 0 10px;
   width: 160px;
   text-align: center;
   height: 40px;
   border: 1px solid transparent;
   margin: 10px;
-  transition: all 0.3s;
 }
 
 .tags ul li a {
@@ -118,9 +116,11 @@ html {
   font-family: "SantanderText-Bold";
   text-decoration: none;
   display: block;
+  transition: all 0.3s;
+  background: #f00;
 }
 
-.tags ul li:hover {
+.tags ul li:hover a {
   background: #fff;
   border: 1px solid #f00;
 }
@@ -351,6 +351,34 @@ footer {
   justify-content: space-around;
   padding: 20px 10px;
   flex-wrap: wrap;
+  margin-top: 50px;
+  border-top: 2px solid #991901;
+}
+
+.to-top {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #cc2500;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.to-top:after {
+  position: absolute;
+  content: "↑";
+  font-size: 30px;
+  top: 6px;
+  left: -2px;
+  right: 0;
+  margin: 0 auto;
+  color: #fff;
+  font-weight: bold;
+  width: 19px;
+  height: 30px;
 }
 
 @media (min-width: 768px) {

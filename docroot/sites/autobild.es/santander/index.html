@@ -20,31 +20,34 @@
   </head>
   <body>
     <div class="contain">
+      <a class="to-top" href="#tag"></a>
       <section class="header">
         <div class="sponsor">
           <img src="./media/sponsor.jpg" alt="" />
         </div>
-        <img src="./media/header.jpg" alt="" />
+        <img
+          src="./media/header.jpg"
+          data-aos="flip-left"
+          data-aos-duration="3200"
+          alt=""
+        />
         <div class="header-text">
-          <div class="title" data-aos="fade-left" data-aos-duration="3200">
-            Santander Renting
-          </div>
-          <h1 data-aos="fade-left" data-aos-duration="3500">
-            Guía de decisión
-          </h1>
           <div
-            class="subtitle"
+            class="contain-text-header"
             data-aos="fade-left"
-            data-aos-duration="3700"
-            data-aos-anchor-placement="top-bottom"
+            data-aos-duration="2000"
           >
-            Para tener siempre el coche que necesitas
+            <div class="title">Santander Renting</div>
+            <h1>Guía de decisión</h1>
+            <div class="subtitle">
+              Para tener siempre el coche que necesitas
+            </div>
           </div>
         </div>
       </section>
 
       <!-- TAGS -->
-      <div class="tags">
+      <div class="tags" id="tag">
         <ul>
           <li data-aos="flip-down" data-aos-duration="1000">
             <a href="#Ahorro">Ahorro</a>
@@ -74,11 +77,7 @@
       </div>
       <div class="buttons-cta">
         <ul>
-          <li
-            data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
-          >
+          <li data-aos="flip-down" data-aos-duration="2000">
             <a href="">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -126,11 +125,7 @@
               <p>¿Cuánto dinero quieres gastarte al mes?</p>
             </a>
           </li>
-          <li
-            data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
-          >
+          <li data-aos="flip-down" data-aos-duration="2000">
             <a href="">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -174,11 +169,7 @@
               <p>¿Cuántas personas van a usar tu coche?</p></a
             >
           </li>
-          <li
-            data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
-          >
+          <li data-aos="flip-down" data-aos-duration="2000">
             <a href="">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -206,11 +197,7 @@
               <p>Calcula tu seguro</p></a
             >
           </li>
-          <li
-            data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
-          >
+          <li data-aos="flip-down" data-aos-duration="2000">
             <a href="">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -428,23 +415,22 @@
       </div>
 
       <!-- CONTENIDO VIDEO -->
-
-      <footer>
-        <img
-          class="logoab"
-          src="https://builder.axelspringer.es/brandlab/autobild.es/img/common/logo-ab.png"
-          alt=""
-        />
-        <img
-          class="logobrandlab"
-          src="https://builder.axelspringer.es/brandlab/autobild.es/img/ds/logo-bb.png"
-          alt=""
-        />
-      </footer>
     </div>
+    <footer>
+      <img
+        class="logoab"
+        src="https://builder.axelspringer.es/brandlab/autobild.es/img/common/logo-ab.png"
+        alt=""
+      />
+      <img
+        class="logobrandlab"
+        src="https://builder.axelspringer.es/brandlab/autobild.es/img/ds/logo-bb.png"
+        alt=""
+      />
+    </footer>
     <script src="js/aos.js"></script>
     <script>
-      AOS.init({ duration: 1200, once: false });
+      AOS.init({ duration: 1200, once: true });
     </script>
   </body>
 </html>
