@@ -105,7 +105,6 @@ html {
   width: 160px;
   text-align: center;
   height: 40px;
-  border: 1px solid transparent;
   margin: 10px;
 }
 
@@ -118,6 +117,7 @@ html {
   display: block;
   transition: all 0.3s;
   background: #f00;
+  border: 1px solid #0000;
 }
 
 .tags ul li:hover a {
@@ -369,7 +369,7 @@ footer {
 
 .to-top:after {
   position: absolute;
-  content: "↑";
+  content: "â†‘";
   font-size: 30px;
   top: 6px;
   left: -2px;
