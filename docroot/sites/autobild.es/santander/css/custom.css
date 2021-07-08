@@ -1,15 +1,9 @@
 @font-face {
-  font-family: "SantanderHeadline-Bold";
-  src: url("../fonts/SantanderHeadline-Bold.woff2") format("woff2"),
-    url("../fonts/HyundaiSansHead-Bold.woff2") format("woff2");
-  font-weight: bold;
-}
-
-@font-face {
   font-family: "SantanderHeadline-Regular";
   src: url("../fonts/SantanderHeadline-Regular.woff2") format("woff2"),
     url("../fonts/SantanderHeadline-Regular.woff2") format("woff2");
-  font-weight: bold;
+  font-weight: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -17,6 +11,7 @@
   src: url("../fonts/SantanderText-Regular.woff2") format("woff2"),
     url("../fonts/SantanderText-Regular.woff2") format("woff2");
   font-weight: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -24,6 +19,7 @@
   src: url("../fonts/SantanderText-Bold.woff2") format("woff2"),
     url("../fonts/SantanderText-Bold.woff2") format("woff2");
   font-weight: bold;
+  font-display: swap;
 }
 
 @font-face {
@@ -31,7 +27,9 @@
   src: url("../fonts/SantanderText-Light.woff2") format("woff2"),
     url("../fonts/SantanderText-Light.woff2") format("woff2");
   font-weight: lighter;
+  font-display: swap;
 }
+
 html {
   scroll-behavior: smooth;
 }
