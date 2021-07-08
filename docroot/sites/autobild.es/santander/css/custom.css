@@ -367,7 +367,7 @@ footer {
 
 .to-top:after {
   position: absolute;
-  content: "â†‘";
+  content: "\2191";
   font-size: 30px;
   top: 6px;
   left: -2px;
