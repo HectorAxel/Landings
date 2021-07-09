@@ -549,5 +549,43 @@
     <script>
       AOS.init({ duration: 1200, once: true });
     </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-35111809-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-35111809-1");
+    </script>
+
+    <!-- Begin comScore Tag -->
+    <script>
+      var _comscore = _comscore || [];
+      _comscore.push({
+        c1: "2",
+        c2: "6034990",
+        cs_ucfr: asCMP.havePurposeConsent(5),
+      });
+      (function () {
+        var s = document.createElement("script"),
+          el = document.getElementsByTagName("script")[0];
+        s.async = true;
+        s.src =
+          (document.location.protocol == "https:" ? "https://sb" : "http://b") +
+          ".scorecardresearch.com/beacon.js";
+        el.parentNode.insertBefore(s, el);
+      })();
+    </script>
+    <noscript>
+      <img
+        src="http://b.scorecardresearch.com/p?c1=2&c2=6034990&cs_ucfr=0&cv=2.0&cj=1"
+      />
+    </noscript>
+    <!-- End comScore Tag -->
   </body>
 </html>
