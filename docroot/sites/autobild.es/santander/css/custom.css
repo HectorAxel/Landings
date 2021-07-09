@@ -364,7 +364,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: 20px 10px;
+  padding: 20px 10px 0;
   flex-wrap: wrap;
   margin-top: 50px;
   border-top: 2px solid #991901;
@@ -394,6 +394,22 @@ footer {
   font-weight: bold;
   width: 19px;
   height: 30px;
+}
+
+footer ul {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+footer ul li {
+  margin: 20px 10px;
+}
+
+.der {
+  text-align: center;
+  width: 100%;
+  padding: 20px 10px;
 }
 
 @media (min-width: 768px) {
@@ -504,5 +520,11 @@ footer {
     position: absolute;
     right: 0;
     bottom: 0;
+  }
+  footer ul {
+    width: auto;
+  }
+  .der {
+    order: 2;
   }
 }
