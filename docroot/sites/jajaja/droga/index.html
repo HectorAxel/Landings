@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unas por la banda</title>
+  </head>
+  <style>
+    @keyframes changewidth {
+      from {
+        transform: translate(-59px, -50px);
+      }
+
+      to {
+        transform: translate(200px, 200px);
+      }
+    }
+
+    .hector {
+      animation-duration: 1.4s;
+      animation-name: changewidth;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      position: absolute;
+      left: 0;
+    }
+    @keyframes changewidtht {
+      from {
+        transform: translate(90px, -120px);
+      }
+
+      to {
+        transform: translate(440px, 180px);
+      }
+    }
+
+    .toni {
+      animation-duration: 1.4s;
+      animation-name: changewidtht;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      position: absolute;
+      left: 0;
+    }
+    .navas {
+      position: absolute;
+      left: 150px;
+      z-index: -1;
+      animation-iteration-count: infinite;
+      animation-duration: 2.4s;
+      animation-name: changewidthn;
+      animation-direction: alternate;
+    }
+    @keyframes changewidthn {
+      from {
+        transform: translate(0px, 0px);
+      }
+
+      to {
+        transform: translate(420px, 20px);
+      }
+    }
+    .containdrugs {
+      display: block;
+      width: 600px;
+    }
+  </style>
+  <body>
+    <div class="containdrugs">
+      <audio autoplay src="../domingo.mp3"></audio>
+      <img
+        src="https://st.depositphotos.com/2251967/4280/i/600/depositphotos_42804635-stock-photo-cocaine-powder-in-lines.jpg"
+        alt=""
+        class="drugs"
+      />
+      <img src="../hector.png" alt="" class="hector" />
+      <img src="../toni.png" alt="" class="toni" />
+      <img src="../navas.png" alt="" class="navas" />
+    </div>
+  </body>
+</html>
