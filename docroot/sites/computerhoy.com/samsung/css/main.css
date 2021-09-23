@@ -1,0 +1,717 @@
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+html {
+  font-family: "Citroen-Regular", sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+a {
+  background: transparent;
+}
+a:focus {
+  outline: thin dotted;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+h1 {
+  margin: 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: 700;
+}
+dfn {
+  font-style: italic;
+}
+hr {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+pre {
+  white-space: pre-wrap;
+}
+q {
+  quotes: "\201C""\201D""\2018""\2019";
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+  width: 100%;
+  display: block;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 0;
+}
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+}
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+button,
+input {
+  line-height: normal;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* CABECERA */
+
+header {
+  position: relative;
+}
+.header-wrapper {
+  position: relative;
+}
+
+/* CONTENIDO GENÃ‰RICO */
+
+.entry-white {
+  background: white;
+}
+.container {
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+.video-button {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.video-button img {
+  max-width: 160px;
+}
+.type {
+  border-top: 1px solid #3d3d3d;
+  border-bottom: 1px solid #3d3d3d;
+  display: inline-block;
+  font-size: 26px;
+  color: #0ae4de;
+  margin: 0 0 20px;
+}
+.content h2,
+.content h2 a {
+  color: #0a3c3c;
+  font-size: 40px;
+  line-height: 45px;
+  margin: 0 0 20px 0;
+  text-decoration: none;
+}
+.text {
+  font-size: 20px;
+  margin: 0 0 20px 0;
+  color: #3d3d3d;
+}
+.container-bracket {
+  padding: 30px;
+  position: relative;
+}
+.entry-white .container-bracket:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 30px);
+  border: 15px solid #fff;
+  border-bottom: none;
+  height: 15px;
+  background: #0000;
+}
+.entry-white .container-bracket:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: calc(100% - 30px);
+  border: 15px solid #fff;
+  border-top: none;
+  height: 15px;
+  background: #0000;
+}
+.image-shadow {
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+.container-bracket .text {
+  margin: 20px 0 0;
+}
+
+/* CONTENIDO CON FONDO OSCURO */
+
+.entry-green {
+  background: #0a3c3c;
+}
+.entry-green .type {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+.entry-green .content h2,
+.entry-green .content h2 a {
+  color: white;
+}
+.entry-green .container-bracket:before {
+  border: 15px solid white;
+  border-right: none;
+}
+.entry-green .container-bracket:after {
+  border: 15px solid white;
+  border-left: none;
+}
+.entry-green .text {
+  color: #0ae4de;
+}
+
+.entry-green .image-shadow {
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.5);
+}
+
+footer {
+  padding: 10px;
+  border-top: 4px solid #0a3c3c;
+}
+.footer-logos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.footer-logos a {
+  display: block;
+  margin: 0 auto;
+  width: 130px;
+}
+.branded.aos-init.aos-animate {
+  font-size: 26px;
+  color: #585858;
+  font-family: "samsungsharpsans-bold";
+  width: fit-content;
+  margin: 20px auto 10px;
+}
+
+.branded.aos-init.aos-animate span {
+  display: block;
+  font-family: "samsungsharpsans-bold";
+  margin-top: 10px;
+  position: relative;
+}
+.branded.aos-init.aos-animate span:after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  position: absolute;
+  top: -5px;
+  left: 0;
+  background: #585858;
+}
+img.header-img {
+  width: 100%;
+  margin-top: 30px;
+}
+.header-container {
+  text-align: center;
+}
+.samsung-brand {
+  text-align: center;
+}
+
+.samsung-brand img {
+  max-width: 80px;
+  display: block;
+  margin: 8px auto;
+}
+.contain-lead {
+  background: #000;
+  padding: 30px;
+  position: relative;
+}
+.contain-img {
+  position: relative;
+}
+
+.contain-lead p {
+  color: #fff;
+  font-size: 23px;
+  line-height: 28px;
+  padding: 20px;
+  text-align: center;
+  font-family: "samsungsharpsans-bold";
+}
+
+.contain-lead:after {
+  content: "";
+  width: calc(100% - 40px);
+  height: 25px;
+  border: 10px solid #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 20px;
+  border-bottom: none;
+}
+.contain-lead:before {
+  content: "";
+  width: calc(100% - 40px);
+  height: 25px;
+  border: 10px solid #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 20px;
+  border-top: none;
+}
+
+.reverse .contain-lead {
+  background: #fff;
+}
+.reverse .contain-lead p {
+  color: #585858;
+}
+.reverse .contain-lead:after {
+  border: 10px solid #585858;
+  border-bottom: none;
+}
+.reverse .contain-lead:before {
+  border: 10px solid #585858;
+  border-top: none;
+}
+.reverse .button-more {
+  background-color: #585858;
+}
+.reverse .button-more:before,
+.reverse .button-more:after {
+  background: #fff;
+}
+
+section {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.button-more {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  margin: 0 auto 30px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.button-more:after {
+  content: "";
+  height: 1px;
+  width: calc(100% - 10px);
+  position: absolute;
+  background: #000;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 25px;
+}
+.button-more:before {
+  content: "";
+  height: calc(100% - 10px);
+  width: 1px;
+  position: absolute;
+  background: #000;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 5px;
+}
+.header-container h1 {
+  font-family: "samsungsharpsans-bold";
+}
+
+@media only screen and (min-width: 780px) {
+  header {
+    height: auto;
+    padding-top: 30px;
+  }
+
+  .header-wrapper {
+    position: relative;
+    padding: 0;
+    display: flex;
+  }
+  .header-container {
+    width: 30%;
+    text-align: left;
+    padding-left: 15px;
+  }
+  img.header-img {
+    width: 70%;
+    margin-top: 0;
+  }
+  .samsung-brand {
+    text-align: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 160px;
+  }
+  .header-container h1 {
+    font-size: 39px;
+    line-height: 50px;
+  }
+  .samsung-brand img {
+    margin: 4px auto;
+    max-width: 128px;
+  }
+  .samsung-brand p {
+    line-height: 33px;
+  }
+  .branded.aos-init.aos-animate {
+    margin: revert;
+  }
+  .contain-lead {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #0000008c;
+    padding: 30px;
+    position: absolute;
+    top: 0;
+    width: 30%;
+    height: calc(100% - 60px);
+  }
+  .contain-lead p {
+    font-size: calc(2.5vw);
+    line-height: calc(3.3vw);
+    margin: 20px 0 0;
+  }
+  .contain-lead:after {
+    width: calc(100% - 70px);
+    top: 40px;
+  }
+  .contain-lead:before {
+    width: calc(100% - 70px);
+    bottom: 40px;
+  }
+
+  .reverse .contain-img {
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .reverse img {
+    width: 62%;
+  }
+  .reverse .contain-lead {
+    position: relative;
+    height: auto;
+    padding: 20px;
+    width: 30%;
+  }
+  .reverse .contain-lead:after {
+    top: 0px;
+  }
+  .reverse .contain-lead:before {
+    bottom: 0px;
+  }
+  .reverse .contain-img {
+    align-items: inherit;
+  }
+  .reverse .contain-lead:after {
+    border: 10px solid #585858;
+    border-bottom: none;
+    width: calc(100% - 20px);
+  }
+  .reverse .contain-lead:before {
+    border: 10px solid #585858;
+    border-top: none;
+    width: calc(100% - 20px);
+  }
+}
+@media only screen and (min-width: 980px) {
+  .header-container h1 {
+    font-size: 49px;
+    line-height: 63px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .header-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+  }
+  .header-container h1 {
+    font-size: 70px;
+    line-height: 90px;
+  }
+  header .lead {
+    font-size: 50px;
+    line-height: 55px;
+  }
+  .text {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .header-image {
+    width: 630px;
+    top: 40px;
+    right: 40px;
+  }
+  .content h2,
+  .content h2 a {
+    font-size: 60px;
+    line-height: 65px;
+  }
+  .container-bracket .text {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .button-more {
+    display: block;
+    width: 80px;
+    height: 80px;
+  }
+  .contain-lead p {
+    font-size: 35px;
+    line-height: 45px;
+  }
+  .button-more:after {
+    width: calc(100% - 10px);
+    top: 40px;
+  }
+}
+/* Modal de video */
+
+.video-modal {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  display: none;
+}
+.modal {
+  overflow: hidden;
+}
+.modal .video-modal {
+  display: flex;
+  flex-wrap: wrap;
+}
+.video-container {
+  position: relative;
+  max-width: 900px;
+  width: 80%;
+}
+.inner-container {
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  padding-top: 56.25%;
+}
+.inner-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.button-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+.button-close:before {
+  content: "";
+  background: white;
+  position: absolute;
+  top: 18px;
+  left: 3px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 35px;
+  height: 3px;
+}
+.button-close:after {
+  content: "";
+  background: white;
+  width: 35px;
+  position: absolute;
+  top: 18px;
+  left: 3px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  height: 3px;
+}
+@media only screen and (min-width: 980px) {
+  .video-modal {
+    background: rgba(0, 0, 0, 0.7);
+  }
+}
+.contain-text {
+  position: absolute;
+  top: 0;
+  width: 50%;
+}
+
+.contain-img-text {
+  position: relative;
+}
+@font-face {
+  font-family: "samsungsharpsans-bold";
+  src: url("../fonts/samsungsharpsans-bold.otf");
+  src: url("../fonts/samsungsharpsans-bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/samsungsharpsans-bold.woff") format("woff"),
+    url("../fonts/samsungsharpsans-bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SamsungSharpSans";
+  src: url("../fonts/SamsungSharpSans.eot");
+  src: url("../fonts/SamsungSharpSans.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/SamsungSharpSans.woff") format("woff"),
+    url("../fonts/SamsungSharpSans.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "samsungsharpsans-medium";
+  src: url("../fonts/samsungsharpsans-medium.otf");
+  src: url("../fonts/SamsungSharpSans-Medium.eot") format("embedded-opentype"),
+    url("../fonts/SamsungSharpSans-Medium.woff") format("woff"),
+    url("../fonts/SamsungSharpSans-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  font-family: SamsungSharpSans;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
