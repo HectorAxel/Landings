@@ -284,7 +284,7 @@ header {
 }
 
 footer {
-  padding: 10px;
+  padding: 30px 10px;
   border-top: 4px solid #0a3c3c;
 }
 .footer-logos {
@@ -292,6 +292,11 @@ footer {
   margin: 0;
   padding: 0;
   text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
 }
 .footer-logos a {
   display: block;
@@ -681,7 +686,10 @@ section {
   top: 0;
   width: 50%;
 }
-
+ul.footer-logos img,
+ul.footer-logos svg {
+  max-width: 110px;
+}
 .contain-img-text {
   position: relative;
 }
