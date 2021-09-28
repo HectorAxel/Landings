@@ -438,6 +438,12 @@ ul.footer-logos svg {
     font-size: 49px;
     line-height: 63px;
   }
+  .header-container {
+    width: 40%;
+    padding-right: 30px;
+    text-align: left;
+    padding-left: 15px;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .header-wrapper {
@@ -446,8 +452,8 @@ ul.footer-logos svg {
     display: flex;
   }
   .header-container h1 {
-    font-size: 70px;
-    line-height: 90px;
+    font-size: 57px;
+    line-height: 76px;
   }
   header .lead {
     font-size: 50px;
