@@ -1,36 +1,38 @@
 @font-face {
-  font-family: "samsungsharpsans-bold";
-  src: url("../fonts/samsungsharpsans-bold.otf");
-  src: url("../fonts/samsungsharpsans-bold.eot?#iefix")
+  font-family: "SamsungSharpSans-Bold";
+  src: url("../fonts/SamsungSharpSans-Bold.eot");
+  src: url("../fonts/SamsungSharpSans-Bold.eot?#iefix")
       format("embedded-opentype"),
-    url("../fonts/samsungsharpsans-bold.woff") format("woff"),
-    url("../fonts/samsungsharpsans-bold.ttf") format("truetype");
+    url("../fonts/SamsungSharpSans-Bold.ttf") format("truetype"),
+    url("../fonts/SamsungSharpSans-Bold.woff") format("woff"),
+    url("../fonts/SamsungSharpSans-Bold.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+}
+@font-face {
+  font-family: "SamsungSharpSans-Medium";
+  src: url("../fonts/SamsungSharpSans-Medium.eot");
+  src: url("../fonts/SamsungSharpSans-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/SamsungSharpSans-Medium.ttf") format("truetype"),
+    url("../fonts/SamsungSharpSans-Medium.woff") format("woff"),
+    url("../fonts/SamsungSharpSans-Medium.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
   font-family: "SamsungSharpSans";
   src: url("../fonts/SamsungSharpSans.eot");
   src: url("../fonts/SamsungSharpSans.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/SamsungSharpSans.ttf") format("truetype"),
     url("../fonts/SamsungSharpSans.woff") format("woff"),
-    url("../fonts/SamsungSharpSans.ttf") format("truetype");
+    url("../fonts/SamsungSharpSans.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
-@font-face {
-  font-family: "samsungsharpsans-medium";
-  src: url("../fonts/samsungsharpsans-medium.otf");
-  src: url("../fonts/SamsungSharpSans-Medium.eot") format("embedded-opentype"),
-    url("../fonts/SamsungSharpSans-Medium.woff") format("woff"),
-    url("../fonts/SamsungSharpSans-Medium.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
+
 * {
-  font-family: SamsungSharpSans;
+  font-family: "SamsungSharpSans";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -170,14 +172,14 @@ footer {
 .branded.aos-init.aos-animate {
   font-size: 26px;
   color: #585858;
-  font-family: "samsungsharpsans-bold";
+  font-family: "SamsungSharpSans-Bold";
   width: fit-content;
   margin: 20px auto 10px;
 }
 
 .branded.aos-init.aos-animate span {
   display: block;
-  font-family: "samsungsharpsans-bold";
+  font-family: "SamsungSharpSans-Bold";
   margin-top: 10px;
   position: relative;
 }
@@ -221,7 +223,7 @@ img.header-img {
   line-height: 28px;
   padding: 20px;
   text-align: center;
-  font-family: "samsungsharpsans-bold";
+  font-family: "SamsungSharpSans-Bold";
 }
 
 .contain-lead:after {
@@ -249,25 +251,25 @@ img.header-img {
   border-top: none;
 }
 
-.reverse .contain-lead {
+.container-news section:nth-child(2n) .contain-lead {
   background: #fff;
 }
-.reverse .contain-lead p {
+.container-news section:nth-child(2n) .contain-lead p {
   color: #585858;
 }
-.reverse .contain-lead:after {
+.container-news section:nth-child(2n) .contain-lead:after {
   border: 10px solid #585858;
   border-bottom: none;
 }
-.reverse .contain-lead:before {
+.container-news section:nth-child(2n) .contain-lead:before {
   border: 10px solid #585858;
   border-top: none;
 }
-.reverse .button-more {
+.container-news section:nth-child(2n) .button-more {
   background-color: #585858;
 }
-.reverse .button-more:before,
-.reverse .button-more:after {
+.container-news section:nth-child(2n) .button-more:before,
+.container-news section:nth-child(2n) .button-more:after {
   background: #fff;
 }
 
@@ -314,7 +316,7 @@ section {
   top: 5px;
 }
 .header-container h1 {
-  font-family: "samsungsharpsans-bold";
+  font-family: "SamsungSharpSans-Bold";
   padding: 0 10px;
 }
 .contain-text {
@@ -398,36 +400,36 @@ ul.footer-logos svg {
     bottom: 40px;
   }
 
-  .reverse .contain-img {
+  .container-news section:nth-child(2n) .contain-img {
     display: flex;
     padding: 30px;
     align-items: center;
     justify-content: space-between;
   }
-  .reverse img {
+  .container-news section:nth-child(2n) img {
     width: 62%;
   }
-  .reverse .contain-lead {
+  .container-news section:nth-child(2n) .contain-lead {
     position: relative;
     height: auto;
     padding: 20px;
     width: 30%;
   }
-  .reverse .contain-lead:after {
+  .container-news section:nth-child(2n) .contain-lead:after {
     top: 0px;
   }
-  .reverse .contain-lead:before {
+  .container-news section:nth-child(2n) .contain-lead:before {
     bottom: 0px;
   }
-  .reverse .contain-img {
+  .container-news section:nth-child(2n) .contain-img {
     align-items: inherit;
   }
-  .reverse .contain-lead:after {
+  .container-news section:nth-child(2n) .contain-lead:after {
     border: 10px solid #585858;
     border-bottom: none;
     width: calc(100% - 20px);
   }
-  .reverse .contain-lead:before {
+  .container-news section:nth-child(2n) .contain-lead:before {
     border: 10px solid #585858;
     border-top: none;
     width: calc(100% - 20px);
