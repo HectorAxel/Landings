@@ -114,17 +114,17 @@ html {
   text-decoration: none;
   display: block;
   transition: all 0.3s;
-  background: #f00;
+  background: #ec0000;
   border: 1px solid #0000;
 }
 
 .tags ul li:hover a {
   background: #fff;
-  border: 1px solid #f00;
+  border: 1px solid #ec0000;
 }
 
 .tags ul li:hover a {
-  color: #f00;
+  color: #ec0000;
 }
 
 .megatitle {
@@ -149,7 +149,7 @@ html {
 .text-content {
   padding: 20px 10px;
   margin: -3px auto;
-  background: #990000;
+  background: #ec0000;
   z-index: 2;
 }
 
@@ -236,7 +236,7 @@ html {
   height: 1px;
   content: "";
   width: 40px;
-  background: #990000;
+  background: #ec0000;
   position: absolute;
   left: 0;
   bottom: 50%;
@@ -246,7 +246,7 @@ html {
   height: 1px;
   content: "";
   width: 40px;
-  background: #990000;
+  background: #ec0000;
   position: absolute;
   transform: rotate(90deg);
   left: 0;
@@ -260,7 +260,7 @@ html {
 }
 
 .label {
-  background: #c00;
+  background: #ec0000;
   font-size: 14px;
   text-transform: uppercase;
   position: absolute;
@@ -273,7 +273,7 @@ html {
 }
 
 .megatitle-offer {
-  background: #991901;
+  background: #ec0000;
   width: 100%;
   font-size: 30px;
   text-transform: uppercase;
@@ -288,7 +288,7 @@ html {
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 100px 0;
-  border-bottom: 12px solid #991900;
+  border-bottom: 12px solid #ec0000;
 }
 
 .block-offers img {
@@ -330,7 +330,7 @@ p.title-offer {
 }
 
 .block-video {
-  background: #991900;
+  background: #ec0000;
   padding: 10px;
   position: relative;
 }
@@ -367,7 +367,7 @@ footer {
   padding: 20px 10px 0;
   flex-wrap: wrap;
   margin-top: 50px;
-  border-top: 2px solid #991901;
+  border-top: 2px solid #ec0000;
 }
 
 .to-top {
@@ -377,7 +377,7 @@ footer {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #cc2500;
+  background: #ec0000;
   z-index: 1;
   cursor: pointer;
 }
@@ -411,22 +411,20 @@ footer ul li {
   width: 100%;
   padding: 20px 10px;
 }
+.conditions a {
+  color: #ec0000;
+  text-decoration: underline;
+  text-decoration-color: #ec0000;
+}
 
 @media (min-width: 768px) {
-  .header {
-    padding-bottom: 110px;
-  }
-
   .sponsor img {
     width: 140px;
   }
 
   .header-text {
-    position: absolute;
-    bottom: 0;
     background: #fff;
-    width: calc(100% - 100px);
-    right: 0;
+    width: 100%;
   }
 
   .title {
@@ -468,19 +466,8 @@ footer ul li {
     object-position: center;
   }
   .text-content {
-    width: calc(100% - 20%);
     padding: 20px 10px 45px;
     position: relative;
-  }
-
-  .text-content:after {
-    content: "";
-    height: 16px;
-    width: 50%;
-    position: absolute;
-    background: #fff;
-    bottom: 0;
-    right: 0;
   }
 
   .text-content p {
@@ -498,7 +485,7 @@ footer ul li {
   }
 
   .block-video {
-    background: #991900;
+    background: #ec0000;
     padding: 30px 15px;
     position: relative;
   }
