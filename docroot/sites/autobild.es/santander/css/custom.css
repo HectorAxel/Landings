@@ -418,6 +418,12 @@ footer ul li {
 }
 
 @media (min-width: 768px) {
+  .header .img-intro {
+    height: 540px;
+    object-fit: cover;
+    object-position: 0 -70px;
+  }
+
   .sponsor img {
     width: 140px;
   }
@@ -441,7 +447,7 @@ footer ul li {
   }
 
   .tags {
-    margin: 70px 0;
+    margin: 20px 0 50px;
   }
 
   .content img {
