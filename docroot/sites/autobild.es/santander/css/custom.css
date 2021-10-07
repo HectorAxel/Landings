@@ -100,14 +100,14 @@ html {
 
 .tags ul li {
   margin: 0 10px;
-  width: 160px;
+  width: 145px;
   text-align: center;
   height: 40px;
   margin: 10px;
 }
 
 .tags ul li a {
-  line-height: 38px;
+  line-height: 35px;
   text-transform: uppercase;
   color: #fff;
   font-family: "SantanderText-Bold";
@@ -415,6 +415,10 @@ footer ul li {
   color: #ec0000;
   text-decoration: underline;
   text-decoration-color: #ec0000;
+}
+.conditions {
+  width: 100%;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
