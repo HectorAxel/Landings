@@ -237,7 +237,7 @@ html {
   height: 40px;
   position: relative;
   transition: transform 0.5s;
-  margin: 0 auto;
+  margin: 30px auto 0;
 }
 
 .more:hover {
@@ -245,20 +245,20 @@ html {
 }
 
 .more a:after {
-  height: 1px;
+  height: 4px;
   content: "";
   width: 40px;
-  background: #ec0000;
+  background: #fff;
   position: absolute;
   left: 0;
   bottom: 50%;
 }
 
 .more a:before {
-  height: 1px;
+  height: 4px;
   content: "";
   width: 40px;
-  background: #ec0000;
+  background: #fff;
   position: absolute;
   transform: rotate(90deg);
   left: 0;
@@ -492,7 +492,7 @@ footer ul li {
     object-position: center;
   }
   .text-content {
-    padding: 20px 10px 45px;
+    padding: 20px 10px;
     position: relative;
   }
 
