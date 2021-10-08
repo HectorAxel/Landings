@@ -437,6 +437,18 @@ footer ul li {
   display: block;
 }
 
+.content:after {
+  content: "";
+  background: #ec2c00;
+  height: 4px;
+  width: 300px;
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
 @media (min-width: 768px) {
   .header .img-intro {
     height: 540px;
