@@ -139,7 +139,7 @@ html {
 .content {
   text-align: center;
   position: relative;
-  margin-bottom: 120px;
+  margin-bottom: 50px;
 }
 
 .content img {
@@ -248,7 +248,7 @@ html {
   height: 4px;
   content: "";
   width: 40px;
-  background: #fff;
+  background: #ec0000;
   position: absolute;
   left: 0;
   bottom: 50%;
@@ -258,7 +258,7 @@ html {
   height: 4px;
   content: "";
   width: 40px;
-  background: #fff;
+  background: #ec0000;
   position: absolute;
   transform: rotate(90deg);
   left: 0;
