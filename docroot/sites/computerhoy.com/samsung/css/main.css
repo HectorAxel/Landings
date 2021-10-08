@@ -479,6 +479,10 @@ ul.footer-logos svg {
     font-size: 60px;
     line-height: 65px;
   }
+  .contain-img img {
+    max-height: 780px;
+    object-fit: cover;
+  }
   .container-bracket .text {
     font-size: 30px;
     line-height: 35px;

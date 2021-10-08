@@ -161,8 +161,20 @@ html {
   font-size: 23px;
   color: #fff;
   margin: 0;
+  font-weight: bold;
 }
 
+.content-image {
+  overflow: hidden;
+}
+
+.content-image img {
+  transition: all 1s;
+}
+
+.content.expand:hover img {
+  transform: scale(1.1);
+}
 .buttons-cta ul {
   display: flex;
   justify-content: center;
@@ -196,7 +208,7 @@ html {
 .buttons-cta li svg {
   width: 80px;
   max-height: 100px;
-  transition: transform 0.3s;
+  transition: transform 1s;
 }
 
 .buttons-cta li:hover svg {
@@ -419,6 +431,10 @@ footer ul li {
 .conditions {
   width: 100%;
   text-align: center;
+}
+
+.content a {
+  display: block;
 }
 
 @media (min-width: 768px) {
