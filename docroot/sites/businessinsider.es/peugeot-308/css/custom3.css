@@ -67,7 +67,7 @@
 }
 
 .wrapper-body {
-  max-width: 660px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -103,7 +103,7 @@
   flex-wrap: wrap;
   padding: 0 10px;
   justify-content: space-between;
-  max-width: 660px;
+  max-width: 800px;
   margin: 0 auto;
 }
 .car {
@@ -147,6 +147,40 @@
   display: block;
 }
 /* PART QUIZ */
+/* PARALAX IMAGes */
+
+.wrapper-img.image-2 {
+  background-image: url(../media/Imagen1.2Peugeot-min.jpg);
+  height: 400px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: center;
+}
+.step,
+.cars .step {
+  color: #00e2ff;
+  font-family: "Montserrat-Bold";
+  font-size: 25px;
+  margin-bottom: 40px;
+  line-height: 30px;
+}
+.wrapper-img.center.height.image-3,
+.wrapper-img.center.height.image-4,
+.wrapper-img.center.height.image-5 {
+  background-image: url(../media/Imagen1.5Peugeot-min.jpg);
+  height: 600px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+.wrapper-img.center.height.image-4 {
+  background-image: url(../media/Imagen1.3Peugeot-min.jpg);
+}
+.wrapper-img.center.height.image-5 {
+  background-image: url(../media/Imagen4.0Peugeot-min.jpg);
+}
 
 /* MEDIAQUERYS */
 @media only screen and (min-width: 660px) {
@@ -187,7 +221,7 @@
 
 @media only screen and (min-width: 768px) {
   .logo {
-    max-width: 80px;
+    max-width: 140px;
   }
   .title-head {
     max-width: 620px;
@@ -223,11 +257,11 @@
   .title-head span {
     margin-bottom: 10px;
     display: block;
-    font-size: 80px;
+    font-size: 60px;
   }
   .title-head p {
     padding: 0;
-    font-size: 43px;
+    font-size: 46px;
     line-height: 52px;
   }
   .title-num p {
@@ -251,11 +285,16 @@
     margin-bottom: 20px;
   }
   .wrapper-img.height {
-    height: 100vh;
     max-height: inherit;
   }
   .wrapper-img.height img.zoom {
     max-height: inherit;
+  }
+  .step,
+  .cars .step {
+    font-size: 40px;
+    margin-bottom: 60px;
+    line-height: 60px;
   }
 
   .zoom {
@@ -279,14 +318,14 @@
     padding: 0 10px;
   }
   .title-head {
-    left: 102px;
+    left: 52px;
     max-width: 32%;
   }
 }
 @media only screen and (min-width: 1400px) {
   .title-head span {
-    font-size: 100px;
-    margin-bottom: 19px;
+    font-size: 71px;
+    margin-bottom: 8px;
   }
   .title-head p {
     font-size: 52px;
@@ -298,8 +337,8 @@
 }
 @media only screen and (min-width: 1600px) {
   .title-head span {
-    font-size: 110px;
-    margin-bottom: 30px;
+    font-size: 80px;
+    margin-bottom: 10px;
   }
   .title-head p {
     font-size: 57px;
