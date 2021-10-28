@@ -65,7 +65,13 @@
   padding: 0 10px;
   font-size: 20px;
 }
-
+.title-head .ante,
+.title-head .subtitle {
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  display: none;
+}
 .wrapper-body {
   max-width: 660px;
   margin: 0 auto;
@@ -211,6 +217,10 @@
     margin-bottom: 60px;
     overflow: hidden;
     max-height: 600px;
+  }
+  .title-head .ante,
+  .title-head .subtitle {
+    display: block;
   }
   .title-head {
     text-align: left;
