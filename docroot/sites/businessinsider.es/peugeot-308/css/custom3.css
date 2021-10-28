@@ -140,7 +140,7 @@
   text-align: center;
 }
 .quiz iframe {
-  height: 660px;
+  height: 761px;
   width: 360px;
 }
 .quiz-span {
@@ -210,8 +210,9 @@
     padding: 0 20px;
   }
   .quiz iframe {
-    height: 600px;
+    height: 700px;
     width: 660px;
+    margin-bottom: 30px;
   }
   .car {
     width: 49%;
