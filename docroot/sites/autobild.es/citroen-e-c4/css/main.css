@@ -25,6 +25,10 @@
   top: 50px;
   left: 60px;
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .square p {
@@ -32,15 +36,20 @@
   text-transform: uppercase;
   color: #00e2ff;
   margin: 0;
-  font-size: 34px;
+  font-size: 46px;
+  line-height: 80px;
+  position: relative;
+  top: 15px;
 }
 
 .square span {
   text-transform: uppercase;
   color: #00e2ff;
-  font-size: 130px;
-  line-height: 140px;
+  font-size: 90px;
+  line-height: normal;
   font-weight: 600;
+  position: relative;
+  top: -10px;
 }
 
 .wrapper.hor {
@@ -97,8 +106,8 @@
   height: 100vh;
   max-height: 640px;
   background-size: cover;
-  background-image: url("../media/image-video.jpg");
-  background-position: center;
+  background-image: url("../media/Citroen_e_C4_100_electric_8-min.jpg");
+  background-position: center bottom;
   position: relative;
 }
 .block-video .title {
@@ -221,7 +230,7 @@
   height: 100vh;
   max-height: 610px;
   background-size: cover;
-  background-image: url(../media/image-cta.jpg);
+  background-image: url(../media/CTAs-min.jpg);
   background-position: center;
 }
 
@@ -241,7 +250,7 @@
   height: 100vh;
   max-height: 640px;
   background-size: cover;
-  background-image: url(../media/image-gallery.jpg);
+  background-image: url(../media/Citroen_e_C4_100_electric_7-min.jpg);
   background-position: center;
   position: relative;
   cursor: pointer;
@@ -298,6 +307,19 @@
   top: calc(50% - 9px);
   color: #fff;
   font-size: 50px;
+}
+.infographic {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+.infographic img {
+  width: 100%;
+}
+
+button[disabled] {
+  display: none;
 }
 .modal-vi,
 .modal-gal {
@@ -411,6 +433,13 @@ span.insta img {
   position: relative;
   top: -2px;
 }
+.video-test {
+  color: #fff;
+  font-size: 30px;
+  line-height: 40px;
+  display: block;
+  margin-top: 20px;
+}
 @media (max-width: 800px) {
   * {
     font-family: "KoHo", sans-serif;
@@ -435,7 +464,7 @@ span.insta img {
     height: 160px;
     background: #000000a8;
     position: absolute;
-    padding: 20px;
+    padding: 15px;
     top: 180px;
     left: 0;
     right: 0;
@@ -448,15 +477,16 @@ span.insta img {
     text-transform: uppercase;
     color: #00e2ff;
     margin: 0;
-    font-size: 20px;
+    font-size: 30px;
+    top: 0;
   }
 
   .square span {
     text-transform: uppercase;
     color: #00e2ff;
-    font-size: 70px;
-    line-height: 56px;
+    font-size: 58px;
     font-weight: 600;
+    top: -35px;
   }
 
   .wrapper.hor {
@@ -514,7 +544,7 @@ span.insta img {
     height: 100vh;
     max-height: 640px;
     background-size: cover;
-    background-image: url("../media/image-video.jpg");
+    background-image: url("../media/Citroen_e_C4_100_electric_8-min.jpg");
     background-position: center;
     position: relative;
   }
@@ -661,7 +691,7 @@ span.insta img {
     height: 100vh;
     max-height: 640px;
     background-size: cover;
-    background-image: url(../media/image-gallery.jpg);
+    background-image: url(../media/Citroen_e_C4_interior-min.jpg);
     background-position: center;
     position: relative;
   }
@@ -704,7 +734,7 @@ span.insta img {
   }
 
   .play:after {
-    content: "►";
+    content: "â–º";
     position: absolute;
     left: 0;
     right: 0;
