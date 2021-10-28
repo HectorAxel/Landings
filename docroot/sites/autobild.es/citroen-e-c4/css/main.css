@@ -736,7 +736,7 @@ span.insta img {
   }
 
   .play:after {
-    content: "Ã¢â€“Âº";
+    content: "►";
     position: absolute;
     left: 0;
     right: 0;
