@@ -411,6 +411,8 @@ button[disabled] {
 .splide--fade > .splide__track > .splide__list {
   width: 100%;
   max-height: 600px;
+  display: flex !important;
+  align-items: center;
 }
 .splide.is-active .splide__list li {
   max-height: 600px;
@@ -862,7 +864,6 @@ span.insta img {
   flex-wrap: wrap;
   width: 100%;
 }
-
 .axel {
   width: 100%;
   margin-bottom: 10px;
@@ -898,11 +899,24 @@ span.insta img {
   margin: 0 10px;
 }
 .image-par {
+  display: none;
   height: 800px;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+}
+.gal.mobile {
+  margin: 30px 0;
+}
+
+@media (min-width: 800px) {
+  .gal.mobile {
+    display: none;
+  }
+  .image-par {
+    display: block;
+  }
 }
 @media (min-width: 1000px) {
   .axel {
