@@ -645,8 +645,8 @@ span.insta img {
   }
 
   .block-img img {
-    width: 150px;
-    height: 200px;
+    width: 100%;
+    height: auto;
     object-fit: cover;
   }
   .contain-img {
