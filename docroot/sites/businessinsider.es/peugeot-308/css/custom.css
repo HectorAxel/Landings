@@ -19,6 +19,10 @@
   font-style: normal;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /* PART 1 */
 .contain-landing {
   /* max-width: 1260px; */
@@ -66,8 +70,13 @@
   font-size: 20px;
 }
 
+.title-head .ante {
+  font-size: 12px;
+  line-height: 12px;
+  margin-bottom: 10px;
+}
 .wrapper-body {
-  max-width: 660px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -81,14 +90,16 @@
 .title-num span {
   color: #00e2ff;
 }
+
 .body p,
-.cars p {
+.cars p,
+footer p {
   font-family: "Montserrat-Regular";
   font-size: 15px;
   line-height: 26px;
 }
 .body {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 .body img {
   width: 100%;
@@ -102,31 +113,55 @@
   display: flex;
   flex-wrap: wrap;
   padding: 0 10px;
-  justify-content: space-between;
-  max-width: 660px;
+  justify-content: center;
+  max-width: 800px;
   margin: 0 auto;
 }
-.car {
-  width: 100%;
+.flip-card {
+  background-color: transparent;
+  width: 375px;
+  height: 210px;
+  perspective: 1000px;
   margin-bottom: 30px;
 }
-.car img {
-  background: #000;
-  padding: 10px;
-  box-sizing: border-box;
-  width: 100%;
-  margin-bottom: 20px;
-  display: block;
-  border-radius: 4px;
-}
-.car .name-car {
+.flip-card .name-car {
   font-family: "Montserrat-Bold";
-  font-size: 16px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
-.photo {
-  background: #fff;
-  padding: 20px;
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flip-card-back {
+  padding: 10px;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
 }
 /* PART CARS */
 
@@ -140,14 +175,96 @@
   text-align: center;
 }
 .quiz iframe {
-  height: 660px;
+  height: 761px;
   width: 360px;
 }
 .quiz-span {
   display: block;
 }
 /* PART QUIZ */
+/* PARALAX IMAGes */
 
+.wrapper-img.image-2 {
+  background-image: url(../media/Imagen1.2Peugeot-min.jpg);
+  height: 400px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: center;
+}
+.step,
+.cars .step {
+  color: #00e2ff;
+  font-family: "Montserrat-Bold";
+  font-size: 25px;
+  margin-bottom: 40px;
+  line-height: 30px;
+}
+.wrapper-img.center.height.image-3,
+.wrapper-img.center.height.image-4,
+.wrapper-img.center.height.image-5 {
+  background-image: url(../media/Imagen1.5Peugeot-min.jpg);
+  height: 600px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+.wrapper-img.center.height.image-4 {
+  background-image: url(../media/Imagen1.3Peugeot-min.jpg);
+}
+.wrapper-img.center.height.image-5 {
+  background-image: url(../media/Imagen4.0Peugeot-min.jpg);
+}
+
+footer {
+  padding: 0;
+  margin: 110px 0 30px;
+}
+footer p {
+  margin-bottom: 10px;
+}
+a.peu-logo img {
+  max-width: 75px;
+}
+
+a.axel-logo img {
+  max-width: 112px;
+}
+
+.contain-footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
+}
+
+.contain-footer p {
+  width: 100%;
+}
+
+.title-big {
+  font-size: 26px;
+  font-family: "Montserrat-Bold";
+  text-transform: uppercase;
+  line-height: 32px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.splide--fade > .splide__track > .splide__list {
+  width: 100%;
+}
+.splide__slide img {
+  vertical-align: bottom;
+  max-width: 100%;
+  min-height: 66vw;
+  object-fit: cover;
+}
+.splide__pagination {
+  display: none !important;
+}
 /* MEDIAQUERYS */
 @media only screen and (min-width: 660px) {
   .logo {
@@ -176,17 +293,19 @@
     padding: 0 20px;
   }
   .quiz iframe {
-    height: 600px;
+    height: 850px;
     width: 660px;
+    margin-bottom: 30px;
   }
   .car {
     width: 49%;
+    margin-bottom: 30px;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .logo {
-    max-width: 80px;
+    max-width: 140px;
   }
   .title-head {
     max-width: 620px;
@@ -200,6 +319,9 @@
   .title-head p {
     font-size: 35px;
     line-height: 41px;
+  }
+  .cars {
+    justify-content: space-between;
   }
 }
 
@@ -222,12 +344,22 @@
   .title-head span {
     margin-bottom: 10px;
     display: block;
-    font-size: 80px;
+    font-size: 60px;
   }
   .title-head p {
     padding: 0;
-    font-size: 43px;
+    font-size: 46px;
     line-height: 52px;
+  }
+  .title-big {
+    font-size: 26px;
+    font-family: "Montserrat-Bold";
+    text-transform: uppercase;
+    line-height: 32px;
+    margin-bottom: 60px;
+  }
+  p.ante {
+    padding-left: 4px;
   }
   .title-num p {
     font-size: 43px;
@@ -249,6 +381,19 @@
   .wrapper-img.center .title-head .quiz-span {
     margin-bottom: 20px;
   }
+  .wrapper-img.height {
+    max-height: inherit;
+  }
+  .wrapper-img.height img.zoom {
+    max-height: inherit;
+  }
+  .step,
+  .cars .step {
+    font-size: 40px;
+    margin-bottom: 60px;
+    line-height: 60px;
+  }
+
   .zoom {
     animation: zoom-in-zoom-out 40s ease-out infinite;
   }
@@ -263,6 +408,9 @@
       transform: scale(1, 1);
     }
   }
+  .splide__slide img {
+    min-height: 600px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -270,14 +418,18 @@
     padding: 0 10px;
   }
   .title-head {
-    left: 102px;
+    left: 52px;
     max-width: 32%;
+  }
+  .title-head .ante {
+    font-size: 14px;
+    line-height: 15px;
   }
 }
 @media only screen and (min-width: 1400px) {
   .title-head span {
-    font-size: 100px;
-    margin-bottom: 19px;
+    font-size: 71px;
+    margin-bottom: 8px;
   }
   .title-head p {
     font-size: 52px;
@@ -289,8 +441,8 @@
 }
 @media only screen and (min-width: 1600px) {
   .title-head span {
-    font-size: 110px;
-    margin-bottom: 30px;
+    font-size: 80px;
+    margin-bottom: 10px;
   }
   .title-head p {
     font-size: 57px;

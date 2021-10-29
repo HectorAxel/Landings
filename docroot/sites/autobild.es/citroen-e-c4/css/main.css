@@ -19,7 +19,7 @@
 .square {
   width: 240px;
   height: 240px;
-  background: #000000a8;
+  background: #9b0a10bf;
   position: absolute;
   padding: 20px;
   top: 50px;
@@ -34,7 +34,7 @@
 .square p {
   font-weight: 700;
   text-transform: uppercase;
-  color: #00e2ff;
+  color: #fff;
   margin: 0;
   font-size: 46px;
   line-height: 80px;
@@ -44,7 +44,7 @@
 
 .square span {
   text-transform: uppercase;
-  color: #00e2ff;
+  color: #fff;
   font-size: 90px;
   line-height: normal;
   font-weight: 600;
@@ -76,7 +76,7 @@
 }
 
 .main-title h1 span {
-  color: #49e2ff;
+  color: #9b0a10;
   display: block;
   font-size: 111px;
 }
@@ -125,14 +125,15 @@
   line-height: 65px;
 }
 .mini-description {
-  background: #82fcff;
+  background: #9b0a10;
   padding: 20px 0;
 }
 .mini-description p {
   font-size: 48px;
   line-height: 57px;
   text-align: center;
-  font-weight: lighter;
+  font-weight: normal;
+  color: #fff;
 }
 
 .desc-title p {
@@ -145,7 +146,7 @@
 }
 
 .desc-title span {
-  color: #6ed4fc;
+  color: #9b0a10;
   display: block;
   font-size: 72px;
   line-height: 80px;
@@ -164,7 +165,7 @@
 .block-social button {
   appearance: none;
   border: none;
-  background: #82fcff;
+  background: #9b0a10;
   width: 410px;
   border-radius: 13px;
   display: block;
@@ -183,7 +184,7 @@
   font-weight: 500;
 }
 .block-social {
-  background: #82fcff;
+  background: #9b0a10;
   width: 800px;
   margin: 40px auto;
   padding: 15px;
@@ -195,6 +196,7 @@
   font-size: 30px;
   text-align: center;
   margin-bottom: 20px;
+  color: #fff;
 }
 
 .block-img {
@@ -477,7 +479,7 @@ span.insta img {
   .square p {
     font-weight: 700;
     text-transform: uppercase;
-    color: #00e2ff;
+    color: #9b0a10;
     margin: 0;
     font-size: 30px;
     top: 0;
@@ -485,7 +487,7 @@ span.insta img {
 
   .square span {
     text-transform: uppercase;
-    color: #00e2ff;
+    color: #9b0a10;
     font-size: 58px;
     font-weight: 600;
     top: -35px;
@@ -515,7 +517,7 @@ span.insta img {
   }
 
   .main-title h1 span {
-    color: #49e2ff;
+    color: #9b0a10;
     display: block;
     font-size: 43px;
   }
@@ -566,7 +568,7 @@ span.insta img {
     padding: 0 10px;
   }
   .mini-description {
-    background: #82fcff;
+    background: #9b0a10;
     padding: 20px 0;
   }
   .mini-description p {
@@ -587,7 +589,7 @@ span.insta img {
   }
 
   .desc-title span {
-    color: #6ed4fc;
+    color: #9b0a10;
     display: block;
     font-size: 41px;
   }
@@ -606,7 +608,7 @@ span.insta img {
   .block-social button {
     appearance: none;
     border: none;
-    background: #82fcff;
+    background: #9b0a10;
     width: 290px;
     border-radius: 13px;
     display: block;
@@ -623,7 +625,7 @@ span.insta img {
     font-size: 20px;
   }
   .block-social {
-    background: #82fcff;
+    background: #9b0a10;
     width: calc(100% - 60px);
     margin: 40px auto;
     padding: 15px;

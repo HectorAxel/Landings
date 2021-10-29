@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Peugeot 308</title>
     <link
-      href="./css/custom2.css"
+      href="./css/custom.css"
       rel="stylesheet"
       type="text/css"
       media="all"
@@ -25,7 +25,7 @@
   <body>
     <script src="js/aos.js"></script>
     <script>
-      AOS.init({ duration: 1500, once: true });
+      AOS.init({ duration: 1500, once: false });
     </script>
     <div class="contain-landing">
       <div class="wrapper-img height">
@@ -37,18 +37,21 @@
         />
         <img src="./media/Imagen1.0Peugeot-min.jpg" alt="" class="zoom" />
         <div class="title-head">
-          <p class="ante">Nuevo 308: LA NUEVA CARA DE PEUGEOT</p>
+          <p class="ante" data-aos="fade-right">Nuevo Peugeot 308: La nueva cara de Peugeot</p>
           <p data-aos="fade-right">
-            <span>5 Pasos</span>
-            <p data-aos="fade-left" data-aos-delay="600">Para hacer un producto irresistible</p>
+            
+            <span>5 PASOS </span>
+            <p data-aos="fade-left" data-aos-delay="600">PARA HACER UN PRODUCTO IRRESISTIBLE</p>
           </p>
+          
         </div>
       </div>
       <div class="wrapper-body">
-        <div class="title-num" data-aos="fade-down" data-aos-offset="200" data-aos-delay="1000">
-          <p><span>1</span> Apuesta por la seducción.</p>
+        <p class="title-big">Estos son los puntos que consiguen traspasar la delgada línea entre un producto bonito y un coche irresistible</p>
+        <div class="title-num" data-aos="fade-down" data-aos-offset="200" >
+          <p><span>1</span> Apuesta por la seducción</p>
         </div>
-        <div class="body" data-aos="fade-left" data-aos-offset="100" data-aos-delay="1100">
+        <div class="body" data-aos="fade-left" data-aos-offset="300">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper
             orci eu eros tincidunt rhoncus. Mauris sed ornare orci. Sed lacinia
@@ -68,14 +71,89 @@
           </p>
         </div>
       </div>
-      <div class="wrapper-img" data-aos="fade-up" data-aos-offset="250">
-        <img src="./media/Imagen1.2Peugeot-min.jpg" alt="" class="zoom" />
+      <div class="wrapper-img image-2" data-aos="fade-up" data-aos-offset="400">
+        <!-- <img src="./media/Imagen1.2Peugeot-min.jpg" alt="" class="zoom" /> -->
       </div>
       <div class="wrapper-body">
         <div class="title-num"  data-aos="fade-down" data-aos-offset="50">
-          <p><span>2</span> Apuesta por la tecnología.</p>
+          <p><span>2</span> Apuesta por la tecnología</p>
         </div>
         <div class="body" data-aos="fade-left" data-aos-offset="50">
+          <div
+          class="splide splide--fade splide--ltr splide--draggable is-active"
+          id="splide"
+          style="visibility: visible"
+        >
+          <div class="splide__arrows">
+            <button
+              class="splide__arrow splide__arrow--prev"
+              type="button"
+              aria-controls="splide-track"
+              aria-label="Go to last slide"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 40 40"
+                width="40"
+                height="40"
+              >
+                <path
+                  d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"
+                ></path>
+              </svg></button
+            ><button
+              class="splide__arrow splide__arrow--next"
+              type="button"
+              aria-controls="splide-track"
+              aria-label="Next slide"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 40 40"
+                width="40"
+                height="40"
+              >
+                <path
+                  d="m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div class="splide__track" id="splide-track">
+            <ul class="splide__list" id="splide-list">
+              <li
+                class="splide__slide is-active is-visible"
+                id="splide-slide01"
+                aria-hidden="false"
+                tabindex="0"
+                style="
+                  transition: opacity 400ms
+                    cubic-bezier(0.42, 0.65, 0.27, 0.99) 0s;
+                "
+              >
+                <img src="./media/car1.png" />
+                
+              </li>
+              <li class="splide__slide" id="splide-slide02">
+                <img src="./media/car2.png" />
+                
+              </li>
+              <li class="splide__slide" id="splide-slide03">
+                <img src="./media/car3.png" />
+                
+              </li>
+              <li class="splide__slide" id="splide-slide04">
+                <img src="./media/car4.png" />
+                
+              </li>
+              <li class="splide__slide" id="splide-slide05">
+                <img src="./media/car5.jpeg" />
+                
+              </li>
+            </ul>
+          </div>
+          
+        </div>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper
             orci eu eros tincidunt rhoncus. Mauris sed ornare orci. Sed lacinia
@@ -93,14 +171,14 @@
             ultrices. Curabitur sagittis diam dolor, quis commodo magna finibus
             id. Etiam dapibus id purus at tincidunt.
           </p>
-          <img src="./media/tecnologia.jpeg" alt="" />
         </div>
       </div>
       <div class="wrapper-body">
-        <div class="title-num" data-aos="fade-down" data-aos-offset="250">
-          <p><span>3</span> Apuesta por la sostenibilidad.</p>
+        <div class="title-num" data-aos="fade-down" data-aos-offset="400">
+          <p><span>3</span> Apuesta por la sostenibilidad</p>
         </div>
-        <div class="body" data-aos="fade-left" data-aos-offset="50">
+        <div class="body" data-aos="fade-left" data-aos-offset="500">
+          <img src="./media/sos1.jpeg" alt="">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper
             orci eu eros tincidunt rhoncus. Mauris sed ornare orci. Sed lacinia
@@ -118,13 +196,14 @@
             ultrices. Curabitur sagittis diam dolor, quis commodo magna finibus
             id. Etiam dapibus id purus at tincidunt.
           </p>
+          <img src="./media/sos2.png" alt="">
         </div>
       </div>
       <div class="wrapper-body">
-        <div class="title-num" data-aos="fade-down" data-aos-offset="250">
+        <div class="title-num" data-aos="fade-down" data-aos-offset="400">
           <p><span>4</span> Sé Premium</p>
         </div>
-        <div class="body" data-aos="fade-left" data-aos-offset="50">
+        <div class="body" data-aos="fade-left" data-aos-offset="500">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper
             orci eu eros tincidunt rhoncus. Mauris sed ornare orci. Sed lacinia
@@ -145,10 +224,10 @@
         </div>
       </div>
       <div class="wrapper-body">
-        <div class="title-num" data-aos="fade-down" data-aos-offset="250">
-          <p><span>5</span> Apuesta por la novedad.</p>
+        <div class="title-num" data-aos="fade-down" data-aos-offset="400">
+          <p><span>5</span> Apuesta por la novedad</p>
         </div>
-        <div class="body" data-aos="fade-left" data-aos-offset="50">
+        <div class="body" data-aos="fade-left" data-aos-offset="500">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper
             orci eu eros tincidunt rhoncus. Mauris sed ornare orci. Sed lacinia
@@ -168,111 +247,145 @@
           </p>
         </div>
       </div>
-      <div class="wrapper-img center height" data-aos="fade-up" data-aos-offset="250">
-        <img src="./media/Imagen1.5Peugeot-min.jpg" alt="" class="zoom" />
+      <div class="wrapper-img center height image-3" data-aos="fade-up" data-aos-offset="400">
+        <!-- <img src="./media/Imagen1.5Peugeot-min.jpg" alt="" class="zoom" /> -->
         <div class="title-head">
           <p>Los coches más <span>Bonitos</span> de la historia de peugeot</p>
-          <p class="subtitle">Siempre a la vanguardia, por estos clásicos no pasa el tiempo</p>
         </div>
       </div>
       <div class="cars">
-        <div class="car" data-aos="flip-right" data-aos-offset="50" data-aos-duration="3000">
-
-         <div class="photo">
-            <img src="./media/old1-min.jpg" alt="" />
-            <p class="name-car">1905 Bebe Type</p>
-            <p class="description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper
-              orci eu eros tincidunt rhoncus. Mauris sed ornare orci. Sed lacinia
-              eget magna sit amet consequat. Etiam vel nulla volutpat quam
-              elementum egestas sit amet quis leo. Suspendisse potenti.
-              Pellentesque habitant morbi tristique senectus et netus et malesuada
-              fames ac turpis egestas. Fusce elementum pulvinar tincidunt. Aenean
-              eget est gravida, dictum felis a, luctus metus. Maecenas sit amet
-              libero bibendum, interdum tortor at, volutpat nibh.
-            </p>
-         </div>
-        </div>
-        <div class="car" data-aos="flip-left" data-aos-offset="250" data-aos-duration="3000">
-         <div class="photo">
-            <img src="./media/old2-min.jpg" alt="" />
-            <p class="name-car">1905 Bebe Type</p>
-            <p class="description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper
-              orci eu eros tincidunt rhoncus. Mauris sed ornare orci. Sed lacinia
-              eget magna sit amet consequat. Etiam vel nulla volutpat quam
-              elementum egestas sit amet quis leo. Suspendisse potenti.
-              Pellentesque habitant morbi tristique senectus et netus et malesuada
-              fames ac turpis egestas. Fusce elementum pulvinar tincidunt. Aenean
-              eget est gravida, dictum felis a, luctus metus. Maecenas sit amet
-              libero bibendum, interdum tortor at, volutpat nibh.
-            </p>
-         </div>
-        </div>
-        <div class="car" data-aos="flip-right" data-aos-offset="50" data-aos-duration="3000">
-         <div class="photo">
-            <img src="./media/old3-min.jpg" alt="" />
-            <p class="name-car">1905 Bebe Type</p>
-            <p class="description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper
-              orci eu eros tincidunt rhoncus. Mauris sed ornare orci. Sed lacinia
-              eget magna sit amet consequat. Etiam vel nulla volutpat quam
-              elementum egestas sit amet quis leo. Suspendisse potenti.
-              Pellentesque habitant morbi tristique senectus et netus et malesuada
-              fames ac turpis egestas. Fusce elementum pulvinar tincidunt. Aenean
-              eget est gravida, dictum felis a, luctus metus. Maecenas sit amet
-              libero bibendum, interdum tortor at, volutpat nibh.
-            </p>
-         </div>
-        </div>
-        <div class="car" data-aos="flip-left" data-aos-offset="250" data-aos-duration="3000">
-         <div class="photo">
-            <img src="./media/ol4-min.jpg" alt="" />
-            <p class="name-car">1905 Bebe Type</p>
-            <p class="description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper
-              orci eu eros tincidunt rhoncus. Mauris sed ornare orci. Sed lacinia
-              eget magna sit amet consequat. Etiam vel nulla volutpat quam
-              elementum egestas sit amet quis leo. Suspendisse potenti.
-              Pellentesque habitant morbi tristique senectus et netus et malesuada
-              fames ac turpis egestas. Fusce elementum pulvinar tincidunt. Aenean
-              eget est gravida, dictum felis a, luctus metus. Maecenas sit amet
-              libero bibendum, interdum tortor at, volutpat nibh.
-            </p>
+        <p class="step" data-aos="fade-up" data-aos-offset="400">Siempre a la vanguardia, por estos clásicos no pasa el tiempo</p>
+        <div class="flip-card" data-aos="fade-right" data-aos-offset="500">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./media/old1-min.jpg" />
+            </div>
+            <div class="flip-card-back">
+              <p class="name-car">
+                Peugeot 306
+              </p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
+                corrupti necessitatibus consequuntur. Nam a, accusantium error
+                quisquam tenetur quia exercitationem aliquid esse enim! Distinctio
+                accusamus nesciunt, explicabo perspiciatis at voluptatibus.
+              </p>
+            </div>
           </div>
-         </div>
+        </div>
+        <div class="flip-card" data-aos="fade-left" data-aos-offset="500">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./media/old2-min.jpg" />
+            </div>
+            <div class="flip-card-back">
+              <p class="name-car">
+                Peugeot 306
+              </p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
+                corrupti necessitatibus consequuntur. Nam a, accusantium error
+                quisquam tenetur quia exercitationem aliquid esse enim! Distinctio
+                accusamus nesciunt, explicabo perspiciatis at voluptatibus.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card" data-aos="fade-right" data-aos-offset="500">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./media/old3-min.jpg" />
+            </div>
+            <div class="flip-card-back">
+              <p class="name-car">
+                Peugeot 306
+              </p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
+                corrupti necessitatibus consequuntur. Nam a, accusantium error
+                quisquam tenetur quia exercitationem aliquid esse enim! Distinctio
+                accusamus nesciunt, explicabo perspiciatis at voluptatibus.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card" data-aos="fade-left" data-aos-offset="500">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./media/ol4-min.jpg" />
+            </div>
+            <div class="flip-card-back">
+              <p class="name-car">
+                Peugeot 306
+              </p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
+                corrupti necessitatibus consequuntur. Nam a, accusantium error
+                quisquam tenetur quia exercitationem aliquid esse enim! Distinctio
+                accusamus nesciunt, explicabo perspiciatis at voluptatibus.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card" data-aos="fade-right" data-aos-offset="500">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./media/old5.jpg" />
+            </div>
+            <div class="flip-card-back">
+              <p class="name-car">
+                Peugeot 306
+              </p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
+                corrupti necessitatibus consequuntur. Nam a, accusantium error
+                quisquam tenetur quia exercitationem aliquid esse enim! Distinctio
+                accusamus nesciunt, explicabo perspiciatis at voluptatibus.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flip-card" data-aos="fade-left" data-aos-offset="500">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./media/old6.jpg" />
+            </div>
+            <div class="flip-card-back">
+              <p class="name-car">
+                Peugeot 306
+              </p>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
+                corrupti necessitatibus consequuntur. Nam a, accusantium error
+                quisquam tenetur quia exercitationem aliquid esse enim! Distinctio
+                accusamus nesciunt, explicabo perspiciatis at voluptatibus.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div class="wrapper-img center height" data-aos="fade-up" data-aos-offset="250">
-        <img src="./media/Imagen1.3Peugeot-min.jpg" alt="" class="zoom" />
+      
+      <div class="wrapper-img center height image-4" data-aos="fade-up" data-aos-offset="400">
+        <!-- <img src="./media/Imagen1.3Peugeot-min.jpg" alt="" class="zoom"> -->
         <div class="title-head">
-          <p><span class="quiz-span">Quiz</span>¿Verdadero o falso?</p>
+          <p><span class="quiz-span">Quiz</span>ACIERTA O NO SERÁS DIGNO DE UN 308</p>
         </div>
       </div>
-      <div class="quiz" data-aos="fade-right" data-aos-offset="250">
+      <div class="quiz" data-aos="fade-right" data-aos-offset="400">
         <div class="contain-iframe">
-          <iframe
-            src="https://axelspringerespana.qualifioapp.com/20/FED05F9D-2FF1-4CB3-AB08-D0FE77E10563/v1.cfm?id=FED05F9D-2FF1-4CB3-AB08-D0FE77E10563"
-            id="qualifio976020"
-            class="qualifio_iframe_tag"
-            scrolling="auto"
-            frameborder="0"
-            hspace="0"
-            vspace="0"
-            style="overflow-x: hidden; max-width: 639px"
-          ></iframe>
+          <iframe src="https://axelspringerespana.qualifioapp.com/20/CF2E76AA-7C79-46A5-86B2-E95C993AE4A3/v1.cfm?id=CF2E76AA-7C79-46A5-86B2-E95C993AE4A3" id="qualifio978612" class="qualifio_iframe_tag" width="100%" height="1200" scrolling="auto" frameborder="0" hspace="0" vspace="0" style="overflow-x: hidden;max-width:810px"></iframe>
         </div>
       </div>
-      <div class="wrapper-img center height" data-aos="fade-up" data-aos-offset="250">
-        <img src="./media/Imagen4.0Peugeot-min.jpg" alt="" class="zoom" />
+      <div class="wrapper-img center height image-5" data-aos="fade-up" data-aos-offset="400">
+        <!-- <img src="./media/Imagen4.0Peugeot-min.jpg" alt="" class="zoom" /> -->
         <div class="title-head special-title">
           <p>El nuevo<span> Rostro </span>de Peugeot</p>
-          <p class="subtitle">Una firma de personalidad y carácter</p>
         </div>
       </div>
       <div class="wrapper-body">
+        <p class="step" data-aos="fade-down" >Una firma de personalidad y carácter</p>
         <div class="body" >
-          <p data-aos="fade-left" data-aos-offset="250">
+          <p data-aos="fade-left" data-aos-offset="400">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper
             orci eu eros tincidunt rhoncus. Mauris sed ornare orci. Sed lacinia
             eget magna sit amet consequat. Etiam vel nulla volutpat quam
@@ -289,8 +402,8 @@
             ultrices. Curabitur sagittis diam dolor, quis commodo magna finibus
             id. Etiam dapibus id purus at tincidunt.
           </p>
-          <img src="./media/Imagen2.0Peugeot-min.jpg" alt="" data-aos="fade-left" data-aos-offset="250" />
-          <p data-aos="fade-left" data-aos-offset="250">
+          <img src="./media/rostro.jpeg" alt="" data-aos="fade-left" data-aos-offset="400" />
+          <p data-aos="fade-left" data-aos-offset="400">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras semper
             orci eu eros tincidunt rhoncus. Mauris sed ornare orci. Sed lacinia
             eget magna sit amet consequat. Etiam vel nulla volutpat quam
@@ -310,11 +423,17 @@
         </div>
       </div>
     </div>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"
-    ></script>
+    <footer>
+      <div class="contain-footer">
+        <p>Este contenido ha sido creado por BrandLab para Peugeot:</p>
+        <a href="https://www.peugeot.es/" class="peu-logo">
+          <img src="./media/logo-peu.png" alt="Logo Opel">
+        </a>
+        <a href="https://axelspringer.es/" class="axel-logo">
+          <img src="./media/logo-brand.png" alt="Logo Axelspringer">
+        </a>
+      </div>
+    </footer>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         new Splide("#splide", {
