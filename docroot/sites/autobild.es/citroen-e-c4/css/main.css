@@ -132,7 +132,7 @@
   font-size: 48px;
   line-height: 57px;
   text-align: center;
-  font-weight: normal;
+  font-weight: bold;
   color: #fff;
 }
 
@@ -899,7 +899,7 @@ span.insta img {
 .image-par {
   height: 800px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-attachment: fixed;
   background-position: center;
 }
