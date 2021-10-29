@@ -82,7 +82,8 @@
   color: #00e2ff;
 }
 .body p,
-.cars p {
+.cars p,
+footer p {
   font-family: "Montserrat-Regular";
   font-size: 15px;
   line-height: 26px;
@@ -180,6 +181,32 @@
 }
 .wrapper-img.center.height.image-5 {
   background-image: url(../media/Imagen4.0Peugeot-min.jpg);
+}
+
+footer {
+  padding: 0;
+}
+footer p {
+  margin-bottom: 10px;
+}
+a.peu-logo img {
+  max-width: 75px;
+}
+
+a.axel-logo img {
+  max-width: 112px;
+}
+
+.contain-footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
+}
+
+.contain-footer p {
+  width: 100%;
 }
 
 /* MEDIAQUERYS */
