@@ -900,7 +900,7 @@ span.insta img {
 .image-par {
   height: 800px;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-attachment: fixed;
   background-position: center;
 }
