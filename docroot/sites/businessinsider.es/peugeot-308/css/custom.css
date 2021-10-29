@@ -253,6 +253,22 @@ a.axel-logo img {
   text-align: center;
 }
 
+.flip-card-front:after {
+  content: "";
+  width: 54px;
+  height: 54px;
+  background-image: url(../media/flip.png);
+  left: -10px;
+  bottom: 9px;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  z-index: 1;
+  position: absolute;
+}
+.flip-card:hover .flip-card-front:after {
+  display: none;
+}
+
 .splide--fade > .splide__track > .splide__list {
   width: 100%;
 }
@@ -410,6 +426,16 @@ a.axel-logo img {
   }
   .splide__slide img {
     min-height: 600px;
+  }
+  .cars {
+    max-width: 980px;
+  }
+  .flip-card {
+    width: 49%;
+    height: 262px;
+  }
+  .flip-card img {
+    width: 100%;
   }
 }
 
