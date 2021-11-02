@@ -202,16 +202,18 @@
 .block-img {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .block-img img {
-  width: 124px;
+  width: 100%;
   height: 200px;
   object-fit: cover;
   border-radius: 3px;
 }
 .contain-img {
   margin-right: 5px;
+  width: 32.5%;
 }
 
 .contain-img:last-child {
@@ -258,7 +260,6 @@
   background-position: center;
   position: relative;
   cursor: pointer;
-  margin-top: 30px;
 }
 .title-gallery {
   position: absolute;
@@ -410,12 +411,10 @@ button[disabled] {
 }
 .splide--fade > .splide__track > .splide__list {
   width: 100%;
-  max-height: 600px;
   display: flex !important;
   align-items: center;
 }
 .splide.is-active .splide__list li {
-  max-height: 600px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -698,7 +697,6 @@ span.insta img {
     height: 100vh;
     max-height: 640px;
     background-size: cover;
-    background-image: url(../media/Citroen_e_C4_interior-min.jpg);
     background-position: center;
     position: relative;
   }
@@ -837,10 +835,8 @@ span.insta img {
   }
   .splide--fade > .splide__track > .splide__list {
     width: 100%;
-    max-height: 600px;
   }
   .splide.is-active .splide__list li {
-    max-height: 600px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -902,12 +898,35 @@ span.insta img {
   display: none;
   height: 800px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-attachment: fixed;
   background-position: center;
+  margin-bottom: 100px;
 }
 .gal.mobile {
   margin: 30px 0;
+}
+
+.footer-img {
+  position: sticky;
+  top: 100%;
+  background: #000000cf;
+  width: 100%;
+  padding: 20px 50px;
+}
+
+.footer-img p {
+  font-size: 18px;
+  color: #fff;
+}
+.footer-img-splide {
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+.footer-img-splide p {
+  color: #000;
+  font-size: 18px;
 }
 
 @media (min-width: 800px) {

@@ -123,6 +123,7 @@ footer p {
   height: 210px;
   perspective: 1000px;
   margin-bottom: 30px;
+  cursor: pointer;
 }
 .flip-card .name-car {
   font-family: "Montserrat-Bold";
