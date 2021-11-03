@@ -105,6 +105,22 @@ footer p {
   width: 100%;
   margin: 30px 0 20px;
 }
+.body .contain-iframe {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+  margin-top: 30px;
+}
+.body .contain-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
 /* PART 1 */
 
 /* PART CARS */
@@ -173,6 +189,14 @@ footer p {
   padding: 0 20px;
 }
 .quiz .contain-iframe {
+  .container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  }
+}
+ {
   text-align: center;
 }
 .quiz iframe {
@@ -186,7 +210,7 @@ footer p {
 /* PARALAX IMAGes */
 
 .wrapper-img.image-2 {
-  background-image: url(../media/Imagen1.2Peugeot-min.jpg);
+  background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/peugeot-308/Imagen1.2Peugeot-min.jpg);
   height: 400px;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -204,7 +228,7 @@ footer p {
 .wrapper-img.center.height.image-3,
 .wrapper-img.center.height.image-4,
 .wrapper-img.center.height.image-5 {
-  background-image: url(../media/Imagen1.5Peugeot-min.jpg);
+  background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/peugeot-308/Imagen1.5Peugeot-min.jpg);
   height: 600px;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -212,10 +236,10 @@ footer p {
   background-position: center;
 }
 .wrapper-img.center.height.image-4 {
-  background-image: url(../media/Imagen1.3Peugeot-min.jpg);
+  background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/peugeot-308/Imagen1.3Peugeot-min.jpg);
 }
 .wrapper-img.center.height.image-5 {
-  background-image: url(../media/Imagen4.0Peugeot-min.jpg);
+  background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/peugeot-308/Imagen4.0Peugeot-min.jpg);
 }
 
 footer {
@@ -258,7 +282,7 @@ a.axel-logo img {
   content: "";
   width: 54px;
   height: 54px;
-  background-image: url(../media/flip.svg);
+  background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/peugeot-308/flip.svg);
   left: -10px;
   bottom: 9px;
   background-size: 70px;
