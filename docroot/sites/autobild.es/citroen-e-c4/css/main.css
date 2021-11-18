@@ -565,7 +565,7 @@ span.insta img {
     max-height: 640px;
     background-size: cover;
     background-image: url("https://builder.axelspringer.es/brandlab/autobild.es/img/citroen-e-c4/Citroen_e_C4_100_electric_8-min.jpg");
-    background-position: center;
+    background-position: -239px;
     position: relative;
   }
   .block-video .title {
@@ -693,7 +693,7 @@ span.insta img {
     max-height: 610px;
     background-size: cover;
     background-image: url(https://builder.axelspringer.es/brandlab/autobild.es/img/citroen-e-c4/CTAs-min.jpg);
-    background-position: center;
+    background-position: -920px;
   }
 
   .contain-buttons {

@@ -1,956 +1,502 @@
-* {
-  font-family: "KoHo", sans-serif;
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../fonts/Montserrat-Bold.eot");
+  src: url("../fonts/Montserrat-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Montserrat-Bold.ttf") format("truetype"),
+    url("../fonts/Montserrat-Bold.woff") format("woff"),
+    url("../fonts/Montserrat-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
-.header-video video {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  min-width: 100%;
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../fonts/Montserrat-Regular.eot");
+  src: url("../fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Montserrat-Regular.ttf") format("truetype"),
+    url("../fonts/Montserrat-Regular.woff") format("woff"),
+    url("../fonts/Montserrat-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
 
-.header-video {
-  width: 100%;
-  height: 100vh;
-  max-height: 600px;
+* {
+  box-sizing: border-box;
+}
+
+/* PART 1 */
+.contain-landing {
+  /* max-width: 1260px; */
+  margin: 0 auto;
+}
+.wrapper-img {
   position: relative;
   margin-bottom: 30px;
 }
-
-.square {
-  width: 240px;
-  height: 240px;
-  background: #9b0a10bf;
+.wrapper-img img {
+  width: 100%;
+  display: block;
+  max-height: 600px;
+  object-fit: cover;
+}
+.logo {
+  max-width: 40px;
   position: absolute;
-  padding: 20px;
-  top: 50px;
-  left: 60px;
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-.square p {
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #fff;
-  margin: 0;
-  font-size: 46px;
-  line-height: 80px;
-  position: relative;
-  top: 15px;
-}
-
-.square span {
-  text-transform: uppercase;
-  color: #fff;
-  font-size: 90px;
-  line-height: normal;
-  font-weight: 600;
-  position: relative;
-  top: -10px;
-}
-
-.wrapper.hor {
-  max-width: 800px;
-  height: 100%;
-  position: relative;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 20px;
   z-index: 1;
 }
 
-.main-title {
+.title-head {
   position: absolute;
-  bottom: 50px;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-}
-
-.main-title h1 {
-  color: #fff;
   text-transform: uppercase;
-  text-align: center;
-  font-size: 66px;
-  font-weight: 700;
-}
-
-.main-title h1 span {
-  color: #9b0a10;
-  display: block;
-  font-size: 111px;
-}
-.description {
-  margin-bottom: 70px;
-}
-
-.description p {
-  font-weight: 100;
-  color: #3b3b3b;
-  font-size: 52px;
-  text-align: center;
-  line-height: 65px;
-  margin-bottom: 30px;
-  display: block;
-}
-
-.wrapper {
-  max-width: 1020px;
-  margin: 0 auto;
-}
-
-.description img {
-  width: 100%;
-}
-.block-video {
-  height: 100vh;
-  max-height: 640px;
-  background-size: cover;
-  background-image: url("https://builder.axelspringer.es/brandlab/autobild.es/img/citroen-e-c4/Citroen_e_C4_100_electric_8-min.jpg");
-  background-position: center bottom;
-  position: relative;
-}
-.block-video .title {
-  position: absolute;
-  top: 40px;
+  bottom: 15px;
   left: 0;
   right: 0;
   margin: 0 auto;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 52px;
-  max-width: 660px;
   text-align: center;
-  font-weight: 600;
-  line-height: 65px;
+  line-height: 24px;
+  max-width: 420px;
 }
-.mini-description {
-  background: #9b0a10;
-  padding: 20px 0;
+.title-head span {
+  color: #00e2ff;
+  font-family: "Montserrat-Bold";
 }
-.mini-description.reverse {
-  background: #fff;
-  margin-top: 50px;
-}
-.mini-description.reverse p {
-  color: #9b0a10;
-  text-transform: uppercase;
+.title-head p {
+  color: #00e2ff;
+  font-family: "Montserrat-Regular";
+  padding: 0 10px;
+  font-size: 20px;
 }
 
-.mini-description p {
-  font-size: 48px;
-  line-height: 57px;
-  text-align: center;
-  font-weight: bold;
-  color: #fff;
+.title-head .ante {
+  font-size: 12px;
+  line-height: 12px;
+  margin-bottom: 10px;
 }
-
-.desc-title p {
-  text-align: center;
-  color: #3c3c3c;
-  font-size: 46px;
-  text-transform: uppercase;
-  font-weight: 600;
-  line-height: 66px;
-}
-
-.desc-title span {
-  color: #9b0a10;
-  display: block;
-  font-size: 72px;
-  line-height: 80px;
-}
-
-.wrapper.vh {
-  margin: 40px auto;
-}
-.info img + p {
-  font-size: 48px;
-  text-align: center;
-  font-weight: lighter;
-  line-height: 52px;
-}
-.info button,
-.block-social button {
-  appearance: none;
-  border: none;
-  background: #9b0a10;
-  width: 410px;
-  border-radius: 13px;
-  display: block;
-  margin: 30px auto 0;
-  text-align: center;
-}
-.block-social button {
-  background: #fff;
-}
-
-.info button a,
-.block-social button a {
-  text-transform: uppercase;
-  color: #3c3c3c;
-  font-size: 29px;
-  font-weight: 500;
-}
-.block-social {
-  background: #9b0a10;
-  width: 800px;
-  margin: 40px auto;
-  padding: 15px;
-  border-radius: 10px;
-}
-
-.block-social p {
-  text-transform: uppercase;
-  font-size: 30px;
-  text-align: center;
-  margin-bottom: 20px;
-  color: #fff;
-}
-
-.block-img {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.block-img img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 3px;
-}
-.contain-img {
-  margin-right: 5px;
-  width: 32.5%;
-}
-
-.contain-img:last-child {
-  margin-right: 0;
-}
-
-.block-cta a {
-  font-size: 21px;
-  text-transform: uppercase;
-  display: block;
-  text-align: center;
-  background: #fff;
-  padding: 13px 10px;
-  border-radius: 10px;
-  color: #3c3c3c;
-  margin: auto;
-  width: 320px;
-}
-.block-cta {
-  height: 100vh;
-  max-height: 610px;
-  background-size: cover;
-  background-image: url(https://builder.axelspringer.es/brandlab/autobild.es/img/citroen-e-c4/CTAs-min.jpg);
-  background-position: center;
-}
-
-.contain-buttons {
-  height: 100%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  padding-bottom: 130px;
-}
-
-.block-cta .contain-buttons a {
-  margin: 0 10px;
-}
-
-.gallery {
-  height: 100vh;
-  max-height: 640px;
-  background-size: cover;
-  background-image: url(https://builder.axelspringer.es/brandlab/autobild.es/img/citroen-e-c4/Citroen_e_C4_100_electric_7-min.jpg);
-  background-position: center;
-  position: relative;
-  cursor: pointer;
-}
-.title-gallery {
-  position: absolute;
-  top: 40px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 52px;
-  max-width: 660px;
-  text-align: center;
-  font-weight: 600;
-  line-height: 65px;
-}
-.gallery:after,
-.block-video:after {
-  content: "";
-  height: 100%;
-  width: 100%;
-  background: #0003;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.play,
-.icon-gallery {
-  width: 200px;
-  height: 200px;
-  background-color: #0000007d;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  top: 250px;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background-color 0.3s, opacity, transform 1.2s !important;
-}
-.play:hover {
-  background-color: #000;
-}
-
-.play svg {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  top: calc(50% - 14px);
-  transform: rotate(90deg);
-  width: 40px;
-  height: 40px;
-  stroke: #fff;
-  fill: #fff;
-}
-.infographic {
+.wrapper-body {
   max-width: 800px;
-  margin: 0 auto 30px;
-  text-align: center;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.title-num p {
+  font-size: 22px;
+  font-family: "Montserrat-Bold";
+  text-transform: uppercase;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+.title-num span {
+  color: #00e2ff;
 }
 
-.infographic img {
+.body p,
+.cars p,
+footer p {
+  font-family: "Montserrat-Regular";
+  font-size: 15px;
+  line-height: 26px;
+}
+.body {
+  margin-bottom: 50px;
+}
+.body img {
   width: 100%;
+  margin: 30px 0 20px;
 }
-
-button[disabled] {
-  display: none;
+.body .contain-iframe {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+  margin-top: 30px;
 }
-.modal-vi,
-.modal-gal {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
+.body .contain-iframe iframe {
+  position: absolute;
   top: 0;
   left: 0;
-  align-items: center;
-  justify-content: center;
-  background: #000000e6;
-  z-index: 1000;
-  display: none;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
-.modal-visible .modal-vi,
-.modal-visible-gal .modal-gal {
+/* PART 1 */
+
+/* PART CARS */
+
+.cars {
   display: flex;
+  flex-wrap: wrap;
+  padding: 0 10px;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
 }
-.modal-visible,
-.modal-visible-gal {
-  overflow: hidden;
-}
-.close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
+.flip-card {
+  background-color: transparent;
+  width: 375px;
+  height: 210px;
+  perspective: 1000px;
+  margin-bottom: 30px;
   cursor: pointer;
-  width: 40px;
-  height: 40px;
 }
-.close:before {
-  content: "";
-  background: #fff;
-  position: absolute;
-  top: 18px;
-  left: 3px;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  width: 35px;
-  height: 3px;
+.flip-card .name-car {
+  font-family: "Montserrat-Bold";
 }
-.close:after {
-  content: "";
-  background: #fff;
-  width: 35px;
-  position: absolute;
-  top: 18px;
-  left: 3px;
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  height: 3px;
-}
-.container-video {
+.flip-card-inner {
   position: relative;
   width: 100%;
-  height: 0;
-  padding-bottom: 51%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-.container-video iframe {
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  left: 0;
-  top: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
-.video {
-  width: 100%;
-  max-width: 980px;
-}
-.content-by {
-  width: 100px;
-  height: 91px;
-  position: absolute;
-  right: 60px;
-  top: 50px;
+.flip-card-back {
+  padding: 10px;
 }
 
-.contain-gallery {
-  max-width: 940px;
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+/* PART CARS */
+
+/* PART QUIZ */
+.quiz {
+  max-width: 660px;
   margin: 0 auto;
+  padding: 0 20px;
 }
-.splide--fade > .splide__track > .splide__list {
-  width: 100%;
-  display: flex !important;
-  align-items: center;
-}
-.splide.is-active .splide__list li {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.splide.is-active .splide__list li h3 {
-  width: 100%;
-}
-.splide.is-active .splide__list li img {
-  max-height: 600px;
-}
-.icon-gallery svg {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  top: calc(50% - 40px);
-  width: 80px;
-  height: 80px;
-}
-span.insta img {
-  max-width: 37px;
-  position: relative;
-  top: -2px;
-}
-.video-test {
-  color: #fff;
-  font-size: 30px;
-  line-height: 40px;
-  display: block;
-  margin-top: 20px;
-}
-@media (max-width: 800px) {
-  * {
-    font-family: "KoHo", sans-serif;
-  }
-  .header-video video {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    min-width: 100%;
-  }
-  .play svg {
-    width: 20px;
-    height: 20px;
-    top: calc(50% - 9px);
-  }
-  .header-video {
-    width: 100%;
-    height: 100vh;
-    max-height: 800px;
+.quiz .contain-iframe {
+  .container {
     position: relative;
-    margin-bottom: 30px;
-  }
-
-  .square {
-    width: 160px;
-    height: 160px;
-    background: #000000a8;
-    position: absolute;
-    padding: 15px;
-    top: 180px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .square p {
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #9b0a10;
-    margin: 0;
-    font-size: 30px;
-    top: 0;
-  }
-
-  .square span {
-    text-transform: uppercase;
-    color: #9b0a10;
-    font-size: 58px;
-    font-weight: 600;
-    top: -35px;
-  }
-
-  .wrapper.hor {
-    max-width: 800px;
-    height: 100%;
-    position: relative;
-    z-index: 1;
-  }
-
-  .main-title {
-    position: absolute;
-    bottom: 50px;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-  }
-
-  .main-title h1 {
-    color: #fff;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-  }
-
-  .main-title h1 span {
-    color: #9b0a10;
-    display: block;
-    font-size: 43px;
-  }
-  .description {
-    margin-bottom: 70px;
-  }
-
-  .description p {
-    font-weight: 100;
-    color: #3b3b3b;
-    font-size: 22px;
-    text-align: center;
-    line-height: 34px;
-    margin-bottom: 30px;
-    display: block;
-    padding: 0 10px;
-  }
-
-  .wrapper {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-
-  .description img {
-    width: 100%;
-  }
-  .block-video {
-    height: 100vh;
-    max-height: 640px;
-    background-size: cover;
-    background-image: url("https://builder.axelspringer.es/brandlab/autobild.es/img/citroen-e-c4/Citroen_e_C4_100_electric_8-min.jpg");
-    background-position: -240px;
-    position: relative;
-  }
-  .block-video .title {
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 28px;
-    max-width: 660px;
-    text-align: center;
-    font-weight: 600;
-    line-height: 36px;
-    padding: 0 10px;
-  }
-  .mini-description {
-    background: #9b0a10;
-    padding: 20px 0;
-  }
-  .mini-description p {
-    font-size: 28px;
-    line-height: 36px;
-    text-align: center;
-    font-weight: lighter;
-    padding: 0 10px;
-  }
-
-  .desc-title p {
-    text-align: center;
-    color: #3c3c3c;
-    font-size: 28px;
-    text-transform: uppercase;
-    font-weight: 600;
-    line-height: 36px;
-  }
-
-  .desc-title span {
-    color: #9b0a10;
-    display: block;
-    font-size: 41px;
-    line-height: 50px;
-  }
-
-  .wrapper.vh {
-    margin: 40px auto;
-  }
-  .info img + p {
-    font-size: 28px;
-    text-align: center;
-    font-weight: lighter;
-    line-height: 36px;
-    padding: 0 10px;
-  }
-  .info button,
-  .block-social button {
-    appearance: none;
-    border: none;
-    background: #9b0a10;
-    width: 290px;
-    border-radius: 13px;
-    display: block;
-    margin: 30px auto 0;
-  }
-  .block-social button {
-    background: #fff;
-  }
-
-  .info button a,
-  .block-social button a {
-    text-transform: uppercase;
-    color: #3c3c3c;
-    font-size: 20px;
-  }
-  .block-social {
-    background: #9b0a10;
-    width: calc(100% - 60px);
-    margin: 40px auto;
-    padding: 15px;
-    border-radius: 10px;
-  }
-
-  .block-social p {
-    text-transform: uppercase;
-    font-size: 20px;
-    text-align: center;
-  }
-
-  .block-img {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .block-img img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-  .contain-img {
-    margin-right: 5px;
-    margin-bottom: 10px;
-    width: 100%;
-  }
-
-  .contain-img:last-child {
-    margin-right: 0;
-  }
-
-  .block-cta a {
-    font-size: 21px;
-    text-transform: uppercase;
-    display: block;
-    width: 320px;
-    margin: 20px auto 5px;
-    text-align: center;
-    background: #fff;
-    padding: 13px 10px;
-    border-radius: 10px;
-    color: #3c3c3c;
-  }
-  .block-cta {
-    height: 100vh;
-    max-height: 610px;
-    background-size: cover;
-    background-image: url(https://builder.axelspringer.es/brandlab/autobild.es/img/citroen-e-c4/CTAs-min.jpg);
-    background-position: 810px;
-  }
-
-  .contain-buttons {
-    height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-  }
-
-  .block-cta .contain-buttons a {
-    margin: 0 10px 30px;
-  }
-
-  .gallery {
-    height: 100vh;
-    max-height: 640px;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-  }
-  .title-gallery {
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 28px;
-    max-width: 660px;
-    text-align: center;
-    font-weight: 600;
-    line-height: 36px;
-    padding: 0 10px;
-  }
-  .gallery:after,
-  .block-video:after {
-    content: "";
-    height: 100%;
-    width: 100%;
-    background: #0003;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  .play,
-  .icon-gallery {
-    width: 100px;
-    height: 100px;
-    background: #0000007d;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    bottom: 250px;
-    border-radius: 50%;
-  }
-  .modal-vi,
-  .modal-gal {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    align-items: center;
-    justify-content: center;
-    background: #000000e6;
-    z-index: 1000;
-    display: none;
-  }
-  .modal-visible .modal-vi,
-  .modal-visible-gal .modal-gal {
-    display: flex;
-  }
-  .modal-visible,
-  .modal-visible-gal {
     overflow: hidden;
-  }
-  .close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-  }
-  .close:before {
-    content: "";
-    background: #fff;
-    position: absolute;
-    top: 18px;
-    left: 3px;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    width: 35px;
-    height: 3px;
-  }
-  .close:after {
-    content: "";
-    background: #fff;
-    width: 35px;
-    position: absolute;
-    top: 18px;
-    left: 3px;
-    -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    height: 3px;
-  }
-  .container-video {
-    position: relative;
     width: 100%;
-    height: 0;
-    padding-bottom: 51%;
-  }
-  .container-video iframe {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-  }
-  .video {
-    width: 100%;
-    max-width: 980px;
-  }
-  .content-by {
-    width: 100px;
-    height: 91px;
-    position: absolute;
-    right: 0;
-    margin: 0 auto;
-    left: 0;
-    top: 50px;
-  }
-
-  .contain-gallery {
-    max-width: 940px;
-    margin: 0 auto;
-  }
-  .splide--fade > .splide__track > .splide__list {
-    width: 100%;
-  }
-  .splide.is-active .splide__list li {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .splide.is-active .splide__list li h3 {
-    width: 100%;
-  }
-  .splide.is-active .splide__list li img {
-    max-height: 600px;
-  }
-  .info img {
-    width: 100%;
-  }
-  .icon-gallery svg {
-    width: 40px;
-    height: 80px;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
   }
 }
+ {
+  text-align: center;
+}
+.quiz iframe {
+  height: 761px;
+  width: 360px;
+}
+.quiz-span {
+  display: block;
+}
+/* PART QUIZ */
+/* PARALAX IMAGes */
+
+.wrapper-img.image-2 {
+  background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/peugeot-308/Imagen1.2Peugeot-min.jpg);
+  height: 400px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: center;
+}
+.step,
+.cars .step {
+  color: #00e2ff;
+  font-family: "Montserrat-Bold";
+  font-size: 25px;
+  margin-bottom: 40px;
+  line-height: 30px;
+}
+.wrapper-img.center.height.image-3,
+.wrapper-img.center.height.image-4,
+.wrapper-img.center.height.image-5 {
+  background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/peugeot-308/Imagen1.5Peugeot-min.jpg);
+  height: 600px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+.wrapper-img.center.height.image-4 {
+  background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/peugeot-308/Imagen1.3Peugeot-min.jpg);
+}
+.wrapper-img.center.height.image-5 {
+  background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/peugeot-308/Imagen4.0Peugeot-min.jpg);
+}
+
+footer {
+  padding: 0;
+  margin: 110px 0 30px;
+}
+footer p {
+  margin-bottom: 10px;
+}
+a.peu-logo img {
+  max-width: 75px;
+}
+
+a.axel-logo img {
+  max-width: 112px;
+}
+
 .contain-footer {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-}
-.axel {
-  width: 100%;
-  margin-bottom: 10px;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
-.footer-logos {
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-.footer-logos .logos {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.footer-logos .logos img {
-  max-width: 110px;
-}
-
-.rss {
+.contain-footer p {
   width: 100%;
 }
 
-.rss ul {
-  display: flex;
-  justify-content: center;
+.title-big {
+  font-size: 26px;
+  font-family: "Montserrat-Bold";
+  text-transform: uppercase;
+  line-height: 32px;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
-.rss ul li {
-  margin: 0 10px;
-}
-.image-par {
-  display: none;
-  height: 800px;
+.flip-card-front:after {
+  content: "";
+  width: 54px;
+  height: 54px;
+  background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/peugeot-308/flip.svg);
+  left: -10px;
+  bottom: 9px;
+  background-size: 70px;
   background-repeat: no-repeat;
-  background-size: contain;
-  background-attachment: fixed;
-  background-position: center;
+  z-index: 1;
+  position: absolute;
 }
-.gal.mobile {
-  margin: 30px 0;
+.flip-card:hover .flip-card-front:after {
+  display: none;
 }
 
-.footer-img {
-  position: sticky;
-  top: 100%;
-  background: #000000cf;
+.splide--fade > .splide__track > .splide__list {
   width: 100%;
-  padding: 20px 50px;
 }
-
-.footer-img p {
-  font-size: 18px;
-  color: #fff;
+.splide__slide img {
+  vertical-align: bottom;
+  max-width: 100%;
+  min-height: 66vw;
+  object-fit: cover;
 }
-.footer-img-splide {
-  padding: 0 40px;
-  margin: 0 auto;
+.splide__pagination {
+  display: none !important;
 }
-
-.footer-img-splide p {
-  color: #000;
-  font-size: 18px;
-}
-
-@media (min-width: 800px) {
-  .gal.mobile {
-    display: none;
+/* MEDIAQUERYS */
+@media only screen and (min-width: 660px) {
+  .logo {
+    max-width: 60px;
   }
-  .image-par {
+  .title-head {
+    max-width: 520px;
+  }
+  .wrapper-img.center .title-head.special-title {
+    max-width: 100%;
+  }
+  .title-head.special-title span {
+    display: inline;
+  }
+  .title-head span {
+    margin-bottom: 5px;
     display: block;
+    font-size: 25px;
+  }
+  .title-head p {
+    font-size: 22px;
+  }
+  .quiz {
+    max-width: 660px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .quiz iframe {
+    height: 850px;
+    width: 660px;
+    margin-bottom: 30px;
+  }
+  .car {
+    width: 49%;
+    margin-bottom: 30px;
   }
 }
-@media (min-width: 1000px) {
-  .axel {
-    width: 20%;
-    margin-bottom: 0;
+
+@media only screen and (min-width: 768px) {
+  .logo {
+    max-width: 140px;
+  }
+  .title-head {
+    max-width: 620px;
+    bottom: 25px;
+  }
+  .title-head span {
+    margin-bottom: 5px;
+    display: block;
+    font-size: 42px;
+  }
+  .title-head p {
+    font-size: 35px;
+    line-height: 41px;
+  }
+  .cars {
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 980px) {
+  .wrapper-img {
+    position: relative;
+    margin-bottom: 60px;
+    overflow: hidden;
+    max-height: 600px;
+  }
+  .title-head {
+    text-align: left;
+    right: inherit;
+    bottom: inherit;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 37%;
+  }
+  .title-head span {
+    margin-bottom: 10px;
+    display: block;
+    font-size: 60px;
+  }
+  .title-head p {
+    padding: 0;
+    font-size: 46px;
+    line-height: 52px;
+  }
+  .title-big {
+    font-size: 26px;
+    font-family: "Montserrat-Bold";
+    text-transform: uppercase;
+    line-height: 32px;
+    margin-bottom: 60px;
+  }
+  p.ante {
+    padding-left: 4px;
+  }
+  .title-num p {
+    font-size: 43px;
+    line-height: 52px;
+  }
+  .wrapper-img.center .title-head {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     text-align: center;
+    bottom: 30px;
+    top: inherit;
+    transform: none;
+    max-width: 920px;
   }
-  .footer-logos {
-    width: 60%;
-    margin-bottom: 0;
+  .wrapper-img.center .title-head span {
+    margin: 10px 0;
   }
-  .rss {
-    width: 20%;
+  .wrapper-img.center .title-head .quiz-span {
+    margin-bottom: 20px;
+  }
+  .wrapper-img.height {
+    max-height: inherit;
+  }
+  .wrapper-img.height img.zoom {
+    max-height: inherit;
+  }
+  .step,
+  .cars .step {
+    font-size: 40px;
+    margin-bottom: 60px;
+    line-height: 60px;
+  }
+
+  .zoom {
+    animation: zoom-in-zoom-out 40s ease-out infinite;
+  }
+  @keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.2, 1.2);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+  .splide__slide img {
+    min-height: 600px;
+  }
+  .cars {
+    max-width: 980px;
+  }
+  .flip-card {
+    width: 49%;
+    height: 262px;
+  }
+  .flip-card img {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .cars {
+    padding: 0 10px;
+  }
+  .title-head {
+    left: 52px;
+    max-width: 32%;
+  }
+  .title-head .ante {
+    font-size: 14px;
+    line-height: 15px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .title-head span {
+    font-size: 71px;
+    margin-bottom: 8px;
+  }
+  .title-head p {
+    font-size: 52px;
+    line-height: 60px;
+  }
+  .wrapper-img.center .title-head .quiz-span {
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .title-head span {
+    font-size: 80px;
+    margin-bottom: 10px;
+  }
+  .title-head p {
+    font-size: 57px;
+    line-height: 63px;
   }
 }
