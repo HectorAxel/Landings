@@ -17,8 +17,8 @@
 }
 
 .square {
-  width: 240px;
-  height: 240px;
+  width: 155px;
+  height: 155px;
   background: #9b0a10bf;
   position: absolute;
   padding: 20px;
@@ -36,16 +36,15 @@
   text-transform: uppercase;
   color: #fff;
   margin: 0;
-  font-size: 46px;
-  line-height: 80px;
+  font-size: 34px;
+  line-height: 48px;
   position: relative;
   top: 15px;
 }
 
 .square span {
-  text-transform: uppercase;
   color: #fff;
-  font-size: 90px;
+  font-size: 42px;
   line-height: normal;
   font-weight: 600;
   position: relative;
@@ -69,7 +68,6 @@
 
 .main-title h1 {
   color: #fff;
-  text-transform: uppercase;
   text-align: center;
   font-size: 66px;
   font-weight: 700;
@@ -479,36 +477,6 @@ span.insta img {
     margin-bottom: 30px;
   }
 
-  .square {
-    width: 160px;
-    height: 160px;
-    background: #000000a8;
-    position: absolute;
-    padding: 15px;
-    top: 180px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .square p {
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #9b0a10;
-    margin: 0;
-    font-size: 30px;
-    top: 0;
-  }
-
-  .square span {
-    text-transform: uppercase;
-    color: #9b0a10;
-    font-size: 58px;
-    font-weight: 600;
-    top: -35px;
-  }
-
   .wrapper.hor {
     max-width: 800px;
     height: 100%;
@@ -526,7 +494,6 @@ span.insta img {
 
   .main-title h1 {
     color: #fff;
-    text-transform: uppercase;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -822,15 +789,6 @@ span.insta img {
   .video {
     width: 100%;
     max-width: 980px;
-  }
-  .content-by {
-    width: 100px;
-    height: 91px;
-    position: absolute;
-    right: 0;
-    margin: 0 auto;
-    left: 0;
-    top: 50px;
   }
 
   .contain-gallery {
