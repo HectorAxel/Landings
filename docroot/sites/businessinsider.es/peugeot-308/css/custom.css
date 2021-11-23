@@ -350,6 +350,8 @@ a.axel-logo img {
   }
   .flip-card .name-car {
     font-family: "Montserrat-Bold";
+    font-size: 18px;
+    margin-bottom: 10px;
   }
   .flip-card-inner {
     position: relative;
