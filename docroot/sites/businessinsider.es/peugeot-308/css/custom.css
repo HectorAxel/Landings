@@ -18,6 +18,11 @@
   font-weight: normal;
   font-style: normal;
 }
+html,
+body {
+  overflow-x: hidden;
+  width: 100vw;
+}
 
 * {
   box-sizing: border-box;
@@ -96,7 +101,7 @@
 footer p {
   font-family: "Montserrat-Regular";
   font-size: 15px;
-  line-height: 26px;
+  line-height: 20px;
 }
 .body {
   margin-bottom: 50px;
@@ -167,7 +172,7 @@ footer p {
   backface-visibility: hidden;
 }
 .flip-card-back {
-  padding: 10px;
+  padding: 6px 7px;
 }
 
 .flip-card-front {
@@ -188,16 +193,11 @@ footer p {
   margin: 0 auto;
   padding: 0 20px;
 }
-.quiz .contain-iframe {
-  .container {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-  }
-}
- {
-  text-align: center;
+.quiz .contain-iframe .container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 }
 .quiz iframe {
   height: 761px;
@@ -270,11 +270,11 @@ a.axel-logo img {
 }
 
 .title-big {
-  font-size: 26px;
+  font-size: 17px;
   font-family: "Montserrat-Bold";
   text-transform: uppercase;
-  line-height: 32px;
-  margin-bottom: 50px;
+  line-height: 27px;
+  margin-bottom: 40px;
   text-align: center;
 }
 
