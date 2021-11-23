@@ -182,9 +182,8 @@ footer p {
 .wrapper-img.center.height.image-4,
 .wrapper-img.center.height.image-5 {
   background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/peugeot-308/Imagen1.5Peugeot-min.jpg);
-  height: 600px;
+  height: 200px;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
   background-position: center;
 }
@@ -271,6 +270,16 @@ a.axel-logo img {
 }
 /* MEDIAQUERYS */
 @media only screen and (min-width: 660px) {
+  .wrapper-img.center.height.image-3,
+  .wrapper-img.center.height.image-4,
+  .wrapper-img.center.height.image-5 {
+    background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/peugeot-308/Imagen1.5Peugeot-min.jpg);
+    height: 600px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
   .logo {
     max-width: 60px;
   }
