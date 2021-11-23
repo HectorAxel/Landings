@@ -213,7 +213,6 @@ footer p {
   background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/peugeot-308/Imagen1.2Peugeot-min.jpg);
   height: 400px;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: contain;
   background-position: center;
 }
@@ -327,6 +326,9 @@ a.axel-logo img {
   }
   .title-head p {
     font-size: 22px;
+  }
+  .wrapper-img.image-2 {
+    background-attachment: fixed;
   }
   .quiz {
     max-width: 660px;
