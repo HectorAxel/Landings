@@ -1,6 +1,8 @@
 $(".play").click(function (e) {
+  console.log("paso1");
   e.preventDefault();
   var ref = "https://www.youtube.com/embed/04KdWX-XELw?autoplay=1";
+  console.log("paso2" + ref);
   $(".modal-vi iframe").attr("src", ref);
   $("body").addClass("modal-visible");
 });
