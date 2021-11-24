@@ -428,9 +428,6 @@ button[disabled] {
 .splide.is-active .splide__list li h3 {
   width: 100%;
 }
-.splide.is-active .splide__list li img {
-  max-height: 600px;
-}
 .icon-gallery svg {
   position: absolute;
   left: 0;
