@@ -1,6 +1,6 @@
 $(".play").click(function (e) {
   e.preventDefault();
-  var ref = "https://www.youtube.com/embed/04KdWX-XELw?h?autoplay=1";
+  var ref = "https://www.youtube.com/embed/04KdWX-XELw?autoplay=1";
   $(".modal-vi iframe").attr("src", ref);
   $("body").addClass("modal-visible");
 });
