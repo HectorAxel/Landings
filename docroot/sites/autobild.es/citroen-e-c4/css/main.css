@@ -1,5 +1,6 @@
 * {
   font-family: "KoHo", sans-serif;
+  box-sizing: border-box;
 }
 .header-video video {
   height: 100%;
@@ -23,7 +24,7 @@
   position: absolute;
   padding: 20px;
   top: 50px;
-  left: 60px;
+  left: 30px;
   text-align: center;
   display: flex;
   flex-wrap: wrap;
@@ -248,7 +249,7 @@
 .contain-buttons {
   height: 100%;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   padding-bottom: 130px;
 }
@@ -408,7 +409,7 @@ button[disabled] {
   width: 100px;
   height: 91px;
   position: absolute;
-  right: 60px;
+  right: 30px;
   top: 50px;
 }
 

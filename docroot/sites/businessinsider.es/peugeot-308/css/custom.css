@@ -101,7 +101,7 @@ body {
 footer p {
   font-family: "Montserrat-Regular";
   font-size: 15px;
-  line-height: 20px;
+  line-height: 26px;
 }
 .body {
   margin-bottom: 50px;
@@ -179,7 +179,7 @@ footer p {
   line-height: 30px;
 }
 .wrapper-img.center.height.image-3 {
-  background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/peugeot-308/Imagen4.0Peugeot-min.jpg);
+  background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/peugeot-308/Imagen4.0Peugeot-min.jpg?av);
   height: 200px;
   background-repeat: no-repeat;
   background-size: cover;
