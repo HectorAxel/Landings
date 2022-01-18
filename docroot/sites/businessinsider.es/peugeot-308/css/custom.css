@@ -279,6 +279,12 @@ a.axel-logo img {
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
+iframe {
+  display: none;
+}
+iframe.visible {
+  display: block;
+}
 /* MEDIAQUERYS */
 @media only screen and (min-width: 660px) {
   .wrapper-img.center.height.image-3,
@@ -320,7 +326,7 @@ a.axel-logo img {
     padding: 0 20px;
   }
   .quiz iframe {
-    height: 850px;
+    height: 560px;
     width: 660px;
     margin-bottom: 30px;
   }
