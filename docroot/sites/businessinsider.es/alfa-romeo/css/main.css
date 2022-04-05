@@ -223,8 +223,8 @@ a.axel-logo img {
     --glitch-height: 100vh;
     --gap-horizontal: 10px;
     --gap-vertical: 5px;
-    --time-anim: 2s;
-    --delay-anim: 1s;
+    --time-anim: 4s;
+    --delay-anim: 2s;
     --blend-mode-1: none;
     --blend-mode-2: none;
     --blend-mode-3: none;
