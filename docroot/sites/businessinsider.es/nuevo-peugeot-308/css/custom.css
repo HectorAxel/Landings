@@ -1,0 +1,558 @@
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("../fonts/Montserrat-Bold.eot");
+  src: url("../fonts/Montserrat-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Montserrat-Bold.ttf") format("truetype"),
+    url("../fonts/Montserrat-Bold.woff") format("woff"),
+    url("../fonts/Montserrat-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("../fonts/Montserrat-Regular.eot");
+  src: url("../fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Montserrat-Regular.ttf") format("truetype"),
+    url("../fonts/Montserrat-Regular.woff") format("woff"),
+    url("../fonts/Montserrat-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+html,
+body {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* PART 1 */
+.contain-landing {
+  /* max-width: 1260px; */
+  margin: 0 auto;
+}
+.wrapper-img {
+  position: relative;
+  margin-bottom: 30px;
+}
+.wrapper-img img {
+  width: 100%;
+  display: block;
+  max-height: 600px;
+  object-fit: cover;
+}
+.logo {
+  max-width: 40px;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 20px;
+  z-index: 1;
+}
+
+.title-head {
+  position: absolute;
+  text-transform: uppercase;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 24px;
+  max-width: 420px;
+}
+.title-head span {
+  color: #00e2ff;
+  font-family: "Montserrat-Bold";
+}
+.title-head p {
+  color: #00e2ff;
+  font-family: "Montserrat-Regular";
+  padding: 0 10px;
+  font-size: 20px;
+}
+
+.title-head .ante {
+  font-size: 12px;
+  line-height: 12px;
+  margin-bottom: 10px;
+}
+.wrapper-body {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.title-num p {
+  font-size: 22px;
+  font-family: "Montserrat-Bold";
+  text-transform: uppercase;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+.title-num span {
+  color: #00e2ff;
+}
+
+.body p,
+.cars p,
+footer p {
+  font-family: "Montserrat-Regular";
+  font-size: 15px;
+  line-height: 26px;
+}
+.body {
+  margin-bottom: 50px;
+}
+.body img {
+  width: 100%;
+  margin: 30px 0 20px;
+}
+.body .contain-iframe {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+  margin-top: 30px;
+}
+.body .contain-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+/* PART 1 */
+
+/* PART CARS */
+
+.cars {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10px;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* PART CARS */
+
+/* PART QUIZ */
+.quiz {
+  max-width: 660px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.quiz .contain-iframe {
+  text-align: center;
+}
+.quiz iframe {
+  height: 480px;
+  width: 100%;
+  margin: 40px auto;
+  text-align: center;
+}
+.quiz .contain-iframe .container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+.quiz-span {
+  display: block;
+}
+/* PART QUIZ */
+/* PARALAX IMAGes */
+
+.wrapper-img.image-2 {
+  background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/peugeot-308/Imagen1.2Peugeot-min.jpg);
+  height: 130px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.step,
+.cars .step {
+  color: #00e2ff;
+  font-family: "Montserrat-Bold";
+  font-size: 25px;
+  margin-bottom: 40px;
+  line-height: 30px;
+}
+.wrapper-img.center.height.image-3 {
+  background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/peugeot-308/Imagen4.0Peugeot-min.jpg?av);
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.wrapper-img.center.height.image-4 {
+  background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/peugeot-308/Imagen1.3Peugeot-min.jpg?dfa);
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.wrapper-img.center.height.image-5 {
+  background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/peugeot-308/Imagen1.5Peugeot-min.png?aga);
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+footer {
+  padding: 0;
+  margin: 110px 0 30px;
+}
+footer p {
+  margin-bottom: 10px;
+}
+a.peu-logo img {
+  max-width: 75px;
+}
+
+a.axel-logo img {
+  max-width: 112px;
+}
+
+.contain-footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
+}
+
+.contain-footer p {
+  width: 100%;
+}
+
+.title-big {
+  font-size: 17px;
+  font-family: "Montserrat-Bold";
+  text-transform: uppercase;
+  line-height: 27px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.splide--fade > .splide__track > .splide__list {
+  width: 100%;
+}
+.splide__slide img {
+  vertical-align: bottom;
+  max-width: 100%;
+  min-height: 66vw;
+  object-fit: cover;
+}
+.splide__pagination {
+  display: none !important;
+}
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+}
+.flip-card-front img {
+  width: 100%;
+  max-width: 500px;
+}
+.flip-card-back {
+  padding: 10px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+iframe {
+  display: none;
+}
+iframe.visible {
+  display: block;
+}
+/* MEDIAQUERYS */
+@media only screen and (min-width: 660px) {
+  .wrapper-img.center.height.image-3,
+  .wrapper-img.center.height.image-4,
+  .wrapper-img.center.height.image-5 {
+    height: 600px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+  .logo {
+    max-width: 60px;
+  }
+  .title-head {
+    max-width: 520px;
+  }
+  .wrapper-img.center .title-head.special-title {
+    max-width: 100%;
+  }
+  .title-head.special-title span {
+    display: inline;
+  }
+  .title-head span {
+    margin-bottom: 5px;
+    display: block;
+    font-size: 25px;
+  }
+  .title-head p {
+    font-size: 22px;
+  }
+  .wrapper-img.image-2 {
+    background-attachment: fixed;
+    height: 400px;
+  }
+  .quiz {
+    max-width: 660px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .quiz iframe {
+    height: 560px;
+    width: 660px;
+    margin-bottom: 30px;
+  }
+  .car {
+    width: 49%;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .logo {
+    max-width: 140px;
+  }
+  .title-head {
+    max-width: 620px;
+    bottom: 25px;
+  }
+  .title-head span {
+    margin-bottom: 5px;
+    display: block;
+    font-size: 42px;
+  }
+  .title-head p {
+    font-size: 35px;
+    line-height: 41px;
+  }
+  .cars {
+    justify-content: space-between;
+  }
+  .flip-card {
+    background-color: transparent;
+    width: 375px;
+    height: 210px;
+    perspective: 1000px;
+    margin-bottom: 30px;
+    cursor: pointer;
+  }
+  .flip-card .name-car {
+    font-family: "Montserrat-Bold";
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  .flip-card-back {
+    padding: 6px 7px;
+  }
+
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  .flip-card-front:after {
+    content: "";
+    width: 54px;
+    height: 54px;
+    background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/peugeot-308/flip.svg);
+    left: -10px;
+    bottom: 9px;
+    background-size: 70px;
+    background-repeat: no-repeat;
+    z-index: 1;
+    position: absolute;
+  }
+  .flip-card:hover .flip-card-front:after {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 980px) {
+  .wrapper-img {
+    position: relative;
+    margin-bottom: 60px;
+    overflow: hidden;
+    max-height: 600px;
+  }
+  .title-head {
+    text-align: left;
+    right: inherit;
+    bottom: inherit;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 37%;
+  }
+  .title-head span {
+    margin-bottom: 10px;
+    display: block;
+    font-size: 60px;
+  }
+  .title-head p {
+    padding: 0;
+    font-size: 46px;
+    line-height: 52px;
+  }
+  .title-big {
+    font-size: 26px;
+    font-family: "Montserrat-Bold";
+    text-transform: uppercase;
+    line-height: 32px;
+    margin-bottom: 60px;
+  }
+  p.ante {
+    padding-left: 4px;
+  }
+  .title-num p {
+    font-size: 43px;
+    line-height: 52px;
+  }
+  .wrapper-img.center .title-head {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    bottom: 30px;
+    top: inherit;
+    transform: none;
+    max-width: 920px;
+  }
+  .wrapper-img.center .title-head span {
+    margin: 10px 0;
+  }
+  .wrapper-img.center .title-head .quiz-span {
+    margin-bottom: 20px;
+  }
+  .wrapper-img.height {
+    max-height: inherit;
+  }
+  .wrapper-img.height img.zoom {
+    max-height: inherit;
+  }
+  .step,
+  .cars .step {
+    font-size: 40px;
+    margin-bottom: 60px;
+    line-height: 60px;
+  }
+
+  .zoom {
+    animation: zoom-in-zoom-out 40s ease-out infinite;
+  }
+  @keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.2, 1.2);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+  .splide__slide img {
+    min-height: 600px;
+  }
+  .cars {
+    max-width: 980px;
+  }
+  .flip-card {
+    width: 49%;
+    height: 262px;
+  }
+  .flip-card img {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .cars {
+    padding: 0 10px;
+  }
+  .title-head {
+    left: 52px;
+    max-width: 32%;
+  }
+  .title-head .ante {
+    font-size: 14px;
+    line-height: 15px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .title-head span {
+    font-size: 71px;
+    margin-bottom: 8px;
+  }
+  .title-head p {
+    font-size: 52px;
+    line-height: 60px;
+  }
+  .wrapper-img.center .title-head .quiz-span {
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .title-head span {
+    font-size: 80px;
+    margin-bottom: 10px;
+  }
+  .title-head p {
+    font-size: 57px;
+    line-height: 63px;
+  }
+}

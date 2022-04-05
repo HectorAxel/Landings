@@ -1,0 +1,212 @@
+@font-face {
+  font-family: LabGrotesque;
+  src: url("../fonts/fonts/LabGrotesque-Regular.woff2") format("woff2"),
+    url("../fonts/fonts/LabGrotesque-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: TiemposTextWeb;
+  src: url("../fonts/fonts/TiemposTextWeb-Regular.woff2") format("woff2"),
+    url("../fonts/fonts/TiemposTextWeb-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  font-family: LabGrotesque, Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* PARTE CABECERA */
+body {
+  width: 100vw;
+}
+
+.header-video {
+  background: #000;
+}
+.sponsor p {
+  color: #fff;
+  font-size: 13px;
+  padding: 0 10px;
+}
+
+.sponsor {
+  text-align: center;
+}
+
+.sponsor img {
+  max-width: 40px;
+  display: block;
+  margin: 0 auto;
+}
+.header-video video {
+  height: 60%;
+  max-height: 400px;
+  width: 100%;
+  object-fit: cover;
+  min-width: 100%;
+}
+.contain-text {
+  max-width: calc(100vw - 35%);
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 60px;
+}
+.line {
+  background: #096ffa;
+  height: 100%;
+  width: 1px;
+  position: absolute;
+  left: -30px;
+}
+p.title {
+  font-size: 39px;
+  line-height: 45px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 30px;
+}
+p.size-l {
+  color: #fff;
+  font-size: 17px;
+  line-height: 25px;
+}
+span.number {
+  padding: 25px 0 36px;
+  font-family: TiemposTextWeb;
+  position: absolute;
+  left: -56px;
+  display: block;
+  font-size: 98px;
+  background: #000;
+  color: #096ffa;
+}
+span.color-blue {
+  color: #096ffa;
+  font-family: "TiemposTextWeb";
+  font-size: 42px;
+}
+p.text {
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* PARTE LISTADO */
+
+.wrapper .contain-text .title-number {
+  padding-top: 60px;
+  margin-bottom: 20px;
+}
+
+span.number-title {
+  font-family: TiemposTextWeb;
+  font-weight: bold;
+  font-size: 21px;
+  position: absolute;
+  left: -45px;
+  background: #086ffa;
+  border-radius: 50%;
+  line-height: 26px;
+  text-align: center;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+}
+
+span.title-list {
+  font-size: 23px;
+  font-family: TiemposTextWeb;
+  font-weight: bold;
+  color: #086ffa;
+}
+
+.lead p {
+  font-size: 16px;
+  line-height: 24px;
+}
+.container-img {
+  position: relative;
+  z-index: 10;
+}
+
+@media only screen and (min-width: 900px) {
+  .header-video video {
+    height: 70%;
+    max-height: 1000px;
+    width: 100%;
+    object-fit: contain;
+  }
+  .contain-text {
+    max-width: 540px;
+  }
+  .line {
+    left: -40px;
+  }
+  p.title {
+    margin-bottom: 20px;
+    font-size: 61px;
+    line-height: 66px;
+  }
+  p.size-l {
+    font-size: 31px;
+    line-height: 32px;
+  }
+  span.number {
+    padding: 35px 0 47px;
+    left: -71px;
+    font-size: 118px;
+  }
+  p.text {
+    font-size: 21px;
+    line-height: 29px;
+  }
+  .wrapper .contain-text .title-number {
+    margin-bottom: 40px;
+  }
+  span.number-title {
+    font-size: 35px;
+    left: -59px;
+    line-height: 34px;
+    width: 40px;
+    height: 40px;
+  }
+  span.title-list {
+    font-size: 40px;
+    line-height: 35px;
+  }
+  .lead p {
+    font-size: 21px;
+    line-height: 33px;
+  }
+  .container-img {
+    height: 500px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+  .container-img.one {
+    background-image: url("./media/list1.jpg");
+  }
+  .container-img.two {
+    background-image: url("./media/list2.jpg");
+  }
+  .container-img.three {
+    background-image: url("./media/list3.jpg");
+  }
+  .container-img.four {
+    background-image: url("./media/list4.jpg");
+  }
+  .container-img.five {
+    background-image: url("./media/list5.jpg");
+  }
+  .container-img img {
+    display: none;
+  }
+}
