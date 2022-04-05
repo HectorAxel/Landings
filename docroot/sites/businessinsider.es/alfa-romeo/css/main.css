@@ -130,15 +130,25 @@ span.title-list {
 .lead p {
   font-size: 16px;
   line-height: 24px;
+  color: #111;
 }
 .container-img {
   position: relative;
   z-index: 10;
 }
+.container-img:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  background-image: linear-gradient(#0a0a0a00, #0000001f),
+    repeating-linear-gradient(0, #0000, #0000 2px, #0000005e 3px, #000 3px);
+}
 
 @media only screen and (min-width: 900px) {
   .header-video video {
-    height: 70%;
+    height: 80vh;
     max-height: 1000px;
     width: 100%;
     object-fit: contain;
@@ -185,28 +195,46 @@ span.title-list {
     font-size: 21px;
     line-height: 33px;
   }
+  .container-img.mobile {
+    display: none;
+  }
   .container-img {
-    height: 500px;
+    height: 100vh;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
   }
   .container-img.one {
-    background-image: url("./media/list1.jpg");
+    background-image: linear-gradient(#0a0a0a00, #0000001f),
+      repeating-linear-gradient(0, #0000, #0000 2px, #0000005e 3px, #000 3px),
+      url(../media/list1.jpg);
   }
   .container-img.two {
-    background-image: url("./media/list2.jpg");
+    background-image: linear-gradient(#0a0a0a00, #0000001f),
+      repeating-linear-gradient(0, #0000, #0000 2px, #0000005e 3px, #000 3px),
+      url(../media/list2.jpg);
   }
   .container-img.three {
-    background-image: url("./media/list3.jpg");
+    background-image: linear-gradient(#0a0a0a00, #0000001f),
+      repeating-linear-gradient(0, #0000, #0000 2px, #0000005e 3px, #000 3px),
+      url(../media/list3.jpg);
   }
   .container-img.four {
-    background-image: url("./media/list4.jpg");
+    background-image: linear-gradient(#0a0a0a00, #0000001f),
+      repeating-linear-gradient(0, #0000, #0000 2px, #0000005e 3px, #000 3px),
+      url(../media/list4.jpg);
   }
   .container-img.five {
-    background-image: url("./media/list5.jpg");
+    background-image: linear-gradient(#0a0a0a00, #0000001f),
+      repeating-linear-gradient(0, #0000, #0000 2px, #0000005e 3px, #000 3px),
+      url(../media/list5.jpg);
   }
   .container-img img {
     display: none;
+  }
+  .sponsor p {
+    color: #fff;
+    font-size: 15px;
+    padding: 30px 0;
   }
 }
