@@ -15,7 +15,9 @@
   font-style: normal;
   font-display: swap;
 }
-
+html {
+  overflow-x: hidden;
+}
 * {
   font-family: LabGrotesque, Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
