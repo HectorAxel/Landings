@@ -158,8 +158,8 @@ span.number-title {
 }
 
 span.title-list {
-  font-size: 23px;
-  font-family: "Monserrat";
+  font-size: 36px;
+  font-family: "Roz";
   font-weight: bold;
   color: #086ffa;
   line-height: 39px;
@@ -238,7 +238,7 @@ a.axel-logo img {
     height: 60px;
   }
   span.title-list {
-    font-size: 40px;
+    font-size: 50px;
     line-height: 38px;
     position: relative;
     top: 8px;
