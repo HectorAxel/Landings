@@ -231,15 +231,17 @@ a.axel-logo img {
     margin-bottom: 40px;
   }
   span.number-title {
-    font-size: 35px;
+    font-size: 39px;
     left: -79px;
-    line-height: 52px;
+    line-height: 57px;
     width: 60px;
     height: 60px;
   }
   span.title-list {
     font-size: 40px;
-    line-height: 55px;
+    line-height: 38px;
+    position: relative;
+    top: 8px;
   }
   .lead p {
     font-size: 21px;
