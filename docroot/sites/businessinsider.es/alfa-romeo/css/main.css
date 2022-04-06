@@ -72,8 +72,8 @@ header .bi-logo img {
   min-width: 100%;
 }
 .contain-text {
-  max-width: calc(100vw - 35%);
-  margin: 0 auto;
+  max-width: calc(100vw - 30%);
+  margin-left: calc(100vw - 81%);
   position: relative;
   padding-bottom: 60px;
 }
@@ -188,6 +188,7 @@ a.axel-logo img {
   }
   .contain-text {
     max-width: 540px;
+    margin: 0 auto;
   }
   .line {
     left: -50px;
