@@ -1,16 +1,24 @@
 @font-face {
-  font-family: LabGrotesque;
-  src: url("../fonts/fonts/LabGrotesque-Regular.woff2") format("woff2"),
-    url("../fonts/fonts/LabGrotesque-Regular.woff") format("woff");
+  font-family: "Monserrat";
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+    url("../fonts/Montserrat-Regular.ttf") format("ttf");
   font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Monserrat-sem";
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"),
+    url("../fonts/Montserrat-SemiBold.ttf") format("ttf");
+  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: TiemposTextWeb;
-  src: url("../fonts/fonts/TiemposTextWeb-Regular.woff2") format("woff2"),
-    url("../fonts/fonts/TiemposTextWeb-Regular.woff") format("woff");
+  font-family: "Roz";
+  src: url("../fonts/RozhaOne-Regular.woff2") format("woff2"),
+    url("../fonts/RozhaOne-Regular.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -19,7 +27,7 @@ html {
   overflow-x: hidden;
 }
 * {
-  font-family: LabGrotesque, Arial, Helvetica, sans-serif;
+  font-family: "Monserrat", Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -60,7 +68,7 @@ header .bi-logo img {
 }
 .sponsor p {
   color: #fff;
-  font-size: 12px;
+  font-size: 13px;
   padding: 0 10px;
   font-weight: bold;
 }
@@ -91,14 +99,15 @@ header .bi-logo img {
   height: 100%;
   width: 1px;
   position: absolute;
-  left: -30px;
+  left: -40px;
 }
 p.title {
-  font-size: 39px;
-  line-height: 45px;
+  font-size: 44px;
+  line-height: 51px;
   font-weight: bold;
   color: #fff;
   margin-bottom: 30px;
+  font-family: "Monserrat-sem", "Monserrat";
 }
 p.size-l {
   color: #fff;
@@ -106,18 +115,18 @@ p.size-l {
   line-height: 25px;
 }
 span.number {
-  padding: 25px 0 36px;
-  font-family: TiemposTextWeb;
+  padding: 31px 0 36px;
+  font-family: "Roz";
   position: absolute;
-  left: -56px;
+  left: -68px;
   display: block;
-  font-size: 98px;
+  font-size: 113px;
   background: #000;
   color: #096ffa;
 }
 span.color-blue {
   color: #096ffa;
-  font-family: "TiemposTextWeb";
+  font-family: "Roz";
   font-size: 42px;
 }
 p.text {
@@ -134,14 +143,14 @@ p.text {
 }
 
 span.number-title {
-  font-family: TiemposTextWeb;
+  font-family: "Roz";
   font-weight: bold;
   font-size: 27px;
   position: absolute;
-  left: -50px;
+  left: -59px;
   background: #086ffa;
   border-radius: 50%;
-  line-height: 34px;
+  line-height: 39px;
   text-align: center;
   color: #fff;
   width: 40px;
@@ -150,7 +159,7 @@ span.number-title {
 
 span.title-list {
   font-size: 23px;
-  font-family: TiemposTextWeb;
+  font-family: "Monserrat";
   font-weight: bold;
   color: #086ffa;
   line-height: 39px;
@@ -207,12 +216,12 @@ a.axel-logo img {
   }
   p.size-l {
     font-size: 31px;
-    line-height: 32px;
+    line-height: 36px;
   }
   span.number {
-    padding: 35px 0 47px;
-    left: -71px;
-    font-size: 118px;
+    padding: 40px 0 47px;
+    left: -79px;
+    font-size: 128px;
   }
   p.text {
     font-size: 21px;
