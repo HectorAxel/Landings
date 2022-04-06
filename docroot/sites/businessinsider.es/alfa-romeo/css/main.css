@@ -1,21 +1,4 @@
 @font-face {
-  font-family: "Monserrat";
-  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"),
-    url("../fonts/Montserrat-Regular.ttf") format("ttf");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Monserrat-sem";
-  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"),
-    url("../fonts/Montserrat-SemiBold.ttf") format("ttf");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
   font-family: "Roz";
   src: url("../fonts/RozhaOne-Regular.woff2") format("woff2"),
     url("../fonts/RozhaOne-Regular.ttf") format("ttf");
@@ -27,7 +10,7 @@ html {
   overflow-x: hidden;
 }
 * {
-  font-family: "Monserrat", Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -104,10 +87,10 @@ header .bi-logo img {
 p.title {
   font-size: 44px;
   line-height: 51px;
-  font-weight: bold;
+  font-weight: 600;
   color: #fff;
   margin-bottom: 30px;
-  font-family: "Monserrat-sem", "Monserrat";
+  font-family: "Montserrat", sans-serif;
 }
 p.size-l {
   color: #fff;
