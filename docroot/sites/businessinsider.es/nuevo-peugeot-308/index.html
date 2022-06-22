@@ -26,7 +26,10 @@
   <body>
     <script src="js/aos.js"></script>
     <script>
-      AOS.init({ duration: 1500, once: false });
+      if ($(window).width() < 980) {
+        console.log("hola");
+        AOS.init({ duration: 1500, once: false });
+      }
     </script>
     <div class="contain-landing">
       <div class="wrapper-img height">
