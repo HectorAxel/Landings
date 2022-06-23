@@ -1,0 +1,434 @@
+@font-face {
+  font-family: LabGrotesque;
+  src: url("../fonts/LabGrotesqueTiemposTextWeb-Bold.woff2") format("woff2"),
+    url("../fonts/LabGrotesque-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: LabGrotesque-Bold;
+  src: url("../fonts/LabGrotesque-Bold.woff2") format("woff2"),
+    url("../fonts/LabGrotesque-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: TiemposTextWeb;
+  src: url("../fonts/TiemposTextWeb-Regular.woff2") format("woff2"),
+    url("../fonts/TiemposTextWeb-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: TiemposTextWeb-Bold;
+  src: url("../fonts/TiemposTextWeb-Bold.woff2") format("woff2"),
+    url("../fonts/TiemposTextWeb-Bold.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+html {
+  font-family: TiemposTextWeb, serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  background: transparent;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: 700;
+  font-family: TiemposTextWeb-Bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+hr {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+q {
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 0;
+}
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+button,
+input {
+  line-height: normal;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ------------------------------------ */
+.desktop {
+  display: none;
+}
+
+.headline {
+  position: relative;
+}
+
+.headline img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.box-title {
+  flex-wrap: wrap;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  display: flex;
+}
+
+.box-title h1 {
+  color: #fff;
+  font-weight: bold;
+  align-self: self-start;
+  font-size: 45px;
+}
+
+.box-title h1 span {
+  font-weight: 100;
+  display: block;
+}
+
+.subtitle {
+  color: #fff;
+  width: 100%;
+  align-self: self-end;
+  font-size: 18px;
+}
+
+.subtitle span {
+  font-weight: bold;
+}
+
+.block-image-text img {
+  width: 100%;
+  object-fit: cover;
+  height: 560px;
+}
+
+.block-image-text h1 {
+  position: absolute;
+  bottom: 50px;
+  padding: 0 40px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 54px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+.block-image-text {
+  position: relative;
+  overflow: hidden;
+  max-height: 570px;
+  width: 100%;
+}
+
+.block-image-text h1 span {
+  font-weight: 200;
+  display: block;
+}
+
+.block-text {
+  margin-bottom: 40px;
+}
+
+.block-text h1 {
+  font-size: 32px;
+  color: #454545;
+  text-transform: uppercase;
+  padding: 0 60px;
+  text-align: center;
+}
+
+.block-text h1 span {
+  display: block;
+  text-transform: none;
+  font-weight: 400;
+}
+.block-text .text p {
+  font-size: 20px;
+  color: #454545;
+  padding: 0 30px;
+  text-align: center;
+}
+
+.antinatural img {
+  width: 100%;
+  margin-bottom: 30px;
+  max-width: 500px;
+  max-height: 600px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 50px;
+}
+
+.block-antinatural {
+  padding: 0 20px;
+}
+
+.block-antinatural .text h2 {
+  font-size: 25px;
+  line-height: 34px;
+  color: #454545;
+}
+
+.block-antinatural .text .lead {
+  font-size: 18px;
+  line-height: 24px;
+  color: #454545;
+  font-weight: 300;
+}
+
+.antinatural .text {
+  margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 980px) {
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  }
+  .headline {
+    margin-bottom: 60px;
+  }
+  .headline img {
+    height: 700px;
+  }
+  .box-title h1 {
+    font-size: 111px;
+    line-height: 111px;
+    margin: 30px 0 0;
+    width: 100%;
+  }
+  .box-title .subtitle {
+    font-size: 45px;
+    line-height: 61px;
+    width: 810px;
+  }
+  .block-antinatural .text h2 {
+    font-size: 40px;
+    line-height: 54px;
+  }
+  .block-antinatural .text .lead {
+    font-size: 25px;
+    line-height: 34px;
+  }
+  .antinatural {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 980px;
+    margin: 40px auto;
+    grid-column-gap: 50px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .box-title {
+    padding: 40px 140px;
+  }
+}

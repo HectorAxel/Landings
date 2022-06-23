@@ -426,20 +426,20 @@ img.desktop {
 }
 .back {
   width: 100%;
-  height: 120px;
-  background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/nuevo-fiat-500-electrico/13_sound-wave_cierre-arriba.png);
+  height: 60px;
+  background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/nuevo-fiat-500-electrico/arriba.png);
   background-size: cover;
-  background-position-y: 40px;
-  background-position-x: -203px;
+  background-position-y: 0;
+  background-position-x: 0;
   background-repeat: no-repeat;
 }
 .back-two {
   width: 100%;
-  height: 120px;
-  background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/nuevo-fiat-500-electrico/14_sound-wave3_cierre-abajo.png);
+  height: 60px;
+  background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/nuevo-fiat-500-electrico/abajo.png);
   background-size: cover;
-  background-position-y: -38px;
-  background-position-x: -241px;
+  background-position-y: 0;
+  background-position-x: 0;
   background-repeat: no-repeat;
 }
 
@@ -475,9 +475,11 @@ img.desktop {
   }
   .group-circles {
     min-height: 190px;
+    margin-bottom: 80px;
   }
   .photos {
     justify-content: space-between;
+    margin-bottom: 100px;
   }
   .photos img {
     width: 49.5%;
@@ -488,6 +490,7 @@ img.desktop {
     grid-template-columns: 60% 40%;
     justify-content: space-between;
     grid-column-gap: 20px;
+    margin-bottom: 90px;
   }
   .group-two {
     display: grid;
@@ -514,12 +517,16 @@ img.desktop {
     grid-template-columns: 50% 50%;
   }
   .back {
-    background-position-y: 4px;
+    background-position-y: 1px;
     background-position-x: 0;
+    height: 120px;
+    margin-top: 50px;
   }
   .back-two {
-    background-position-y: -58px;
+    background-position-y: -1px;
     background-position-x: 0px;
+    height: 120px;
+    margin-bottom: 50px;
   }
   .contain-header {
     max-width: 1200px;

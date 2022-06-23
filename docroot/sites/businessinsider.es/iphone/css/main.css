@@ -250,13 +250,21 @@ table {
 }
 
 /* ------------------------------------ */
+
+.contain-mobile {
+  background-image: url(../assets/2.png);
+  background-size: cover;
+  padding: 129px 47px;
+  background-position-y: -27px;
+  background-attachment: fixed;
+}
 header {
   padding: 10px 20px 8px;
   background: #fff;
   text-align: center;
   -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.4);
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.4);
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   z-index: 120;
@@ -329,6 +337,33 @@ header.mini {
   box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.2);
 }
 
+.headline {
+  background-image: -o-linear-gradient(rgb(184, 214, 255), rgb(255, 255, 255));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#b8d6ff),
+    to(#fff)
+  );
+  background-image: linear-gradient(#b8d6ff, #fff);
+  text-align: center;
+  padding-top: 24px;
+}
+
+.headline .antetitulo {
+  font-family: LabGrotesque;
+  font-weight: 900;
+  color: rgb(9, 111, 250);
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+.headline .lead {
+  font-size: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 .container {
   width: 100%;
   margin: 0 auto;
