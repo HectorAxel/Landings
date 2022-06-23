@@ -457,7 +457,7 @@ section.right {
   padding-bottom: 340px;
   position: relative;
 }
-html::-webkit-scrollbar {
+body::-webkit-scrollbar {
   display: none; /* for Chrome, Safari, and Opera */
 }
 @media only screen and (min-width: 800px) {
