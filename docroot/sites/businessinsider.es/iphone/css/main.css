@@ -79,6 +79,7 @@ html {
 
 body {
   margin: 0;
+  overflow: hidden;
 }
 
 a {
@@ -353,16 +354,6 @@ header.mini {
 .headline {
   padding: 0 10px;
 }
-.container {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 15px;
-  display: flex;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  justify-content: space-between;
-  padding-top: 60px;
-}
 
 .lead {
   width: 100%;
@@ -385,7 +376,6 @@ aside {
 
 section.right {
   width: 100%;
-  padding: 0 20px;
   text-align: left;
 }
 
@@ -395,6 +385,7 @@ section.right {
   font-size: 18px;
   line-height: 30px;
   margin: 0 0 2rem;
+  padding: 0 25px;
 }
 .contain-body ul {
   margin: 0 0 2rem;
@@ -408,7 +399,7 @@ section.right {
   text-decoration: none;
 }
 .contain-body img {
-  width: 100%;
+  width: 100vw;
   margin-bottom: 2rem;
 }
 
@@ -417,8 +408,9 @@ section.right {
   margin-bottom: 2rem;
 }
 
-h2 {
+.contain-body h2 {
   font-family: TiemposTextWeb-Bold;
+  padding: 0 10px;
 }
 
 .box {
@@ -440,8 +432,9 @@ h2 {
   background-repeat: no-repeat;
   margin: 0 auto;
   background-attachment: fixed;
-  padding: 0 8vw;
+  padding: 19vw 7.3vw;
   position: relative;
+  overflow: hidden;
 }
 .contain-all {
   overflow: hidden;
@@ -449,14 +442,17 @@ h2 {
   overflow: scroll;
   padding-bottom: 0;
   position: relative;
-  top: calc(10vw + 50px);
+}
+@media only screen and (min-width: 800px) {
+  .container {
+    padding: 17vw 7.3vw;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
   .container {
     width: 1200px;
     margin: 0 auto;
-    padding: 80px 15px 0;
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
@@ -466,14 +462,39 @@ h2 {
     background-position-y: 70px;
     background-position-x: center;
     text-align: center;
-    padding-top: 24px;
     background-repeat: no-repeat;
     max-width: 1160px;
     margin: 0 auto;
-    padding: 190px 120px 0;
+    padding: 180px 65px 0;
     background-attachment: fixed;
+    overflow: hidden;
   }
   .contain-all {
     top: 0;
+  }
+  .headline {
+    padding: 0 30px;
+  }
+  .headline .antetitulo {
+    font-size: 20px;
+  }
+  .headline h1 {
+    font-size: 70px;
+  }
+  .contain-body p,
+  .contain-body li {
+    font-size: 21px;
+    line-height: 36px;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+  }
+  .contain-body h2 {
+    max-width: 600px;
+    font-size: 30px;
+    margin: 0 auto 2rem;
+  }
+  .contain-body iframe {
+    width: 98%;
+    margin: 0 auto 2rem;
   }
 }
