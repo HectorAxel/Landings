@@ -407,7 +407,6 @@ section.right {
   overflow: hidden;
   padding-top: 56.25%;
   margin-bottom: 2rem;
-  display: block;
 }
 .contain-body .iframe iframe {
   position: absolute;
@@ -441,13 +440,13 @@ section.right {
   justify-content: space-between;
   background-image: url(../assets/iphone13-1.png);
   background-size: 96%;
-  background-position-y: 80px;
+  background-position-y: 60px;
   background-position-x: center;
   text-align: center;
   background-repeat: no-repeat;
   margin: 0 auto;
   background-attachment: fixed;
-  padding: 19vw 7.3vw;
+  padding: 15vw 7.3vw;
   position: relative;
   overflow: hidden;
 }
