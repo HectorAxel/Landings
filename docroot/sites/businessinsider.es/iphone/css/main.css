@@ -424,8 +424,8 @@ section.right {
 }
 
 .contain-body iframe {
-  width: 100%;
-  margin-bottom: 2rem;
+  width: 98%;
+  margin: 0 auto 2rem;
 }
 
 .contain-body h2 {
@@ -737,10 +737,6 @@ a.newsletter-footer:hover {
   .contain-body h2 {
     max-width: 600px;
     font-size: 30px;
-    margin: 0 auto 2rem;
-  }
-  .contain-body iframe {
-    width: 98%;
     margin: 0 auto 2rem;
   }
   .bi-logo .logo {
