@@ -518,6 +518,10 @@ footer h2 {
   font-size: 25px;
   line-height: 32px;
 }
+footer .copyright a {
+  text-decoration: none;
+  color: #000;
+}
 
 a.newsletter-footer {
   color: #fff;
@@ -583,8 +587,8 @@ a.newsletter-footer:hover {
 @media only screen and (min-width: 800px) {
   body {
     background-image: url(../assets/1-min.png);
-    animation: back 60s infinite linear;
-    -webkit-animation: back 60s infinite linear;
+    animation: back 120s infinite linear;
+    -webkit-animation: back 120s infinite linear;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -718,6 +722,17 @@ a.newsletter-footer:hover {
     line-height: 36px;
     max-width: 600px;
     margin: 0 auto 2rem;
+  }
+  .contain-body a {
+    box-shadow: 0 1px 0 0 #096ffa;
+    color: #111;
+    text-decoration: none;
+    transition: 0.2s;
+  }
+  .contain-body a:hover {
+    box-shadow: 0 1px 0 0 #fff;
+    color: #096ffa;
+    text-decoration: none;
   }
   .contain-body h2 {
     max-width: 600px;
