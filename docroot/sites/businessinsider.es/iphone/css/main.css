@@ -427,6 +427,30 @@ section.right {
   width: 98%;
   margin: 0 auto 2rem;
 }
+.contain-body a.featured {
+  position: relative;
+  width: calc(100% - 100px);
+  box-shadow: none;
+  color: rgb(9, 111, 250);
+  width: calc(100% - 100px);
+  display: block;
+  margin: 0 auto;
+}
+
+a.featured:before {
+  content: "Relacionado";
+  display: block;
+  background: url(../assets/rayo.svg);
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: 0 6px;
+  padding: 0 0 8px 18px;
+  color: #000;
+  text-transform: uppercase;
+  font-family: LabGrotesque;
+  font-weight: bold;
+  font-size: 15px;
+}
 
 .contain-body h2 {
   font-family: TiemposTextWeb-Bold;
@@ -547,6 +571,17 @@ a.newsletter-footer:hover {
 
 ::-webkit-scrollbar {
   display: none;
+}
+.contain-body a {
+  box-shadow: 0 1px 0 0 #096ffa;
+  color: #111;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.contain-body a:hover {
+  box-shadow: 0 1px 0 0 #fff;
+  color: #096ffa;
+  text-decoration: none;
 }
 @media only screen and (min-width: 500px) {
   .newsletter-button {
@@ -723,17 +758,7 @@ a.newsletter-footer:hover {
     max-width: 600px;
     margin: 0 auto 2rem;
   }
-  .contain-body a {
-    box-shadow: 0 1px 0 0 #096ffa;
-    color: #111;
-    text-decoration: none;
-    transition: 0.2s;
-  }
-  .contain-body a:hover {
-    box-shadow: 0 1px 0 0 #fff;
-    color: #096ffa;
-    text-decoration: none;
-  }
+
   .contain-body h2 {
     max-width: 600px;
     font-size: 30px;
