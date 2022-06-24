@@ -1,0 +1,85 @@
+@-webkit-keyframes loader {
+  0% {
+    height: 100%;
+  }
+  to {
+    height: 0%;
+  }
+}
+@keyframes loader {
+  0% {
+    height: 100%;
+  }
+  to {
+    height: 0%;
+  }
+}
+.loader {
+  position: fixed;
+  width: calc(100vw - 14.6vw);
+  top: 17vw;
+  margin: 0 auto;
+  height: 100%;
+  background: #fff;
+  z-index: 100000;
+  -webkit-transition: opacity 1s ease-out;
+  transition: opacity 1s ease-out;
+  -webkit-transition-delay: 1s;
+  transition-delay: 1s;
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  padding-top: 150px;
+}
+.loader .loader-apple {
+  -webkit-transition: opacity 4s ease-out;
+  transition: opacity 4s ease-out;
+  -webkit-transition-delay: 0;
+  transition-delay: 0;
+  opacity: 1;
+  width: 68px;
+  height: 92px;
+  position: relative;
+  background: no-repeat bottom;
+  background-image: url("../assets/apple-logo-1.png");
+  background-size: 100% auto;
+}
+.loader .loader-apple-inner {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: #fff;
+  -webkit-animation: loader 1s infinite normal;
+  animation: loader 1s infinite normal;
+}
+.loader.invisible,
+.loader.invisible .loader-apple {
+  opacity: 0;
+}
+
+@media only screen and (min-width: 650px) {
+  .loader {
+    top: 19vw;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .loader {
+    top: 19vw;
+  }
+  .loader .loader-apple,
+  .loader .loader-apple {
+    width: 118px;
+    height: 172px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .loader {
+    width: calc(1200px - 170px);
+    top: 220px;
+    padding-top: 270px;
+  }
+}
