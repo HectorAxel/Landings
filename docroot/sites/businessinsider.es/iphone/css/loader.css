@@ -67,7 +67,7 @@
 }
 @media only screen and (min-width: 800px) {
   .loader {
-    top: 19vw;
+    top: 16vw;
   }
   .loader .loader-apple,
   .loader .loader-apple {
@@ -79,7 +79,7 @@
 @media only screen and (min-width: 1200px) {
   .loader {
     width: calc(1200px - 170px);
-    top: 220px;
+    top: 190px;
     padding-top: 270px;
   }
 }

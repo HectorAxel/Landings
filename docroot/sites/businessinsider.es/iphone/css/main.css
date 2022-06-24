@@ -292,7 +292,7 @@ header {
 .bi-logo {
   cursor: pointer;
   position: relative;
-  top: -6.6vw;
+  top: -1.6vw;
   left: 6.3vw;
 }
 
@@ -320,8 +320,8 @@ header {
   outline: none;
   font-size: 0.7rem;
   position: relative;
-  top: -5.2vw;
-  right: 6.9vw;
+  top: -1.2vw;
+  right: 5.5vw;
   line-height: 25px;
   height: 25px;
   width: 11vw;
@@ -446,13 +446,13 @@ section.right {
   justify-content: space-between;
   background-image: url(../assets/apple.png);
   background-size: 115%;
-  background-position-y: -47px;
+  background-position-y: -40px;
   background-position-x: center;
   text-align: center;
   background-repeat: no-repeat;
   margin: 0 auto;
   background-attachment: fixed;
-  padding: 14vw 7.3vw;
+  padding: 9vw 7.3vw;
   position: relative;
   overflow: hidden;
 }
@@ -544,14 +544,40 @@ a.newsletter-footer:hover {
 ::-webkit-scrollbar {
   display: none;
 }
+@media only screen and (min-width: 500px) {
+  .newsletter-button {
+    top: -0.8vw;
+    right: 7.3vw;
+  }
+  .container {
+    padding: 11vw 7.3vw;
+  }
+}
 
 @media only screen and (min-width: 600px) {
   .container {
-    padding: 15vw 7.3vw;
+    padding: 12vw 7.3vw;
   }
   .bi-logo {
     left: 8vw;
-    top: -5.6vw;
+    top: -1.6vw;
+  }
+  .newsletter-button {
+    top: -0.8vw;
+    right: 8.3vw;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .container {
+    padding: 13vw 7.3vw;
+  }
+  .bi-logo {
+    left: 8vw;
+    top: -1.6vw;
+  }
+  .newsletter-button {
+    top: -0.8vw;
+    right: 8.3vw;
   }
 }
 @media only screen and (min-width: 800px) {
@@ -609,18 +635,18 @@ a.newsletter-footer:hover {
     }
   }
   .container {
-    padding: 15vw 7.3vw;
+    padding: 10vw 7.3vw;
     background-position-y: -75px;
   }
   .bi-logo {
     cursor: pointer;
     position: relative;
-    top: -7.6vw;
+    top: -2.6vw;
     left: 9vw;
   }
   .container-text a.newsletter-button,
   .newsletter-button {
-    top: -7.6vw;
+    top: -1.6vw;
     right: 9vw;
     line-height: 25px;
     height: 25px;
@@ -632,11 +658,25 @@ a.newsletter-footer:hover {
   }
 }
 @media only screen and (min-width: 900px) {
+  .container {
+    padding: 11vw 7.3vw;
+  }
   .newsletter-button {
-    top: -5.6vw;
+    top: -1.6vw;
   }
   .bi-logo {
-    top: -5.6vw;
+    top: -2.1vw;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .container {
+    padding: 13vw 7.3vw;
+  }
+  .newsletter-button {
+    top: -1.6vw;
+  }
+  .bi-logo {
+    top: -2.1vw;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -655,7 +695,7 @@ a.newsletter-footer:hover {
     background-repeat: no-repeat;
     max-width: 1160px;
     margin: 0 auto;
-    padding: 151px 65px 0;
+    padding: 120px 65px 0;
     background-attachment: fixed;
     overflow: hidden;
   }
@@ -694,11 +734,11 @@ a.newsletter-footer:hover {
     max-width: inherit;
   }
   .bi-logo {
-    top: -50px;
+    top: -26px;
     left: 70px;
   }
   .newsletter-button {
-    top: -45px;
+    top: -17px;
     right: 101px;
     line-height: 34px;
     height: 34px;
