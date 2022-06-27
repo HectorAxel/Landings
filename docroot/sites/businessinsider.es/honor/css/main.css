@@ -509,6 +509,7 @@ html .slick-dots {
   margin: 0 auto;
   left: 0;
   right: 0;
+  display: none !important;
 }
 html .slick-slide {
   padding: 10px 20px;
@@ -547,6 +548,9 @@ html .slick-track {
   html .slick-slide p {
     font-size: 22px;
     line-height: 30px;
+  }
+  html .slick-dots {
+    display: block !important;
   }
 }
 @media only screen and (min-width: 1200px) {
