@@ -304,7 +304,6 @@ table {
   overflow: hidden;
   max-height: 570px;
   width: 100%;
-  margin-top: -30px;
 }
 
 .block-image-text h1 span {
@@ -313,7 +312,7 @@ table {
 }
 
 .block-text {
-  margin-bottom: 40px;
+  margin: 40px 0;
 }
 
 .block-text h1 {
@@ -343,7 +342,7 @@ table {
 }
 
 .block-antinatural {
-  padding: 0 20px 30px;
+  padding: 30px 20px 30px;
 }
 
 .block-antinatural .text h2 {
@@ -587,6 +586,9 @@ html .slick-track .slick-slide:nth-child(6) {
   grid-template-columns: 100%;
   max-width: 1200px;
   margin: 0 auto;
+}
+.block-image-text.special-top {
+  margin-top: -30px;
 }
 
 .group-one {
