@@ -251,6 +251,53 @@ table {
 }
 
 /* ------------------------------------ */
+
+header {
+  padding: 10px 20px 8px;
+  background: #fff;
+  text-align: center;
+  -webkit-box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 120;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+header p {
+  margin: 0;
+  width: 140px;
+  font-size: 12px;
+}
+header .bi-logo {
+  cursor: pointer;
+}
+header .bi-logo:active,
+header .bi-logo:focus {
+  outline: 0;
+}
+header .bi-logo svg {
+  width: 100px;
+  -webkit-transition: width 0.2s ease-in-out;
+  -o-transition: width 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out;
+}
+header.mini {
+  -webkit-box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.2);
+}
 .antinatural .desktop,
 .headline .desktop,
 .block-image-text .desktop,
@@ -560,6 +607,21 @@ html .slick-slide p {
 html .slick-track {
   display: flex;
 }
+footer {
+  background: #252525;
+  padding: 2.5rem 0;
+  text-align: center;
+}
+footer img {
+  max-width: 300px;
+}
+footer .logo-color {
+  fill: #fff;
+}
+footer p {
+  font-size: 14px;
+  color: #fff;
+}
 
 @media only screen and (min-width: 600px) {
   html .slick-track {
@@ -842,6 +904,9 @@ html .slick-track {
     margin: 60px auto 0;
     order: 0;
   }
+  header p {
+    width: 301px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -871,7 +936,7 @@ html .slick-track {
   .box-title h1 {
     font-size: 111px;
     line-height: 111px;
-    margin: 30px 0 0;
+    margin: 90px 0 0;
     width: 100%;
   }
   .box-title .subtitle {
@@ -1010,4 +1075,71 @@ html .slick-track {
     max-width: 900px;
     width: 48vw;
   }
+}
+
+@-webkit-keyframes loader {
+  0% {
+    height: 100%;
+  }
+  to {
+    height: 0%;
+  }
+}
+@keyframes loader {
+  0% {
+    height: 100%;
+  }
+  to {
+    height: 0%;
+  }
+}
+.loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 1;
+  -webkit-transition: opacity 0.5s ease-out;
+  transition: opacity 0.5s ease-out;
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.loader .loader-bi {
+  -webkit-transition: opacity 0.4s ease-out;
+  transition: opacity 0.4s ease-out;
+  -webkit-transition-delay: 0;
+  transition-delay: 0;
+  opacity: 1;
+  width: 60px;
+  height: 60px;
+  position: relative;
+  background: no-repeat bottom;
+  background-image: url("https://builder.axelspringer.es/brandlab/businessinsider.es/img/bi.ico");
+  background-size: 100% auto;
+}
+.loader .loader-bi-inner {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: #fff;
+  -webkit-animation: loader 1s ease-out 0.2s infinite normal forwards;
+  animation: loader 1s ease-out 0.2s infinite normal forwards;
+}
+.loader.invisible,
+.loader.invisible .loader-bi {
+  opacity: 0;
+}
+.all.invisible {
+  z-index: 4;
 }
