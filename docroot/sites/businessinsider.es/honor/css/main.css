@@ -261,7 +261,6 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 120;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display: -webkit-box;
@@ -1140,6 +1139,7 @@ footer p {
 .loader.invisible .loader-bi {
   opacity: 0;
 }
-.all.invisible {
+
+.main-header.invisible {
   z-index: 4;
 }
