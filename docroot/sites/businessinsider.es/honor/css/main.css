@@ -543,7 +543,7 @@ html .slick-dots {
 }
 html .slick-slide {
   padding: 10px 20px;
-  border: 1px solid;
+  border: 1px solid #a2c7f9;
   box-shadow: 0px 3px 6px rgb(0 0 0 / 16%);
   float: inherit;
   height: inherit;
@@ -588,25 +588,6 @@ html .slick-track {
     margin: 0 20px;
     padding: 20px 30px;
   }
-}
-
-html .slick-track .slick-slide:nth-child(1) {
-  border-color: #a2c7f9;
-}
-html .slick-track .slick-slide:nth-child(2) {
-  border-color: #d8bc5c;
-}
-html .slick-track .slick-slide:nth-child(3) {
-  border-color: #e8e2e3;
-}
-html .slick-track .slick-slide:nth-child(4) {
-  border-color: #e8e2e3;
-}
-html .slick-track .slick-slide:nth-child(5) {
-  border-color: #a2c7f9;
-}
-html .slick-track .slick-slide:nth-child(6) {
-  border-color: #a2c7f9;
 }
 
 .four-images {
