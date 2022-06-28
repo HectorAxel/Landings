@@ -586,7 +586,7 @@ html .slick-track .slick-slide:nth-child(6) {
   display: grid;
   grid-template-columns: 100%;
   max-width: 1200px;
-  margin: 70px auto 0;
+  margin: 0 auto;
 }
 
 .group-one {
@@ -607,6 +607,9 @@ html .slick-track .slick-slide:nth-child(6) {
   }
   .block-image-text.four img.desktop {
     display: block;
+  }
+  .four-images {
+    margin: 20px auto 0;
   }
 }
 
