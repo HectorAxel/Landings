@@ -385,6 +385,13 @@ section.right {
   font-family: LabGrotesque;
 }
 
+.contain-body video {
+  width: 100%;
+  aspect-ratio: 16/9;
+  height: auto;
+  margin: 0 0 40px;
+}
+
 .contain-body p,
 .contain-body li {
   font-family: TiemposTextWeb;
