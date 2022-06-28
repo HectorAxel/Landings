@@ -253,7 +253,7 @@ table {
 /* ------------------------------------ */
 
 .contain-mobile {
-  background-image: url(../assets/2.png);
+  background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/aniversario-iphone/2.png);
   background-size: cover;
   padding: 129px 47px;
   background-position-y: -27px;
@@ -447,7 +447,7 @@ section.right {
 a.featured:before {
   content: "Relacionado";
   display: block;
-  background: url(../assets/rayo.svg);
+  background: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/aniversario-iphone/rayo.svg);
   background-repeat: no-repeat;
   background-size: 10px;
   background-position: 0 6px;
@@ -475,7 +475,7 @@ a.featured:before {
   flex-wrap: wrap;
   box-sizing: border-box;
   justify-content: space-between;
-  background-image: url(../assets/apple.png);
+  background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/aniversario-iphone/apple.png);
   background-size: 115%;
   background-position-y: -40px;
   background-position-x: center;
@@ -628,7 +628,7 @@ a.newsletter-footer:hover {
 }
 @media only screen and (min-width: 800px) {
   body {
-    background-image: url(../assets/1-min.png);
+    background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/aniversario-iphone/1-min.png);
     animation: back 120s infinite linear;
     -webkit-animation: back 120s infinite linear;
     background-size: cover;
@@ -638,46 +638,60 @@ a.newsletter-footer:hover {
   }
   @keyframes back {
     0% {
-      background-image: url(../assets/1-min.png), url(../assets/2-min.png);
+      background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/aniversario-iphone/1-min.png),
+        url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/aniversario-iphone/2-min.png);
     }
     7.4% {
-      background-image: url(../assets/2-min.png), url(../assets/3-min.png);
+      background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/aniversario-iphone/2-min.png),
+        url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/aniversario-iphone/3-min.png);
     }
     14.8% {
-      background-image: url(../assets/3-min.png), url(../assets/4-min.png);
+      background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/aniversario-iphone/3-min.png),
+        url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/aniversario-iphone/4-min.png);
     }
     22.2% {
-      background-image: url(../assets/4-min.png), url(../assets/5-min.png);
+      background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/aniversario-iphone/4-min.png),
+        url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/aniversario-iphone/5-min.png);
     }
     29.6% {
-      background-image: url(../assets/5-min.png), url(../assets/6-min.png);
+      background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/aniversario-iphone/5-min.png),
+        url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/aniversario-iphone/6-min.png);
     }
     37% {
-      background-image: url(../assets/6-min.png), url(../assets/7-min.png);
+      background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/aniversario-iphone/6-min.png),
+        url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/aniversario-iphone/7-min.png);
     }
     44.4% {
-      background-image: url(../assets/7-min.png), url(../assets/8-min.jpg);
+      background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/aniversario-iphone/7-min.png),
+        url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/aniversario-iphone/8-min.jpg);
     }
     51.8% {
-      background-image: url(../assets/8-min.jpg), url(../assets/9-min.png);
+      background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/aniversario-iphone/8-min.jpg),
+        url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/aniversario-iphone/9-min.png);
     }
     59.2% {
-      background-image: url(../assets/9-min.png), url(../assets/10-min.jpeg);
+      background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/aniversario-iphone/9-min.png),
+        url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/aniversario-iphone/10-min.jpeg);
     }
     66.6% {
-      background-image: url(../assets/10-min.jpeg), url(../assets/11-min.jpeg);
+      background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/aniversario-iphone/10-min.jpeg),
+        url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/aniversario-iphone/11-min.jpeg);
     }
     74% {
-      background-image: url(../assets/11-min.jpeg), url(../assets/12-min.jpeg);
+      background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/aniversario-iphone/11-min.jpeg),
+        url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/aniversario-iphone/12-min.jpeg);
     }
     81.4% {
-      background-image: url(../assets/12-min.jpeg), url(../assets/13-min.jpg);
+      background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/aniversario-iphone/12-min.jpeg),
+        url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/aniversario-iphone/13-min.jpg);
     }
     88.8% {
-      background-image: url(../assets/13-min.jpg), url(../assets/14-min.png);
+      background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/aniversario-iphone/13-min.jpg),
+        url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/aniversario-iphone/14-min.png);
     }
     100% {
-      background-image: url(../assets/14-min.png), url(../assets/1-min.png);
+      background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/aniversario-iphone/14-min.png),
+        url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/aniversario-iphone/1-min.png);
     }
   }
   .container {
@@ -733,7 +747,7 @@ a.newsletter-footer:hover {
     flex-wrap: wrap;
     box-sizing: border-box;
     justify-content: space-between;
-    background-image: url(../assets/apple.png);
+    background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/aniversario-iphone/apple.png);
     background-size: 1384px;
     background-position-y: -116px;
     background-position-x: center;
