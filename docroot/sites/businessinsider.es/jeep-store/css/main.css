@@ -606,7 +606,7 @@ footer p {
   }
   html .slick-prev:before,
   html .slick-next:before {
-    background-image: url(../assets/arrow.png);
+    background-image: url(https://builder.axelspringer.es/brandlab/autobild.es/img/jeep-store/arrow.png);
     content: "";
     position: absolute;
     width: 100%;
