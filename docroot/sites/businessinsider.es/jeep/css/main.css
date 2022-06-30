@@ -250,8 +250,9 @@ table {
 }
 
 .block-grey p.small img {
-  max-width: 60px;
+  max-width: 90px;
   margin-left: 10px;
+  margin-right: 10px;
   vertical-align: middle;
 }
 .block-slider-1 {
@@ -557,6 +558,26 @@ html .slick-disabled {
   color: #12470b;
   margin-bottom: -20px;
 }
+footer {
+  background: #252525;
+  padding: 2.5rem 0;
+  text-align: center;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+footer img {
+  max-width: 100px;
+}
+footer .logo-color {
+  fill: #fff;
+}
+footer p {
+  font-size: 14px;
+  color: #fff;
+}
+
 @media only screen and (min-width: 860px) {
   .block-grey {
     padding: 30px 100px;
