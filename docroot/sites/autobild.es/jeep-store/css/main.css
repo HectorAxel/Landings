@@ -228,11 +228,6 @@ table {
   display: flex;
   justify-content: center;
 }
-.headline video {
-  width: 101%;
-  aspect-ratio: 2/1;
-  object-fit: cover;
-}
 
 .block-grey {
   background: #f5f5f5;
@@ -687,9 +682,6 @@ footer p {
   .head-title span.dos {
     font-size: 109px;
     margin: -27px 0 -20px;
-  }
-  .headline video {
-    aspect-ratio: 2.5;
   }
   .desktop {
     display: block;
