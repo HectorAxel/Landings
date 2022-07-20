@@ -22,13 +22,7 @@ $(".select-buttons a").click(function (e) {
   }
 });
 
-window.addEventListener(
-  "load",
-  () => {
-    document.querySelector(".loader").classList.add("invisible");
-    setTimeout(() => {
-      document.querySelector(".loader").remove();
-    }, 3000);
-  },
-  false
-);
+document.querySelector(".loader").classList.add("invisible");
+setTimeout(() => {
+  document.querySelector(".loader").remove();
+}, 3000);
