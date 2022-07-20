@@ -21,8 +21,3 @@ $(".select-buttons a").click(function (e) {
     $(".valent").addClass("selected");
   }
 });
-
-document.querySelector(".loader").classList.add("invisible");
-setTimeout(() => {
-  document.querySelector(".loader").remove();
-}, 3000);
