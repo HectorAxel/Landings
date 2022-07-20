@@ -1,0 +1,61 @@
+@-webkit-keyframes loader {
+  0% {
+    height: 100%;
+  }
+  to {
+    height: 0%;
+  }
+}
+@keyframes loader {
+  0% {
+    height: 100%;
+  }
+  to {
+    height: 0%;
+  }
+}
+.loader {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  margin: 0 auto;
+  height: 100%;
+  background: #fff;
+  z-index: 100000;
+  -webkit-transition: opacity 1s ease-out;
+  transition: opacity 1s ease-out;
+  -webkit-transition-delay: 1s;
+  transition-delay: 1s;
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  padding-top: 150px;
+}
+.loader .loader-wrapper {
+  -webkit-transition: opacity 4s ease-out;
+  transition: opacity 4s ease-out;
+  -webkit-transition-delay: 0;
+  transition-delay: 0;
+  opacity: 1;
+  width: 138px;
+  height: 100px;
+  position: relative;
+  background: no-repeat bottom;
+  background-image: url("../assets/logo-ab.png");
+  background-size: 100% auto;
+}
+.loader .loader-wrapper-inner {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: #fff;
+  -webkit-animation: loader 1s infinite normal;
+  animation: loader 1s infinite normal;
+}
+.loader.invisible,
+.loader.invisible .loader-wrapper {
+  opacity: 0;
+}
