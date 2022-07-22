@@ -357,6 +357,7 @@ body.visible {
 .select-cards p {
   font-weight: 300;
   padding: 0 25px 10px;
+  line-height: 28.8px;
 }
 
 .block-grey {
@@ -392,8 +393,12 @@ body.visible {
   width: 100%;
   height: 100px;
 }
+.block-final p {
+  text-decoration: none;
+  color: inherit;
+}
 
-.block-final a {
+.block-final .button {
   transition: all 0.3s;
   width: 170px;
   margin: 0 auto;
@@ -407,7 +412,7 @@ body.visible {
   text-decoration: none;
 }
 
-.block-final a:hover {
+.block-final .button:hover {
   background: #d0021b;
   color: #fff;
 }
