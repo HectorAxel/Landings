@@ -223,7 +223,25 @@ a.button-samsung:hover {
   text-decoration: none;
   color: #000;
 }
+.intro {
+  position: relative;
+}
+.intro:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(0deg, #020202 0%, #0000 33%);
+}
+.intro {
+  margin-bottom: -90px;
+}
 @media only screen and (min-width: 760px) {
+  .intro {
+    margin-bottom: -151px;
+  }
   header .samsung img {
     max-width: 276px;
   }
@@ -271,9 +289,6 @@ a.button-samsung:hover {
   }
 }
 @media only screen and (min-width: 980px) {
-  .intro {
-    margin-bottom: -151px;
-  }
   .block-samsung img.mobile {
     display: none;
   }
