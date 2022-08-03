@@ -1,0 +1,369 @@
+body {
+  background-color: #000;
+  padding-top: 50px;
+}
+header {
+  height: 50px;
+  background: #000;
+  width: 100%;
+  padding: 0 10px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+header .wrapper-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 50px;
+}
+header .samsung img {
+  max-width: 136px;
+}
+
+header .business img {
+  max-width: 55px;
+}
+
+.business p {
+  color: #fff;
+  font-size: 9px;
+  margin: 0 5px 0 0;
+}
+
+.business {
+  display: flex;
+  align-items: center;
+}
+
+.samsung {
+  display: flex;
+  align-items: center;
+}
+
+.desktop {
+  display: none;
+}
+
+.intro img {
+  width: 100%;
+}
+
+.intro-text {
+  color: #fff;
+  text-align: center;
+  padding: 0 30px;
+}
+
+.intro-text h1 {
+  font-size: 40px;
+}
+
+p.sub {
+  color: #9be0fb;
+  font-size: 22px;
+  line-height: 33px;
+  margin-bottom: 48px;
+}
+
+.intro-lead {
+  color: #fff;
+  font-size: 16px;
+  line-height: 27px;
+  padding: 0 30px;
+}
+
+.intro-lead span {
+  color: #9be0fb;
+}
+.title-block h2 {
+  font-size: 34px;
+  line-height: 40px;
+  color: #fff;
+  text-align: center;
+  padding: 0 30px;
+}
+.title-block h2 span {
+  font-style: italic;
+  display: block;
+}
+.column-text h3 {
+  color: #9be0fb;
+  font-size: 26px;
+  margin: 20px 0 0;
+}
+
+.column-text {
+  padding: 0 30px;
+}
+
+.column-text p {
+  color: #fff;
+}
+
+.column-text span {
+  color: #9be0fb;
+  font-weight: bold;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slide .group {
+  border-top: 16px solid #9be0fb;
+  padding-bottom: 20px;
+}
+.slide.slick-slide {
+  background: #2f2d2b;
+  height: auto;
+}
+
+.block-samsung {
+  background: #fff;
+  padding: 30px 0;
+}
+
+.block-samsung img.mobile {
+  max-width: 200px;
+  margin: 20px auto;
+  display: block;
+}
+.block-samsung img {
+  width: 100%;
+}
+.block-samsung .text {
+  padding: 0 30px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: baseline;
+}
+.news a {
+  color: #000;
+  text-decoration: none;
+  margin-bottom: 30px;
+}
+a.button-samsung {
+  color: #5c8798 !important;
+  border: 1px solid #5c8798;
+  border-radius: 30px;
+  padding: 3px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+a.button-samsung:hover {
+  background: #9be0fb;
+  color: #fff !important;
+  border: 1px solid transparent;
+}
+.block-our h2 {
+  font-size: 34px;
+  color: #fff;
+  text-align: center;
+  margin-top: 90px;
+}
+
+.history img {
+  width: 100%;
+}
+
+.history {
+  background: #fff;
+  margin: 0 30px 60px;
+  border-radius: 0 0 16px 16px;
+  padding-bottom: 80px;
+  border-top: 16px solid #9be0fb;
+  position: relative;
+}
+
+.history .title {
+  padding: 0 30px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+}
+
+.history .title h3 {
+  font-size: 22px;
+}
+
+.history .title .lead {
+  color: #5c8798;
+  padding: 0;
+}
+.logobi {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.logobi img {
+  max-width: 170px;
+}
+
+.logobi p {
+  width: 100%;
+  font-size: 14px;
+  color: #fff;
+}
+.intro-lead span:before {
+  content: "L";
+}
+.history .button-samsung {
+  position: absolute;
+  bottom: 20px;
+}
+.history .title > a {
+  text-decoration: none;
+  color: #000;
+}
+@media only screen and (min-width: 760px) {
+  header .samsung img {
+    max-width: 276px;
+  }
+  header .business img {
+    max-width: 95px;
+  }
+  .business p {
+    font-size: 14px;
+  }
+  img.mobile {
+    display: none;
+  }
+  .block-samsung img.desktop {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  }
+  .intro-text h1 {
+    font-size: 78px;
+  }
+  p.sub {
+    font-size: 30px;
+    line-height: 45px;
+    max-width: 960px;
+    margin: 0 auto 50px;
+  }
+  .intro-lead {
+    font-size: 20px;
+    line-height: 34px;
+    max-width: 600px;
+    margin: 0 auto 110px;
+    position: relative;
+  }
+  .title-block h2 {
+    font-size: 60px;
+    line-height: 80px;
+  }
+  .intro-lead span:before {
+    content: "L";
+    position: absolute;
+    font-size: 126px;
+    left: -50px;
+    top: 42px;
+  }
+}
+@media only screen and (min-width: 980px) {
+  .intro {
+    margin-bottom: -151px;
+  }
+  .block-samsung img.mobile {
+    display: none;
+  }
+  .block-samsung img.desktop {
+    display: block;
+  }
+  .slider {
+    margin: 0 auto;
+    width: 980px;
+  }
+  .block-samsung img.desktop {
+    max-width: 680px;
+    margin: 30px auto;
+  }
+  .block-samsung .text {
+    position: relative;
+  }
+  .news {
+    display: grid;
+    grid-template-columns: 63% 37%;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .news a {
+    text-decoration: none;
+    color: #000;
+  }
+  .news p {
+    font-size: 22px;
+    line-height: 35px;
+  }
+  .block-historys {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 60px;
+    margin: 0 auto 90px;
+    width: 1200px;
+  }
+  .history .title h3 {
+    font-size: 32px;
+    line-height: 44px;
+  }
+  .history .title .lead {
+    font-size: 22px;
+    line-height: 35px;
+  }
+  .history {
+    margin: 0;
+  }
+  .block-our h2 {
+    font-size: 60px;
+  }
+  .block-our {
+    padding-top: 90px;
+  }
+  .intro img {
+    height: calc(100vh - 50px);
+    object-fit: cover;
+    margin-bottom: -180px;
+  }
+  .block-samsung a.button-samsung {
+    position: absolute;
+    bottom: 7px;
+    left: 34px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .slider {
+    margin: inherit;
+    width: inherit;
+  }
+  .slide .group {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 60px;
+    padding-bottom: 0;
+    height: 100%;
+  }
+  .column-text h3 {
+    font-size: 50px;
+  }
+  .column-text p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .column-text {
+    max-width: 530px;
+    padding: 0;
+  }
+}
