@@ -1,0 +1,372 @@
+.desktop {
+  display: none;
+}
+body {
+  background-color: #ebdac3;
+  height: 100vh;
+}
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: 2;
+  box-shadow: 0px 5px 5px 0px #0000000d;
+}
+
+header .wrapper-h {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  padding: 5px 15px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .wrapper-h .logo-site img {
+  max-width: 65px;
+  display: block;
+}
+
+header .wrapper-h .hyundai img {
+  width: 126px;
+}
+
+.text {
+  font-size: 8px;
+  margin-right: 10px;
+}
+
+.hyundai {
+  text-align: right;
+}
+
+.intro img {
+  width: 100%;
+}
+
+.intro {
+  position: relative;
+  margin-bottom: -80px;
+}
+.intro:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: linear-gradient(
+    180deg,
+    rgba(235, 218, 195, 0) 75.52%,
+    #ebdac3 96.87%
+  );
+  bottom: 0;
+  left: 0;
+}
+
+.intro h1 {
+  position: absolute;
+  top: 55px;
+  color: #fff;
+  text-align: center;
+  font-size: 35px;
+  line-height: 44px;
+  padding: 0 20px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  text-shadow: 0px 5px 40px 0px #2e1b10;
+}
+.lead {
+  margin: 40px 0;
+}
+.lead p {
+  padding: 0 30px;
+  margin: 0;
+  color: #252525;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.red {
+  background: #003366;
+  padding: 30px;
+}
+
+.red img {
+  width: 100%;
+}
+.red .text p {
+  font-size: 26px;
+  line-height: 39px;
+  color: #fff;
+}
+.red .image {
+  border-radius: 20px;
+  overflow: hidden;
+}
+.red {
+  margin-bottom: 40px;
+}
+
+.plus {
+  margin: 0 auto;
+  width: 45px;
+  height: 45px;
+  background: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 44px;
+  position: relative;
+  display: block;
+  transform: rotate(0deg);
+  transition: all 0.3s;
+}
+.plus:hover {
+  transform: rotate(90deg);
+}
+a.plus svg {
+  width: 35px;
+  height: 35px;
+  position: relative;
+  top: 5px;
+}
+h2 {
+  font-size: 28px;
+  text-align: center;
+  line-height: 35px;
+  padding: 0 20px;
+}
+.block-info img {
+  width: 100%;
+}
+.block-info {
+  position: relative;
+}
+.block-info .plus {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.popup.visible {
+  display: block;
+}
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #00000080;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  z-index: 2;
+  overflow: scroll;
+  display: none;
+}
+
+.popup img {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+}
+
+.close {
+  position: fixed;
+  color: #fff;
+  font-size: 47px;
+  top: 10px;
+  right: 20px;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+.block-info .plus img {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  top: 4px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.plus img {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  top: 4px;
+  transition: all 0.3;
+}
+.block-info .plus:hover img {
+  transform: rotate(90deg);
+}
+
+footer {
+  background: #252525;
+  text-align: center;
+}
+
+footer p {
+  color: #fff;
+  margin-bottom: 10px;
+  padding: 30px 20px;
+}
+
+.logo-ab img {
+  max-width: 74px;
+  margin-bottom: 30px;
+}
+
+.logo-brandlab img {
+  max-width: 148px;
+  margin-bottom: 30px;
+}
+ul.icons {
+  display: flex;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+ul.icons li {
+  margin: 0 10px;
+}
+
+ul.icons svg {
+  width: 30px;
+  fill: #fff;
+}
+@media (min-width: 970px) {
+  .desktop {
+    display: block;
+  }
+  .mobile {
+    display: none;
+  }
+  .intro h1 {
+    font-size: 60px;
+    line-height: 75px;
+    top: 10%;
+  }
+  .lead {
+    max-width: 1200px;
+    margin: 80px auto;
+  }
+  .lead p {
+    font-size: 24px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 48px;
+  }
+  footer .wrapper-footer {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .logo-brandlab img,
+  .logo-ab img,
+  footer p {
+    margin: 0;
+  }
+  header .wrapper-h .logo-site img {
+    max-width: 83px;
+    display: block;
+  }
+
+  header .wrapper-h .hyundai img {
+    width: 168px;
+  }
+
+  .text {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+
+  .hyundai {
+    text-align: right;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .red {
+    display: grid;
+    max-width: 1200px;
+    margin: 0 auto 100px;
+  }
+  .red.left {
+    grid-template-columns: 30% auto;
+  }
+  .red.right {
+    grid-template-columns: auto 25%;
+  }
+  .red .text p {
+    font-size: 38px;
+    line-height: 53px;
+  }
+  .red.left .image {
+    order: 1;
+    position: relative;
+    left: 70px;
+    padding-right: 0;
+  }
+  .red.left .text {
+    padding-left: 11px;
+    padding-right: 0;
+    position: relative;
+  }
+  .red .text p {
+    font-size: 38px;
+    line-height: 53px;
+  }
+  .red.right .image {
+    width: 888px;
+    position: relative;
+    left: -70px;
+    padding: 0;
+  }
+  .red.right .text {
+    padding-left: 0;
+    position: relative;
+    margin-left: -17px;
+  }
+  .red .text p {
+    margin-top: 0;
+  }
+  .red.right .plus {
+    right: 50px;
+  }
+  .red.left .plus {
+    left: 50px;
+  }
+  .plus {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+.zoom-in-out-box {
+  animation: zoom-in-zoom-out 50s ease infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
