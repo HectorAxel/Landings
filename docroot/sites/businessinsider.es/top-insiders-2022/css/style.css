@@ -6,14 +6,6 @@
   font-style: normal;
   font-display: swap;
 }
-@font-face {
-  font-family: LabGrotesque Light;
-  src: url("../media/fonts/LabGrotesque-Thin.woff") format("woff2"),
-    url("../media/fonts/LabGrotesque-Thin.woff2") format("woff");
-  font-weight: 250;
-  font-style: normal;
-  font-display: swap;
-}
 * {
   font-family: LabGrotesque;
 }
@@ -161,7 +153,7 @@ a.button-top {
 
 .candidatos {
   background: #185f7c;
-  padding: 120px 20px 100px;
+  padding: 30px 20px;
 }
 
 .candidatos h2 {
@@ -169,7 +161,6 @@ a.button-top {
   text-align: left;
   color: #fff;
   text-transform: uppercase;
-  font-family: LabGrotesque Light;
 }
 .candidatos h2 + p {
   font-size: 20px;
@@ -221,7 +212,6 @@ a.button-top {
   letter-spacing: 0em;
   text-align: center;
   cursor: pointer;
-  font-family: LabGrotesque Light;
 }
 .flip-card-front img {
   position: absolute;
@@ -271,8 +261,8 @@ a.button-top {
 .close {
   position: absolute;
   color: #111;
-  top: -24px;
-  right: -9px;
+  top: -11px;
+  right: -7px;
   font-size: 28px;
   transform: rotate(45deg);
   cursor: pointer;
