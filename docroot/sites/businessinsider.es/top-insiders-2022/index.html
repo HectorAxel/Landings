@@ -50,6 +50,9 @@
       name="description"
       content="Bienvenidos a la Primera Edición de los Top Insiders 2022. Es el momento de elegir a los protagonistas que están impulsando el cambio. Decide. Vota."
     />
+
+    <meta name="cXenseParse:pageclass" content="especial" />
+
     <title>
       Top Insiders 2022: El mundo cambia. Elige a los líderes que lo están
       transformando
@@ -107,6 +110,36 @@
       })(window, document, "script", "dataLayer", "GTM-T6NC728");
     </script>
     <!-- End Google Tag Manager -->
+    <!-- Piano ID Adblock detection -->
+    <script type="text/javascript">
+      document.cookie =
+        "__adblocker=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";
+      var setNptTechAdblockerCookie = function (adblocker) {
+        var d = new Date();
+        d.setTime(d.getTime() + 60 * 5 * 1000);
+        document.cookie =
+          "__adblocker=" +
+          (adblocker ? "true" : "false") +
+          "; expires=" +
+          d.toUTCString() +
+          "; path=/";
+      };
+      var script = document.createElement("script");
+      script.setAttribute("async", true);
+      script.setAttribute("src", "//www.npttech.com/advertising.js");
+      script.setAttribute("onerror", "setNptTechAdblockerCookie(true);");
+      document.getElementsByTagName("head")[0].appendChild(script);
+    </script>
+    <!-- End Piano ID Adblock detection -->
+    <!-- Composer -->
+    <script>
+      window.tp = window.tp || [];
+      window.tp.push(["setUsePianoIdUserProvider", true]);
+      window.tp.push(["setTags", ["tipo-especial"]]);
+      window.tp.push(["setContentIsNative", true]);
+      window.tp.push(["init", function () {}]);
+    </script>
+    <!-- End Composer -->
   </head>
   <body>
     <header>
@@ -265,10 +298,10 @@
         <p>Estos son los 4 finalistas en cada una de las 10 categorías:</p>
 
         <!-- CEO Insider -->
-        <section>
+        <section class="special">
           <h3>CEO Insider</h3>
           <p class="sub">
-            Líderes que inspiran dentro y fuera de sus empresas. 
+            Líderes que inspiran dentro y fuera de sus empresas.
           </p>
           <div class="block-slider-2">
             <div class="contain-card">
@@ -416,7 +449,7 @@
         <section>
           <h3>Compañía del año</h3>
           <p class="sub">
-            Grandes empresas y pymes que destacan por su crecimiento.  
+            Grandes empresas y pymes que destacan por su crecimiento.
           </p>
           <div class="block-slider-2">
             <div class="contain-card">
@@ -554,7 +587,7 @@
         <section>
           <h3>Startup del año</h3>
           <p class="sub">
-            Nuevas compañías digitales y líderes que reinventan el mundo. 
+            Nuevas compañías digitales y líderes que reinventan el mundo.
           </p>
           <div class="block-slider-2">
             <div class="contain-card">
@@ -688,7 +721,7 @@
         <section>
           <h3>Dispositivo tecnológico</h3>
           <p class="sub">
-            Productos innovadores que están cambiando nuestro día a día. 
+            Productos innovadores que están cambiando nuestro día a día.
           </p>
           <div class="block-slider-2">
             <div class="contain-card">
@@ -1871,5 +1904,17 @@
       ></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
+    <!-- Piano ID tag -->
+    <script>
+      (function (src) {
+        var a = document.createElement("script");
+        a.type = "text/javascript";
+        a.async = true;
+        a.src = src;
+        var b = document.getElementsByTagName("script")[0];
+        b.parentNode.insertBefore(a, b);
+      })("//experience-eu.piano.io/xbuilder/experience/load?aid=ojoxbB7kpe");
+    </script>
+    <!-- End Piano ID tag -->
   </body>
 </html>

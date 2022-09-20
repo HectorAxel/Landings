@@ -6,6 +6,14 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "LabGrotesque Thin";
+  src: url("../media/fonts/LabGrotesque-Thin.woff2") format("woff2"),
+    url("../media/fonts/LabGrotesque-Thin.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 * {
   font-family: LabGrotesque;
 }
@@ -49,8 +57,8 @@ header svg {
   height: 100%;
 }
 .center-title p {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  font-size: 20px;
+  line-height: 28px;
   max-width: 230px;
   margin: 0 auto 30px;
 }
@@ -161,6 +169,7 @@ a.button-top {
   text-align: left;
   color: #fff;
   text-transform: uppercase;
+  font-family: "LabGrotesque Thin";
 }
 .candidatos h2 + p {
   font-size: 20px;
@@ -173,9 +182,12 @@ a.button-top {
 .flip-card img {
   width: 100%;
 }
+section.special .flip-card {
+  height: 620px;
+}
 .flip-card {
   width: 270px !important;
-  height: 620px;
+  height: 560px;
   perspective: 1000px;
   background: #ffffff;
   border: 1px solid #111111;
@@ -215,7 +227,7 @@ a.button-top {
 }
 .flip-card-front img {
   position: absolute;
-  bottom: 75px;
+  bottom: 105px;
 }
 
 .flip-card-front,
@@ -410,7 +422,7 @@ footer svg {
 }
 @media only screen and (min-width: 760px) {
   .intro {
-    min-height: 700px;
+    min-height: 800px;
   }
   header svg {
     max-width: 94px;
@@ -424,6 +436,9 @@ footer svg {
   .center-title {
     background: #185f7c;
     max-width: 480px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
   }
   .logo-hyundai {
     bottom: 0;
@@ -438,6 +453,18 @@ footer svg {
   .lead .big {
     font-size: 28px;
     line-height: 39px;
+  }
+  .center-title p {
+    font-size: 36px;
+    line-height: 50px;
+    max-width: 430px;
+    margin: 0 auto 90px;
+  }
+  .intro a.button-top {
+    width: 430px;
+    padding: 11px 0;
+    font-size: 20px;
+    text-align: center;
   }
 }
 @media only screen and (min-width: 980px) {
