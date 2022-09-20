@@ -1,0 +1,478 @@
+@font-face {
+  font-family: LabGrotesque;
+  src: url("../media/fonts/LabGrotesque-Regular.woff2") format("woff2"),
+    url("../media/fonts/LabGrotesque-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  font-family: LabGrotesque;
+}
+header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 1;
+  box-shadow: 0px 5px 5px 0px #0000000d;
+}
+header svg {
+  max-width: 4.875rem;
+}
+
+.intro img {
+  width: 100%;
+}
+.intro img.desktop,
+.intro img.mobile {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.intro img.desktop {
+  display: none;
+}
+
+.center-title {
+  position: absolute;
+  top: 0;
+  max-width: 280px;
+  margin: 0 auto;
+  right: 0;
+  left: 0;
+  text-align: center;
+  padding: 40px 20px 0;
+  color: #fff;
+  height: 100%;
+}
+.center-title p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  max-width: 230px;
+  margin: 0 auto 30px;
+}
+.intro {
+  position: relative;
+  height: calc(100vh - 56px);
+  overflow: hidden;
+}
+
+a.button-top {
+  display: block;
+  background: #b2f6ff;
+  width: 140px;
+  margin: 0 auto 40px;
+  padding: 4px 0;
+  text-decoration: none;
+  color: #111;
+  text-align: center;
+}
+.logo-hyundai {
+  position: absolute;
+  bottom: 50px;
+  max-width: 230px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.lead p {
+  max-width: 786px;
+  margin: 0 auto 30px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+}
+.lead .big {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.lead {
+  background: #185f7c;
+  padding: 60px 20px;
+}
+.discover {
+  background: #b2f6ff;
+  padding: 30px 20px;
+}
+
+.discover h2 {
+  font-size: 36px;
+  line-height: 45px;
+}
+
+.discover .discover-text p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.discover .title {
+  color: #185f7c;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 35px;
+}
+.discover .description {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+[class^="block-slider-"],
+.discover .discover-text,
+.candidatos section,
+.candidatos h2,
+.candidatos h2 + p {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.block-slider-1 img {
+  width: 100%;
+}
+.block-slider-1 .item {
+  display: block;
+  background: #ffffff;
+  border: 1px solid #111111;
+  box-shadow: 8px 8px 0px #111111;
+}
+.contain-card {
+  padding: 0 20px;
+  box-sizing: content-box;
+}
+[class^="block-slider-"] .item {
+  margin: 0 30px;
+  padding: 20px;
+}
+[class^="block-slider-"] .item,
+[class^="block-slider-"] .flip-card {
+  padding: 20px;
+}
+
+.candidatos {
+  background: #185f7c;
+  padding: 30px 20px;
+}
+
+.candidatos h2 {
+  font-size: 44px;
+  text-align: left;
+  color: #fff;
+  text-transform: uppercase;
+}
+.candidatos h2 + p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 26px;
+  color: #fff;
+  text-align: left;
+  margin: 10px auto 100px;
+}
+.flip-card img {
+  width: 100%;
+}
+.flip-card {
+  width: 270px !important;
+  height: 620px;
+  perspective: 1000px;
+  background: #ffffff;
+  border: 1px solid #111111;
+  box-shadow: 8px 8px 0px #111111;
+  padding: 30px 20px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.flip-card .flip-card-inner.flip {
+  transform: rotateY(180deg);
+}
+.flip-card-front {
+  position: relative;
+}
+.flip-card-front .flip-action {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+  cursor: pointer;
+}
+.flip-card-front img {
+  position: absolute;
+  bottom: 75px;
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  text-align: left;
+}
+
+.flip-card-back {
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-card .name {
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 31px;
+  color: #185f7c;
+  margin: 0 0 5px;
+}
+.flip-card .job {
+  font-size: 16px;
+  margin: 0;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.flip-card-back ul {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #111;
+  padding-left: 20px;
+}
+.flip-card-back ul li {
+  margin-bottom: 10px;
+}
+.close {
+  position: absolute;
+  color: #111;
+  top: -24px;
+  right: -9px;
+  font-size: 28px;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+section h3 {
+  font-weight: 500;
+  font-size: 36px;
+  color: #b2f6ff;
+  margin: 0 0 10px;
+}
+section p.sub {
+  font-weight: 300;
+  font-size: 20px;
+  margin: 0 0 30px;
+  color: #fff;
+}
+.candidatos section {
+  margin-bottom: 140px;
+}
+[class^="block-slider-"] .slick-next {
+  right: -5px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
+}
+[class^="block-slider-"] .slick-prev {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+[class^="block-slider-"] .slick-prev,
+[class^="block-slider-"] .slick-next {
+  width: 30px;
+  height: 50px;
+}
+.block-slider-1 .slick-next:before,
+.block-slider-1 .slick-prev:before {
+  background-image: url(../media/arrow-b.svg) !important;
+}
+[class^="block-slider-"] .slick-dots {
+  bottom: -47px;
+}
+.block-slider-1 .slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: black;
+}
+.block-slider-1 .slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: black;
+}
+.block-slider-1 .slick-dots li button:before {
+  font-family: "slick";
+  font-size: 9px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: "•";
+  text-align: center;
+  opacity: 1.25;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+[class^="block-slider-"] .slick-dots li button:before {
+  font-size: 9px;
+}
+[class^="block-slider-"] .slick-next:before,
+[class^="block-slider-"] .slick-prev:before {
+  content: "";
+  height: 43px;
+  background-image: url(../media/arrow.svg);
+  width: 18px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+}
+footer {
+  background: #185f7c;
+  padding: 30px 20px;
+}
+
+footer img {
+  max-width: 120px;
+  margin: 0 auto 40px;
+  display: block;
+}
+
+footer a.button-top {
+  width: auto;
+  padding: 7px;
+  text-transform: uppercase;
+  max-width: 430px;
+}
+footer .logo-hyundai {
+  position: static;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+}
+
+footer .logo-hyundai img {
+  margin-top: 4px;
+}
+footer ul {
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  list-style: none;
+  width: 90px;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+footer svg {
+  width: 24px;
+  height: 24px;
+  fill: #b2f6ff;
+}
+.fixed-button {
+  position: fixed;
+  top: 71px;
+  right: 8px;
+  z-index: 14;
+}
+
+.fixed-button a {
+  color: #111;
+  text-decoration: none;
+  font-weight: bold;
+  background: #b2f6ff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: fixed;
+  top: 71px;
+  right: 8px;
+  text-align: center;
+  line-height: 42px;
+  font-size: 12px;
+  border: 5px solid rgba(16, 66, 87, 0.8);
+}
+@media only screen and (min-width: 760px) {
+  header svg {
+    max-width: 94px;
+  }
+  .intro img.desktop {
+    display: block;
+  }
+  .intro img.mobile {
+    display: none;
+  }
+  .center-title {
+    background: #185f7c;
+    max-width: 480px;
+  }
+  .logo-hyundai {
+    bottom: 0;
+  }
+  .lead p {
+    max-width: 786px;
+    margin: 0 auto 30px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .lead .big {
+    font-size: 28px;
+    line-height: 39px;
+  }
+}
+@media only screen and (min-width: 980px) {
+  .block-slider-1 .item,
+  [class^="block-slider-"] .flip-card {
+    margin: 0 19px;
+  }
+  .block-slider-1 .item:first-child,
+  [class^="block-slider-"] .flip-card:first-child {
+    margin-left: 0;
+  }
+  .block-slider-1 .item:last-child,
+  [class^="block-slider-"] .flip-card:last-child {
+    margin-right: 0;
+  }
+  .candidatos h2 {
+    font-size: 120px;
+  }
+  .candidatos h2 + p {
+    font-size: 42px;
+  }
+  section h3 {
+    font-size: 44px;
+  }
+  section h3 + p {
+    font-size: 28px;
+  }
+  .slick-list .slick-track {
+    justify-content: flex-start;
+  }
+}
+@media only screen and (min-width: 120px) {
+  .fixed-button a {
+    right: 100px;
+    text-align: center;
+    line-height: 63px;
+    font-size: 16px;
+    height: 70px;
+    width: 70px;
+  }
+}
