@@ -409,6 +409,9 @@ footer svg {
   border: 5px solid rgba(16, 66, 87, 0.8);
 }
 @media only screen and (min-width: 760px) {
+  .intro {
+    min-height: 700px;
+  }
   header svg {
     max-width: 94px;
   }
