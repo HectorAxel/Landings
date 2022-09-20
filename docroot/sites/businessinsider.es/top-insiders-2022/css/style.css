@@ -356,7 +356,7 @@ footer img {
 
 footer a.button-top {
   width: auto;
-  padding: 7px;
+  padding: 9px;
   text-transform: uppercase;
   max-width: 430px;
 }
@@ -465,8 +465,15 @@ footer svg {
   .slick-list .slick-track {
     justify-content: flex-start;
   }
+  .contain-card {
+    padding: 0;
+  }
 }
-@media only screen and (min-width: 120px) {
+.slick-track:before,
+.slick-track:after {
+  display: none !important;
+}
+@media only screen and (min-width: 1200px) {
   .fixed-button a {
     right: 100px;
     text-align: center;

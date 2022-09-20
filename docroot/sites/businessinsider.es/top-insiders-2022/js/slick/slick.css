@@ -51,12 +51,6 @@
   display: flex;
   justify-content: space-between;
 }
-.slick-track:before,
-.slick-track:after {
-  display: table;
-
-  content: "";
-}
 .slick-track:after {
   clear: both;
 }
