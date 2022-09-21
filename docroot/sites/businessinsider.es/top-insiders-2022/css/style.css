@@ -202,7 +202,7 @@ a.button-top {
   width: 100%;
 }
 section.special .flip-card {
-  height: 620px;
+  height: 710px;
 }
 .flip-card {
   width: 270px !important;
@@ -265,14 +265,16 @@ section.special .flip-card {
 }
 
 .flip-card .name {
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 500;
-  line-height: 31px;
+  line-height: 26px;
   color: #185f7c;
-  margin: 0 0 5px;
+  margin: 0 0 10px;
 }
 .flip-card .job {
+  color: #111;
   font-size: 16px;
+  line-height: 21px;
   margin: 0;
   font-weight: 500;
   text-transform: uppercase;
