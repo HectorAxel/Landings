@@ -40,6 +40,10 @@ header svg {
   width: 100%;
   height: 100%;
 }
+.logo-hyundai img {
+  max-width: 75px;
+  margin-top: 5px;
+}
 .intro img.desktop {
   display: none;
 }
@@ -55,6 +59,21 @@ header svg {
   padding: 40px 20px 0;
   color: #fff;
   height: 100%;
+}
+.center-title .first {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 24px;
+  text-align: center;
+  margin: 0 0 20px;
+}
+.center-title .second {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 18px;
+  text-align: center;
+  width: 100%;
+  margin: 0 0 40px;
 }
 .center-title p {
   font-size: 20px;
@@ -403,7 +422,9 @@ footer svg {
   right: 8px;
   z-index: 14;
 }
-
+.logo-top {
+  margin-bottom: 50px;
+}
 .fixed-button a {
   color: #111;
   text-decoration: none;
@@ -420,9 +441,10 @@ footer svg {
   font-size: 12px;
   border: 5px solid rgba(16, 66, 87, 0.8);
 }
+
 @media only screen and (min-width: 760px) {
   .intro {
-    min-height: 800px;
+    min-height: 1100px;
   }
   header svg {
     max-width: 94px;
@@ -440,6 +462,7 @@ footer svg {
     flex-wrap: wrap;
     align-content: center;
   }
+
   .logo-hyundai {
     bottom: 0;
   }
@@ -464,6 +487,19 @@ footer svg {
     width: 430px;
     padding: 11px 0;
     font-size: 20px;
+    text-align: center;
+  }
+  .center-title .first {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 36px;
+    text-align: center;
+    width: 100%;
+  }
+  .center-title .second {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 25px;
     text-align: center;
   }
 }
