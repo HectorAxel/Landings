@@ -323,6 +323,7 @@
   }
   .web-desktop {
     display: flex;
+    transition: all 0.5s;
   }
 }
 
@@ -416,6 +417,7 @@
   font-family: "Roboto Condensed";
   font-size: 40px;
   font-weight: 300;
+
   line-height: 49px;
   text-align: right;
   color: #fff;
@@ -450,15 +452,24 @@
   line-height: 29px;
   font-weight: 300;
   margin-top: 60px;
+  opacity: 0;
+  transition: all 5s;
+}
+.web-desktop section.yellow p.visible {
+  opacity: 1;
 }
 .web-desktop .group-box {
   position: absolute;
-  bottom: -27px;
+  bottom: -180px;
   width: calc(100% - 310px);
   right: 0;
   display: grid;
   grid-template-columns: 180px 180px 180px;
   justify-content: space-evenly;
+  transition: all 2s;
+}
+.web-desktop .group-box.visible {
+  bottom: -10px;
 }
 .web-desktop .box {
   padding: 20px;
@@ -701,6 +712,18 @@
   text-align: left;
   color: #fff;
 }
+.web-desktop button[class*="scroll"] {
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  width: 100px;
+}
+.web-desktop button[class*="scroll-pre"] {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  width: 100px;
+}
 @media (min-width: 1280px) {
   .web-desktop h1 span:first-child {
     font-family: "Roboto Condensed";
@@ -732,7 +755,7 @@
   }
   .web-desktop .group-box {
     position: absolute;
-    bottom: 0px;
+    bottom: -180px;
     width: calc(100% - 310px);
     grid-template-columns: 200px 200px 200px;
   }
