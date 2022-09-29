@@ -675,6 +675,25 @@
   margin-top: 70px;
   max-width: 900px;
 }
+.web-desktop .footer-img {
+  max-width: 300px;
+  position: absolute;
+  right: 30px;
+  background: #383e42;
+  height: 630px;
+  padding: 25px;
+  bottom: -300px;
+}
+
+.web-desktop .footer-img p {
+  font-family: "Roboto Condensed";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+}
 @media (min-width: 1280px) {
   .web-desktop h1 span:first-child {
     font-family: "Roboto Condensed";
