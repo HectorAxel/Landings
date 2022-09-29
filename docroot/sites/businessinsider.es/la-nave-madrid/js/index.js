@@ -40,6 +40,9 @@ $(document).ready(function () {
     setTimeout(function () {
       $(".orange .bar").addClass("visible");
     }, 2900);
+    $(
+      ".web-desktop section.yellow p, .web-desktop .group-box, .yellow .bar"
+    ).removeClass("visible");
   });
 
   $(".scroll-3").click(function () {
@@ -54,6 +57,10 @@ $(document).ready(function () {
     setTimeout(function () {
       $(".green .bar").addClass("visible");
     }, 2900);
+
+    $(
+      ".web-desktop .yellow.final-content section h2, .web-desktop .yellow.final-content section p, .web-desktop .yellow .contain-img"
+    ).removeClass("visible");
   });
 
   $(".scroll-4").click(function () {
@@ -64,6 +71,10 @@ $(document).ready(function () {
     $(
       ".web-desktop .green.final-content section h2, .web-desktop .green.final-content section p, .web-desktop .green .contain-img"
     ).addClass("visible");
+
+    $(
+      ".web-desktop .orange.final-content section h2, .web-desktop .orange.final-content section p, .web-desktop .orange .contain-img"
+    ).removeClass("visible");
   });
 
   $(".scroll-pre-1").click(function () {
@@ -77,8 +88,5 @@ $(document).ready(function () {
   });
   $(".scroll-pre-4").click(function () {
     $(".web-desktop").css("right", 0);
-    $(
-      ".web-desktop section.yellow p, .web-desktop .group-box, .yellow .bar"
-    ).removeClass("visible");
   });
 });

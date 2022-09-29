@@ -397,7 +397,7 @@
 }
 .web-desktop .block-text {
   position: absolute;
-  bottom: 0;
+  bottom: 6%;
   width: calc(100vw - 50px);
   max-width: 1200px;
   margin: 0 auto;
@@ -790,6 +790,9 @@
   .web-desktop section.yellow p {
     font-size: 24px;
     line-height: 36px;
+  }
+  .web-desktop .block-text {
+    bottom: 0;
   }
   .web-desktop section.yellow,
   .web-desktop .final-content section {
