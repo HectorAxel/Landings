@@ -324,6 +324,8 @@
   .web-desktop {
     display: flex;
     transition: all 0.5s;
+    position: relative;
+    right: 0;
   }
 }
 
@@ -469,7 +471,7 @@
   transition: all 2s;
 }
 .web-desktop .group-box.visible {
-  bottom: -10px;
+  bottom: -16px;
 }
 .web-desktop .box {
   padding: 20px;
@@ -620,7 +622,16 @@
   font-weight: 300;
   line-height: 40px;
   color: #fff;
-  margin-top: 60px;
+  display: grid;
+  align-content: end;
+  padding-bottom: 80px;
+  opacity: 0;
+  transition: all 5s;
+}
+.web-desktop .final-content section h2.visible,
+.web-desktop .final-content section p.visible,
+.web-desktop .contain-img.visible {
+  opacity: 1;
 }
 .web-desktop .final-content section h2 span {
   color: #ffe900;
@@ -638,7 +649,12 @@
   font-weight: 300;
   line-height: 31px;
   color: #fff;
+  display: grid;
+  align-content: center;
+  opacity: 0;
+  transition: all 5s;
 }
+
 .web-desktop .final-content.yellow section p span {
   color: #ffe900;
 }
@@ -692,6 +708,8 @@
   margin-top: 70px;
   position: relative;
   max-width: 900px;
+  opacity: 0;
+  transition: all 4s;
 }
 .web-desktop .footer-img {
   max-width: 300px;
@@ -724,6 +742,30 @@
   z-index: 1;
   width: 100px;
 }
+.bar {
+  height: 30px;
+  width: 0;
+  top: 50%;
+  transform: translate(0px, 0%);
+  transition: all 3s;
+  position: absolute;
+}
+.bar.visible {
+  width: 50px;
+}
+.bar.max {
+  width: 310px;
+}
+.yellow .bar {
+  background-color: #ffe900;
+}
+.green .bar {
+  background-color: #49c5b1;
+}
+.orange .bar {
+  background-color: #f4633a;
+}
+
 @media (min-width: 1280px) {
   .web-desktop h1 span:first-child {
     font-family: "Roboto Condensed";
@@ -769,5 +811,8 @@
   }
   .web-desktop .final-content {
     grid-template-columns: 410px auto;
+  }
+  .bar.max {
+    width: 410px;
   }
 }
