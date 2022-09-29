@@ -228,10 +228,10 @@
   position: absolute;
   content: "";
   height: 34px;
-  width: calc(100vw - 80px);
+  width: calc(100vw - 69px);
   background: #ffe900;
   bottom: 30px;
-  left: 0;
+  left: 0px;
 }
 .web-mobile .green .text-nave h3:after {
   background: #49c5b1;
@@ -344,7 +344,7 @@
 }
 .web-desktop .screen-one .wrapper-background img {
   transition: all 3s;
-  animation: sizeLess 7s normal;
+  animation: sizeLess 3s normal;
 }
 
 @keyframes sizeLess {
@@ -361,7 +361,7 @@
   top: 50px;
   width: 210px;
   right: 11%;
-  animation: visibleLogo 10s normal;
+  animation: visibleLogo 5s normal;
 }
 @keyframes visibleLogo {
   from {
@@ -413,7 +413,7 @@
   position: relative;
 }
 .web-desktop h1 {
-  animation: visibleH1 14s normal;
+  animation: visibleH1 7s normal;
 }
 .web-desktop h1 span:first-child {
   font-family: "Roboto Condensed";
@@ -602,6 +602,8 @@
 }
 .web-desktop .final-content.orange {
   background-image: url(../media/nave-orange.png);
+  background-size: cover;
+  background-position: center;
 }
 .web-desktop .final-content.green {
   background-image: url(../media/nave-green.png);
@@ -634,6 +636,9 @@
   opacity: 1;
 }
 .web-desktop .final-content section h2 span {
+  font-weight: 400;
+}
+.web-desktop .final-content section h2 span {
   color: #ffe900;
 }
 .web-desktop .final-content.green section h2 span {
@@ -654,7 +659,9 @@
   opacity: 0;
   transition: all 5s;
 }
-
+.web-desktop .final-content section p span {
+  font-weight: 400;
+}
 .web-desktop .final-content.yellow section p span {
   color: #ffe900;
 }
@@ -701,13 +708,14 @@
 }
 .web-desktop .contain-img img {
   width: 100%;
+  max-height: 600px;
+  object-fit: cover;
 }
 
 .web-desktop .contain-img {
   width: calc(100% - 50px);
   margin-top: 70px;
   position: relative;
-  max-width: 900px;
   opacity: 0;
   transition: all 4s;
 }
