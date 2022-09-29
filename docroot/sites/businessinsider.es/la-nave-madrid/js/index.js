@@ -44,10 +44,13 @@ $(document).ready(function () {
 
   $(".scroll-3").click(function () {
     $(".web-desktop").css("right", ancho * 3 - 150);
+
     $(
       ".web-desktop .orange.final-content section h2, .web-desktop .orange.final-content section p, .web-desktop .orange .contain-img"
     ).addClass("visible");
-    $(".green .bar").addClass("max");
+
+    $(".orange .bar").addClass("max");
+
     setTimeout(function () {
       $(".green .bar").addClass("visible");
     }, 2900);
@@ -55,8 +58,11 @@ $(document).ready(function () {
 
   $(".scroll-4").click(function () {
     $(".web-desktop").css("right", ancho * 4 - 250);
+
+    $(".green .bar").addClass("max");
+
     $(
-      ".green .bar, .web-desktop .green.final-content section h2, .web-desktop .green.final-content section p, .web-desktop .green .contain-img"
+      ".web-desktop .green.final-content section h2, .web-desktop .green.final-content section p, .web-desktop .green .contain-img"
     ).addClass("visible");
   });
 
