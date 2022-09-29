@@ -9,7 +9,7 @@ $(".box.yellow").click(function () {
   $(this).addClass("visible");
   $(".group-photos .yellow").addClass("visible");
   $(".group-photos .green, .group-photos .orange").removeClass("visible");
-  $(".box.orange, box.green").removeClass("visible");
+  $(".box.orange, .box.green").removeClass("visible");
 });
 $(".box.green").click(function () {
   $(this).addClass("visible");
