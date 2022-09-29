@@ -47,7 +47,7 @@ $(document).ready(function () {
     $(
       ".web-desktop .orange.final-content section h2, .web-desktop .orange.final-content section p, .web-desktop .orange .contain-img"
     ).addClass("visible");
-    $(".orange .bar").addClass("max");
+    $(".green .bar").addClass("max");
     setTimeout(function () {
       $(".green .bar").addClass("visible");
     }, 2900);
