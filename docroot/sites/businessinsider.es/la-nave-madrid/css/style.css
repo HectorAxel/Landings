@@ -465,6 +465,10 @@
   position: relative;
   top: 195px;
   cursor: pointer;
+  transition: all 0.3s;
+}
+.web-desktop .box.visible {
+  top: -5px;
 }
 .web-desktop .box.orange {
   background: #f4633a;
@@ -555,6 +559,8 @@
 
 .web-desktop .group-photos img {
   width: 100%;
+  max-height: 510px;
+  object-fit: cover;
 }
 .web-desktop .group-photos {
   position: absolute;
@@ -673,6 +679,7 @@
 .web-desktop .contain-img {
   width: calc(100% - 50px);
   margin-top: 70px;
+  position: relative;
   max-width: 900px;
 }
 .web-desktop .footer-img {
