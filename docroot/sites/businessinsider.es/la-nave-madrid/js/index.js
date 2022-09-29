@@ -53,6 +53,7 @@ $(document).ready(function () {
 
   $(".scroll-3").click(function () {
     var ancho = $(window).width();
+    $(this).addClass("hide");
     $(".web-desktop").css("right", ancho * 3 - 150);
 
     $(
@@ -72,6 +73,7 @@ $(document).ready(function () {
 
   $(".scroll-4").click(function () {
     var ancho = $(window).width();
+    $(this).addClass("hide");
     $(".web-desktop").css("right", ancho * 4 - 250);
 
     $(".green .bar").addClass("max");
@@ -87,6 +89,7 @@ $(document).ready(function () {
 
   $(".scroll-pre-1").click(function () {
     var ancho = $(window).width();
+    $(".scroll-4").removeClass("hide");
     $(".web-desktop").css("right", ancho * 3 - 150);
     $(window).resize(function () {
       var ancho = $(window).width();
@@ -95,6 +98,7 @@ $(document).ready(function () {
   });
   $(".scroll-pre-2").click(function () {
     var ancho = $(window).width();
+    $(".scroll-3").removeClass("hide");
     $(".web-desktop").css("right", ancho * 2 - 100);
     $(window).resize(function () {
       var ancho = $(window).width();

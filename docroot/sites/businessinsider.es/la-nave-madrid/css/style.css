@@ -462,26 +462,25 @@
 }
 .web-desktop .group-box {
   position: absolute;
-  bottom: -180px;
+  bottom: -240px;
   width: calc(100% - 310px);
   right: 0;
   display: grid;
   grid-template-columns: 180px 180px 180px;
   justify-content: space-evenly;
-  transition: all 2s;
+  z-index: 2;
 }
 .web-desktop .group-box.visible {
-  bottom: 54px;
+  bottom: -240px;
 }
 .web-desktop .box {
   padding: 20px;
   position: relative;
-  top: 195px;
   cursor: pointer;
   transition: all 0.3s;
 }
 .web-desktop .box.visible {
-  top: -5px;
+  top: -211px;
 }
 .web-desktop .box.orange {
   background: #f4633a;
@@ -581,6 +580,7 @@
   left: 341px;
   max-width: calc(100% - 320px);
   padding: 0 40px;
+  width: 100%;
 }
 .group-photos img {
   opacity: 0;
@@ -615,20 +615,20 @@
   height: 100%;
   display: grid;
   padding: 0 50px;
-  grid-template-rows: 50% 50%;
+  grid-template-rows: 40% 60%;
   position: relative;
+  height: 100vh;
 }
 .web-desktop .final-content section h2 {
   font-family: "Roboto Condensed";
-  font-size: 28px;
+  font-size: 25px;
   font-weight: 300;
-  line-height: 40px;
+  line-height: 34px;
   color: #fff;
   display: grid;
-  align-content: end;
-  padding-bottom: 80px;
+  align-content: center;
   opacity: 0;
-  transition: all 5s;
+  transition: all 3s;
 }
 .web-desktop .final-content section h2.visible,
 .web-desktop .final-content section p.visible,
@@ -649,15 +649,16 @@
 }
 
 .web-desktop .final-content section p {
+  padding-top: 30px;
   font-family: "Roboto";
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 300;
-  line-height: 31px;
+  line-height: 25px;
   color: #fff;
   display: grid;
-  align-content: center;
+  align-content: flex-start;
   opacity: 0;
-  transition: all 5s;
+  transition: all 3s;
 }
 .web-desktop .final-content section p span {
   font-weight: 400;
@@ -717,7 +718,7 @@
   margin-top: 70px;
   position: relative;
   opacity: 0;
-  transition: all 4s;
+  transition: all 2s;
 }
 .web-desktop .footer-img {
   max-width: 300px;
@@ -738,24 +739,151 @@
   text-align: left;
   color: #fff;
 }
-.web-desktop button[class*="scroll"] {
+.scroll-1 {
+  cursor: pointer;
   position: absolute;
-  right: 0;
-  z-index: 1;
-  width: 100px;
+  bottom: 173px;
+  right: 40px;
+  color: #fff;
+  font-family: "Roboto Condensed";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  z-index: 30;
 }
-.web-desktop button[class*="scroll-pre"] {
+.scroll-1 .group-arrow {
   position: absolute;
-  left: 0;
+  transform: rotate(90deg);
+  top: -13px;
+  right: 14px;
+}
+.scroll-1 .group-arrow {
+  position: absolute;
+  transform: rotate(90deg);
+  top: -13px;
+  right: 12px;
+}
+.scroll-2 {
+  position: absolute;
+  width: 170px;
+  height: 230px;
+  bottom: 170px;
+  right: 0;
+  background: #383e42;
   z-index: 1;
-  width: 100px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.scroll-2 p {
+  font-family: "Roboto Condensed";
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 26px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+.prev {
+  position: absolute;
+  bottom: 20px;
+  left: 60px;
+}
+
+.prev p {
+  padding: 0 0 0 29px !important;
+  font-size: 15px !important;
+}
+
+.yellow .prev p {
+  color: #ffe900 !important;
+}
+.green .prev p {
+  color: #49c5b1 !important;
+}
+.orange .prev p {
+  color: #f4633a !important;
+}
+
+.prev .group-arrow {
+  transform: rotate(-90deg);
+  position: absolute;
+  left: 29px;
+  bottom: 0px;
+  transform: scale(0.7) rotate(-90deg);
+}
+.scroll-3.hide,
+.scroll-4.hide {
+  opacity: 0;
+}
+.scroll-3,
+.scroll-4 {
+  background: #383e42;
+  position: absolute;
+  bottom: 70px;
+  right: -40px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.scroll-3 p,
+.scroll-4 p {
+  display: flex;
+  text-decoration: none;
+  font-family: "Roboto Condensed";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+  background: #f4633a;
+  align-items: center;
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 5px;
+  text-transform: uppercase;
+}
+.scroll-4 p {
+  background-color: #49c5b1;
+}
+
+.click {
+  position: relative;
+}
+
+.click .group-arrow {
+  top: -15px;
+  position: absolute;
+  right: 34px;
+  transform: rotate(90deg);
+}
+
+.click p {
+  font-family: "Roboto Condensed";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: 0em;
+  color: #ffe900;
+  text-transform: uppercase;
+}
+.web-desktop .scroll-1 .arrow:after,
+.web-desktop .scroll-1 .arrow:before {
+  background-color: #fff;
 }
 .bar {
   height: 30px;
   width: 0;
   top: 50%;
-  transform: translate(0px, 0%);
-  transition: all 3s;
+  transform: translate(0, -119px);
+  transition: all 2s;
   position: absolute;
 }
 .bar.visible {
@@ -774,29 +902,9 @@
   background-color: #f4633a;
 }
 
-@media (min-width: 1280px) {
-  .web-desktop h1 span:first-child {
-    font-family: "Roboto Condensed";
-    font-size: 41px;
-    font-weight: 300;
-    line-height: 52px;
-    text-align: right;
-    color: #fff;
-  }
-
-  .web-desktop h1 span:last-child {
-    font-family: Roboto Condensed;
-    font-size: 253px;
-    line-height: 1;
-    font-weight: 300;
-    text-align: left;
-    color: #ffe900;
-  }
-}
-
 @media (min-width: 1400px) {
   .web-desktop .group-box.visible {
-    bottom: -18px;
+    bottom: -218px;
   }
   .web-desktop section.yellow p {
     font-size: 24px;
@@ -811,7 +919,7 @@
   }
   .web-desktop .group-box {
     position: absolute;
-    bottom: -180px;
+    bottom: -210px;
     width: calc(100% - 310px);
     grid-template-columns: 200px 200px 200px;
   }
@@ -828,5 +936,37 @@
   }
   .bar.max {
     width: 410px;
+  }
+
+  .scroll-1 {
+    bottom: 123px;
+    right: 70px;
+  }
+  .web-desktop .final-content section h2 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .web-desktop .final-content section p {
+    font-size: 18px;
+    line-height: 31px;
+  }
+}
+@media (min-width: 1600px) {
+  .web-desktop h1 span:first-child {
+    font-family: "Roboto Condensed";
+    font-size: 41px;
+    font-weight: 300;
+    line-height: 52px;
+    text-align: right;
+    color: #fff;
+  }
+
+  .web-desktop h1 span:last-child {
+    font-family: Roboto Condensed;
+    font-size: 253px;
+    line-height: 1;
+    font-weight: 300;
+    text-align: left;
+    color: #ffe900;
   }
 }
