@@ -409,7 +409,6 @@
 .web-desktop .screen-two,
 .web-desktop .final-content {
   width: calc(100vw - 50px);
-  min-height: 900px;
   position: relative;
 }
 .web-desktop h1 {
@@ -450,12 +449,12 @@
 
 .web-desktop section.yellow p {
   font-family: "Roboto Condensed";
-  font-size: 21px;
+  font-size: 19px;
   line-height: 29px;
   font-weight: 300;
-  margin-top: 60px;
+  margin-top: 20px;
   opacity: 0;
-  transition: all 5s;
+  transition: all;
 }
 .web-desktop section.yellow p.visible {
   opacity: 1;
@@ -608,7 +607,16 @@
 .web-desktop .final-content.green {
   background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/la-nave-madrid/nave-green-min.png);
 }
-
+.web-desktop .prev.scroll-pre-4 p {
+  color: #383e42 !important;
+}
+.web-desktop .prev.scroll-pre-4 .group-arrow {
+  bottom: 3px !important;
+}
+.web-desktop .prev.scroll-pre-4 .arrow:after,
+.web-desktop .prev.scroll-pre-4 .arrow:before {
+  background: #383e42 !important;
+}
 .web-desktop .final-content section {
   width: 320px;
   background: #383e42;
@@ -699,6 +707,7 @@
   align-items: center;
   height: 70px;
   width: 70px;
+  z-index: 1;
   border-radius: 50%;
 }
 .web-desktop .green .read a {
@@ -844,7 +853,7 @@
   font-family: "Roboto Condensed";
   font-size: 10px;
   font-weight: 400;
-  line-height: 17px;
+  line-height: 12px;
   letter-spacing: 0em;
   text-align: center;
   color: #fff;
@@ -911,7 +920,7 @@
 
 @media (min-width: 1400px) {
   .web-desktop .group-box.visible {
-    bottom: -218px;
+    bottom: -211px;
   }
   .web-desktop section.yellow p {
     font-size: 24px;
