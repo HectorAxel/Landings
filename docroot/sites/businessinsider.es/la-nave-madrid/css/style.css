@@ -688,12 +688,13 @@
   position: absolute;
   bottom: 70px;
   right: -56px;
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1;
 }
 
 .web-desktop .read a {
