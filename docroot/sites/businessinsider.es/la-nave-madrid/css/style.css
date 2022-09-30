@@ -598,15 +598,15 @@
   grid-template-columns: 320px auto;
 }
 .web-desktop .final-content.yellow {
-  background-image: url(../media/nave-yellow.png);
+  background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/la-nave-madrid/nave-yellow-min.png);
 }
 .web-desktop .final-content.orange {
-  background-image: url(../media/nave-orange.png);
+  background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/la-nave-madrid/nave-orange-min.png);
   background-size: cover;
   background-position: center;
 }
 .web-desktop .final-content.green {
-  background-image: url(../media/nave-green.png);
+  background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/la-nave-madrid/nave-green-min.png);
 }
 
 .web-desktop .final-content section {
