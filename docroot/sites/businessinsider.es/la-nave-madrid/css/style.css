@@ -454,7 +454,7 @@
   font-weight: 300;
   margin-top: 20px;
   opacity: 0;
-  transition: all;
+  transition: all 1s;
 }
 .web-desktop section.yellow p.visible {
   opacity: 1;
@@ -637,7 +637,7 @@
   display: grid;
   align-content: center;
   opacity: 0;
-  transition: all;
+  transition: all 1s;
   padding: 0 40px;
 }
 .web-desktop .final-content section h2.visible,
@@ -925,8 +925,8 @@
     bottom: -211px;
   }
   .web-desktop section.yellow p {
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 23px;
+    line-height: 33px;
   }
   .web-desktop .block-text {
     bottom: 0;
@@ -961,12 +961,12 @@
     right: 70px;
   }
   .web-desktop .final-content section h2 {
-    font-size: 25px;
-    line-height: 34px;
+    font-size: 24px;
+    line-height: 30px;
   }
   .web-desktop .final-content section p {
-    font-size: 18px;
-    line-height: 31px;
+    font-size: 17px;
+    line-height: 27px;
   }
 }
 @media (min-width: 1600px) {
