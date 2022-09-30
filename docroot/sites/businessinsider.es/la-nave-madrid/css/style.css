@@ -598,6 +598,8 @@
 }
 .web-desktop .final-content.yellow {
   background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/la-nave-madrid/nave-yellow-min.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .web-desktop .final-content.orange {
   background-image: url(https://builder.axelspringer.es/brandlab/businessinsider.es/img/la-nave-madrid/nave-orange-min.png);
