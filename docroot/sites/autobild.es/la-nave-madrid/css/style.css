@@ -326,6 +326,8 @@
     transition: all 0.5s;
     position: relative;
     right: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
   }
 }
 
@@ -444,12 +446,12 @@
   width: 320px;
   background: #ffe900;
   height: 100%;
-  padding: 0 40px;
+  padding: 0 50px;
 }
 
 .web-desktop section.yellow p {
   font-family: "Roboto Condensed";
-  font-size: 18px;
+  font-size: 19px;
   line-height: 29px;
   font-weight: 300;
   margin-top: 20px;
@@ -622,23 +624,21 @@
   background: #383e42;
   height: 100%;
   display: grid;
-  grid-template-rows: 30% 30px 60%;
+  padding: 0 50px;
+  grid-template-rows: 40% 60%;
   position: relative;
   height: 100vh;
-  align-items: center;
-  padding: 20px 0;
 }
 .web-desktop .final-content section h2 {
   font-family: "Roboto Condensed";
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 300;
-  line-height: 27px;
+  line-height: 34px;
   color: #fff;
   display: grid;
   align-content: center;
   opacity: 0;
   transition: all;
-  padding: 0 40px;
 }
 .web-desktop .final-content section h2.visible,
 .web-desktop .final-content section p.visible,
@@ -661,14 +661,13 @@
 .web-desktop .final-content section p {
   padding-top: 30px;
   font-family: "Roboto";
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 300;
   line-height: 25px;
   color: #fff;
   display: grid;
   align-content: flex-start;
   opacity: 0;
-  padding: 0 40px;
   transition: all 3s;
 }
 .web-desktop .final-content section p span {
@@ -687,7 +686,7 @@
   background: #383e42;
   position: absolute;
   bottom: 70px;
-  right: -56px;
+  right: -46px;
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -729,7 +728,7 @@
 
 .web-desktop .contain-img {
   width: calc(100% - 50px);
-  margin-top: 20px;
+  margin-top: 70px;
   position: relative;
   opacity: 0;
   transition: all 2s;
@@ -900,15 +899,16 @@
 .bar {
   height: 30px;
   width: 0;
-  left: 0px;
-  transition: all;
-  position: relative;
+  top: 50%;
+  transform: translate(0, -119px);
+  transition: all 2s;
+  position: absolute;
 }
 .bar.visible {
   width: 50px;
 }
 .bar.max {
-  width: 100%;
+  width: 358px;
 }
 .yellow .bar {
   background-color: #ffe900;
@@ -953,7 +953,7 @@
     grid-template-columns: 410px auto;
   }
   .bar.max {
-    width: 100%;
+    width: 410px;
   }
 
   .scroll-1 {
