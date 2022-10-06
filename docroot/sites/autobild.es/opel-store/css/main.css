@@ -147,7 +147,7 @@ p.text-step span {
 }
 
 .car {
-  margin: 0 20px 50px;
+  margin: 0 20px 100px;
 }
 
 .car .name-car {
@@ -216,4 +216,12 @@ p.text-step span {
     display: grid;
     grid-template-columns: 50% 50%;
   }
+}
+
+@media (min-width: 1200px) {
+  .desc p {
+    min-height: 198px;
+  }
+
+
 }
