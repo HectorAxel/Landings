@@ -194,6 +194,13 @@ p.text-step span {
   padding: 0;
 }
 
+.intro .intro-image {
+  width: 100%;
+  min-height: 500px;
+  object-fit: cover;
+  object-position: calc(100vw - 998px);
+}
+
 .icons {
   display: flex;
   max-width: 1000px;
@@ -305,6 +312,25 @@ p.text-step span {
   align-items: center;
 }
 
+a.last-link {
+  margin: 0 auto 20px;
+  display: block;
+  text-align: center;
+  background: #f7ff14;
+  color: #111;
+  text-decoration: none;
+  padding: 10px;
+  max-width: 200px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all .3s;
+}
+
+a.last-link:hover {
+  transform: scale(1.1);
+}
+
 @media (min-width: 760px) {
   p.text-step {
     height: 100%;
@@ -351,5 +377,9 @@ p.text-step span {
   .slide {
     display: grid;
     grid-template-columns: 50% 50%;
+  }
+
+  .intro .intro-image {
+    object-position: center;
   }
 }
