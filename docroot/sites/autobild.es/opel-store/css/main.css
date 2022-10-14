@@ -342,13 +342,18 @@ a.last-link:hover {
 
 .rss ul {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto auto;
   list-style: none;
   padding: 0;
   justify-content: center;
 }
 
 .rss ul li:nth-child(2) {
+  position: relative;
+  top: 4px;
+}
+
+.rss ul li:last-child {
   position: relative;
   top: 4px;
 }
