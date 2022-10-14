@@ -331,6 +331,32 @@ a.last-link:hover {
   transform: scale(1.1);
 }
 
+.rss {
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 20px;
+  overflow: hidden;
+  max-width: 300px;
+  text-align: center;
+}
+
+.rss ul {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
+
+.rss ul li:nth-child(2) {
+  position: relative;
+  top: 4px;
+}
+
+.rss svg {
+  color: #de0222;
+}
+
 @media (min-width: 760px) {
   p.text-step {
     height: 100%;
