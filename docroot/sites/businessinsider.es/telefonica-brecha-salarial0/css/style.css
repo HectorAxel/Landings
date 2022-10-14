@@ -213,6 +213,7 @@ p.underline {
   display: grid;
   grid-template-columns: auto auto;
   align-items: baseline;
+  padding: 0 20px;
 }
 
 .arrows .job p,
