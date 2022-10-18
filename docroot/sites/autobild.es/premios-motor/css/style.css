@@ -84,14 +84,14 @@ img.volante {
 
   65% {
     animation-timing-function: ease-in;
-    transform: rotate(0) scale(1);
+    transform: rotate(360deg) scale(1);
     ;
   }
 
   100% {
     animation-timing-function: ease-out;
     opacity: 1;
-    transform: translateY(0px) rotate(40deg);
+    transform: translateY(0px) rotate(400deg);
     ;
 
   }
