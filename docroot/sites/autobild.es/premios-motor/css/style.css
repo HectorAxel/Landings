@@ -1,0 +1,478 @@
+@font-face {
+  font-family: Mont;
+  src: url("../fonts/Mont-Regular.woff2") format("woff2"),
+    url("../fonts/Mont-Regular.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mont Light";
+  src: url("../fonts/Mont-Light.woff2") format("woff2"),
+    url("../fonts/Mont-Light.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mont Bold";
+  src: url("../fonts/Mont-SemiBold.woff2") format("woff2"),
+    url("../fonts/Mont-SemiBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  font-family: Mont;
+}
+
+.intro {
+  background: #000;
+  padding: 0 30px 30px;
+}
+
+.intro img.text-intro {
+  width: 100%;
+  padding: 30px 0;
+  max-width: 700px;
+  margin: 0 auto;
+  display: block;
+  animation: visibleintro 8.5s ease;
+  animation-delay: -1s;
+}
+
+@keyframes visibleintro {
+
+  0%,
+  20%,
+  40%,
+  60%,
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+img.volante {
+  width: 96px;
+  margin: 0 auto;
+  display: block;
+  animation: myAnim 9s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: scale(.5);
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  40% {
+    animation-timing-function: ease-in;
+    transform: scale(3.3) rotate(180deg);
+  }
+
+  65% {
+    animation-timing-function: ease-in;
+    transform: rotate(0) scale(1);
+    ;
+  }
+
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateY(0px) rotate(40deg);
+    ;
+
+  }
+}
+
+
+.intro h2 {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+  font-family: "Mont Light";
+  margin-bottom: 40px;
+  animation: visibleh2 9s ease;
+  animation-delay: -1s;
+}
+
+@keyframes visibleh2 {
+
+  0%,
+  20%,
+  40%,
+  60%,
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.intro a {
+  animation: visiblebutton 9.5s ease;
+  animation-delay: -1s;
+}
+
+@keyframes visiblebutton {
+
+  0%,
+  20%,
+  40%,
+  60%,
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.intro a,
+.box a {
+  width: 160px;
+  margin: 0 auto 50px;
+  display: block;
+  background: #f31000;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Mont;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: center;
+  border-radius: 20px;
+  border: 3px solid #000;
+  position: relative;
+  box-shadow: 0px 0px 0px 1px #f31000;
+}
+
+.box a {
+  border: 3px solid #fff;
+  margin: 0 auto;
+}
+
+.intro-footer {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 40px;
+  animation: visiblefooter 10s ease;
+  animation-delay: -1s;
+}
+
+@keyframes visiblefooter {
+
+  0%,
+  20%,
+  40%,
+  60%,
+  80% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.intro-footer img {
+  width: 100%;
+}
+
+.organiza p,
+.patrocina p {
+  font-family: Mont;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+}
+
+.organiza .group-img {
+  display: grid;
+  grid-template-columns: 55px 18px 53px;
+  gap: 14px;
+  justify-content: center;
+}
+
+.patrocina .group-img {
+  display: grid;
+  grid-template-columns: 112px;
+  justify-content: center;
+
+}
+
+.step-one {
+  padding: 0 30px;
+}
+
+.step-one h2 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 51px;
+  letter-spacing: 0em;
+  text-align: center;
+  font-family: "Mont Light";
+}
+
+.lead {
+  font-family: Mont;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #F31000;
+  margin: 0 auto 30px;
+  max-width: 660px;
+}
+
+.description p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-family: "Mont Light";
+}
+
+.description {
+  padding: 0 30px;
+  border-left: 2px dashed #F31000;
+  border-right: 2px dashed #F31000;
+  max-width: 520px;
+  margin: 0 auto 70px;
+}
+
+.boxes img {
+  width: 100%;
+  margin: 0 auto 30px;
+  max-width: 127px;
+  display: block;
+}
+
+.boxes .box {
+  margin: 0 auto 40px;
+  padding: 30px;
+  border: 1px dashed #9C9C9C;
+  border-radius: 16px;
+  max-width: 278px;
+}
+
+.box h3 {
+  font-family: "Mont Bold";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.box .info {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: center;
+  font-family: 'Mont Light';
+}
+
+.step-lines {
+  background: #000;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+}
+
+.step-lines h2 {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 58px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #f31000;
+  font-family: "Mont Light";
+}
+
+.step-lines h3 {
+  font-family: Mont;
+  font-size: 22px;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #f31000;
+}
+
+.step-lines .line p {
+  font-family: Mont;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  max-width: 150px;
+  position: relative;
+  left: 20px;
+}
+
+.step-lines .line p:nth-child(even) {
+  position: relative;
+  left: 220px;
+  text-align: left;
+}
+
+.step-lines h4 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 16px;
+  border: 1px solid #f31000;
+  border-radius: 20px;
+  padding: 5px 20px;
+  display: inline;
+  background: #000;
+  z-index: 1;
+  position: relative;
+}
+
+.line {
+  position: relative;
+  width: 375px;
+  margin: 0 auto;
+}
+
+.line:before {
+  content: "";
+  background: #f31000;
+  height: calc(100% - 13px);
+  width: 1px;
+  position: absolute;
+  top: 8px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.step-lines .line p:before {
+  content: "⬤";
+  position: absolute;
+  right: -26px;
+  top: 0px;
+  color: #f31000;
+}
+
+.step-lines .line p:nth-child(even):before {
+  left: -41px;
+  right: inherit;
+}
+
+.line-block {
+  margin-bottom: 60px;
+}
+
+.line-block:last-child h4 {
+  margin-top: 30px;
+  display: block;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 960px) {
+
+  .intro h2 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .organiza .group-img {
+    display: grid;
+    grid-template-columns: 100px 32px 96px;
+    gap: 14px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .patrocina .group-img {
+    display: grid;
+    grid-template-columns: 170px;
+    justify-content: center;
+
+  }
+
+  .boxes {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .boxes img {
+    max-width: 137px;
+  }
+
+  .step-one h2 {
+    font-size: 60px;
+    line-height: 96px;
+
+  }
+
+  .lead {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .step-lines h2 {
+    font-size: 70px;
+  }
+
+  .step-lines h3 {
+    font-size: 30px;
+  }
+
+  .step-lines .line p {
+    font-size: 20px;
+    left: -201px;
+    text-align: right;
+    max-width: inherit;
+    padding-right: 6px;
+  }
+
+  .step-lines .line p:nth-child(even) {
+    position: relative;
+    left: 208px;
+    text-align: left;
+  }
+
+  .step-lines .line p:before {
+    right: -22px;
+    font-size: 14px;
+  }
+
+  .step-lines .line p:nth-child(even):before {
+    left: -28px;
+  }
+
+  img.volante {
+    width: 160px;
+  }
+}
