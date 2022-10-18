@@ -40,7 +40,7 @@
   max-width: 700px;
   margin: 0 auto;
   display: block;
-  animation: visibleintro 8.5s ease;
+  animation: visibleintro 8.5s linear;
   animation-delay: -1s;
 }
 
@@ -63,12 +63,12 @@ img.volante {
   width: 96px;
   margin: 0 auto;
   display: block;
-  animation: myAnim 9s ease 0s 1 normal forwards;
+  animation: myAnim 9s linear 0s 1 normal forwards;
 }
 
 @keyframes myAnim {
   0% {
-    animation-timing-function: ease-in;
+    animation-timing-function: linear;
     opacity: 1;
     transform: scale(.5);
   }
@@ -78,18 +78,18 @@ img.volante {
   }
 
   40% {
-    animation-timing-function: ease-in;
+    animation-timing-function: linear;
     transform: scale(3.3) rotate(180deg);
   }
 
   65% {
-    animation-timing-function: ease-in;
+    animation-timing-function: linear;
     transform: rotate(360deg) scale(1);
     ;
   }
 
   100% {
-    animation-timing-function: ease-out;
+    animation-timing-function: linear;
     opacity: 1;
     transform: translateY(0px) rotate(400deg);
     ;
@@ -107,7 +107,7 @@ img.volante {
   color: #fff;
   font-family: "Mont Light";
   margin-bottom: 40px;
-  animation: visibleh2 9s ease;
+  animation: visibleh2 9s linear;
   animation-delay: -1s;
 }
 
@@ -127,7 +127,7 @@ img.volante {
 }
 
 .intro a {
-  animation: visiblebutton 9.5s ease;
+  animation: visiblebutton 9.5s linear;
   animation-delay: -1s;
 }
 
@@ -176,7 +176,7 @@ img.volante {
   display: grid;
   grid-template-columns: auto auto;
   gap: 40px;
-  animation: visiblefooter 10s ease;
+  animation: visiblefooter 10s linear;
   animation-delay: -1s;
 }
 
@@ -215,6 +215,7 @@ img.volante {
   grid-template-columns: 55px 18px 53px;
   gap: 14px;
   justify-content: center;
+  align-items: center;
 }
 
 .patrocina .group-img {
