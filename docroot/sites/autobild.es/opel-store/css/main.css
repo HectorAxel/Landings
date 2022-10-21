@@ -320,7 +320,7 @@ a.last-link {
   color: #111;
   text-decoration: none;
   padding: 10px;
-  max-width: 200px;
+  width: 200px;
   border-radius: 20px;
   text-transform: uppercase;
   font-weight: 500;
@@ -361,6 +361,7 @@ a.last-link:hover {
 .rss svg {
   color: #de0222;
 }
+
 
 @media (min-width: 760px) {
   p.text-step {
@@ -412,5 +413,11 @@ a.last-link:hover {
 
   .intro .intro-image {
     object-position: center;
+  }
+
+  .buttons {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
   }
 }
