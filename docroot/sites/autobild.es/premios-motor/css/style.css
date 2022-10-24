@@ -403,22 +403,23 @@ img.volante {
   height: calc(100% - 13px);
   width: 1px;
   position: absolute;
-  top: 8px;
+  top: 4px;
   left: 0;
   right: 0;
   margin: 0 auto;
 }
 
 .step-lines .line p:before {
-  content: "â¬¤";
+  content: "•";
   position: absolute;
-  right: -26px;
+  right: -30px;
   top: 0px;
   color: #f31000;
+  font-size: 75px;
 }
 
 .step-lines .line p:nth-child(even):before {
-  left: -41px;
+  left: -45px;
   right: inherit;
 }
 
@@ -500,12 +501,12 @@ img.volante {
   }
 
   .step-lines .line p:before {
-    right: -22px;
-    font-size: 14px;
+    right: -27px;
+    font-size: 75px;
   }
 
   .step-lines .line p:nth-child(even):before {
-    left: -28px;
+    left: -33px;
   }
 
   img.volante {
