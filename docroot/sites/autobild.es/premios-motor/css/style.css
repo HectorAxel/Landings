@@ -71,6 +71,8 @@
   object-fit: none;
   border-radius: 50%;
   top: -40px;
+  animation: visiblefooter 8s linear;
+  animation-delay: -1s;
 }
 
 @keyframes visibleintro {
