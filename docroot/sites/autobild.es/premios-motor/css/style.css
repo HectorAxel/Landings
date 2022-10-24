@@ -31,7 +31,8 @@
 
 .intro {
   background: #000;
-  padding: 0 30px 30px;
+  padding: 100px 30px 110px;
+  position: relative;
 }
 
 .intro img.text-intro {
@@ -40,8 +41,36 @@
   max-width: 700px;
   margin: 0 auto;
   display: block;
-  animation: visibleintro 8.5s linear;
+  animation: visibleintro 7s linear;
   animation-delay: -1s;
+}
+
+.back-intro {
+  width: 100%;
+  height: 160px;
+  background: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+}
+
+.back-intro.two {
+  top: -80px;
+  bottom: inherit;
+}
+
+.back-intro img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: #000;
+  height: 70px;
+  width: 70px;
+  object-fit: none;
+  border-radius: 50%;
+  top: -40px;
 }
 
 @keyframes visibleintro {
@@ -63,7 +92,8 @@ img.volante {
   width: 96px;
   margin: 0 auto;
   display: block;
-  animation: myAnim 9s linear 0s 1 normal forwards;
+  animation: myAnim 7s linear 0s 1 normal forwards;
+  transition: all .3s;
 }
 
 @keyframes myAnim {
@@ -91,7 +121,7 @@ img.volante {
   100% {
     animation-timing-function: linear;
     opacity: 1;
-    transform: translateY(0px) rotate(400deg);
+    transform: translateY(0px);
     ;
 
   }
@@ -107,7 +137,7 @@ img.volante {
   color: #fff;
   font-family: "Mont Light";
   margin-bottom: 40px;
-  animation: visibleh2 9s linear;
+  animation: visibleh2 7.5s linear;
   animation-delay: -1s;
 }
 
@@ -127,8 +157,9 @@ img.volante {
 }
 
 .intro a {
-  animation: visiblebutton 9.5s linear;
+  animation: visiblebutton 7.8s linear;
   animation-delay: -1s;
+  transition: all .3s;
 }
 
 @keyframes visiblebutton {
@@ -170,13 +201,14 @@ img.volante {
 .box a {
   border: 3px solid #fff;
   margin: 0 auto;
+  transition: all .3s;
 }
 
 .intro-footer {
   display: grid;
   grid-template-columns: auto auto;
   gap: 40px;
-  animation: visiblefooter 10s linear;
+  animation: visiblefooter 8s linear;
   animation-delay: -1s;
 }
 
@@ -226,7 +258,7 @@ img.volante {
 }
 
 .step-one {
-  padding: 0 30px;
+  padding: 0 30px 40px;
 }
 
 .step-one h2 {
@@ -303,8 +335,9 @@ img.volante {
 .step-lines {
   background: #000;
   color: #fff;
-  padding: 30px;
+  padding: 120px 30px 30px 30px;
   text-align: center;
+  position: relative;
 }
 
 .step-lines h2 {
@@ -375,7 +408,7 @@ img.volante {
 }
 
 .step-lines .line p:before {
-  content: "⬤";
+  content: "â¬¤";
   position: absolute;
   right: -26px;
   top: 0px;
